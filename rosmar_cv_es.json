@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Rosmar Alejandra Mendoza Canchica",
-    "label": "Software Developer (Backend)",
+    "label": "Software Developer (Backend & AI) | Technical Project Manager",
     "image": "",
     "email": "mendozarosmar@gmail.com",
     "phone": "+57 3173820550",
@@ -138,6 +138,11 @@
       "name": "Herramientas de IA & Productividad",
       "level": "Avanzado",
       "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"]
+    },
+    {
+      "name": "Gestión de Proyectos & Liderazgo Técnico",
+      "level": "Avanzado",
+      "keywords": ["Scrum", "Agile", "Jira Help Desk", "SLA 99%+", "Operaciones TI", "Guardias Operativas"]
     }
   ],
   "languages": [
