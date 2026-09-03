@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "+57 3173820550",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Backend Developer focused on designing and optimizing high-traffic microservices and RESTful APIs in Golang, Python, and Java. Experienced in high-scale environments like MercadoLibre and the Fintech sector, combining engineering best practices, relational databases, and AI-driven tools (Cursor, Claude) to build clean, efficient, and maintainable software.",
+    "summary": "Backend Developer specializing in designing and optimizing high-traffic microservices and RESTful APIs in Golang, Python, and Java. Experienced in large-scale environments like MercadoLibre and the Fintech sector, combining engineering best practices, relational databases, and AI-driven tools (Cursor, Claude) to build clean, efficient, and maintainable software.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -32,12 +32,12 @@
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
       "endDate": "2026-06",
-      "summary": "Development, feature expansion, and maintenance of critical microservices in Golang and high-performance RESTful APIs at massive scale.",
+      "summary": "Development and maintenance of critical microservices in Golang and high-performance RESTful APIs at massive scale.",
       "highlights": [
-        "Intensive Go Training: Selected for MercadoLibre's Golang Backend Bootcamp, mastering distributed microservices architecture, engineering best practices, and large-scale standards.",
-        "High-Impact Backend Engineering: Designed and built core Golang microservices (supported by Java and Python), maintaining 99%+ availability SLAs for platforms serving millions of users.",
-        "AI-Assisted Workflow: Integrated tools like Cursor and Claude into daily workflows to speed up endpoint development, refactor legacy code, and boost test coverage.",
-        "System Reliability & On-Call Shifts: Actively participated in rotation shifts (on-call) and live monitoring to quickly diagnose and resolve production incidents."
+        "Designed and built core microservices and RESTful APIs in Golang (supported by Java and Python), maintaining 99%+ availability SLAs for millions of users.",
+        "Completed MercadoLibre's Backend Golang Bootcamp, specializing in Go distributed microservices architecture, concurrency, and high-scale engineering practices.",
+        "Integrated AI tools (Cursor and Claude) into daily workflows to speed up endpoint delivery, refactor legacy code, and boost unit test coverage.",
+        "Managed on-call rotation shifts and real-time monitoring, troubleshooting production incidents to preserve core platform stability."
       ],
       "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
     },
@@ -49,9 +49,9 @@
       "endDate": "2023-08",
       "summary": "Building and integrating backend services for credit and financial technology products.",
       "highlights": [
-        "Credit Services Development: Built and maintained RESTful APIs using FastAPI and Django focused on evaluating and processing financial products.",
-        "Relational Database Optimization: Designed relational data models and tuned SQL queries in PostgreSQL to enhance API response times.",
-        "Cloud Integrations & Webhooks: Connected backend services with AWS cloud infrastructure and built Webhook listeners for real-time data processing."
+        "Developed and maintained RESTful APIs using FastAPI and Django focused on evaluating and processing financial products.",
+        "Designed relational data models and optimized SQL queries in PostgreSQL to improve system response times.",
+        "Implemented cloud integrations with AWS infrastructure and Webhook listeners for real-time data processing."
       ],
       "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
     },
@@ -63,8 +63,8 @@
       "endDate": "2022-07",
       "summary": "Level 2 technical support and production incident resolution.",
       "highlights": [
-        "Incident Resolution: Handled and resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to SLA response times.",
-        "Technical Debugging: Conducted direct code debugging in Django services and executed query analysis in PostgreSQL to resolve live production issues."
+        "Resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to Service Level Agreements (SLAs).",
+        "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues."
       ],
       "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
     },
@@ -76,9 +76,9 @@
       "endDate": "2021-10",
       "summary": "Access management, identity security, and operational reporting dashboards.",
       "highlights": [
-        "Identity & Access Control: Managed corporate user permissions and identities integrating Active Directory and Microsoft Office 365.",
-        "Dashboards & Reporting: Designed interactive Power BI dashboards to track, audit, and report system access metrics.",
-        ".NET App Support: Assisted with permission configurations and role assignments for internal .NET applications."
+        "Managed corporate user permissions and identities using Active Directory and Microsoft Office 365.",
+        "Built interactive Power BI dashboards to track, audit, and report system access metrics to the security team.",
+        "Provided technical support for access configurations and user roles across internal .NET applications."
       ],
       "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
     },
@@ -90,7 +90,7 @@
       "endDate": "2019-10",
       "summary": "IT operations management and service infrastructure monitoring.",
       "highlights": [
-        "IT Operations & Monitoring: Supervised infrastructure health and managed help desk tickets using Jira."
+        "Supervised infrastructure service availability and managed help desk tickets using Jira."
       ],
       "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
     }
