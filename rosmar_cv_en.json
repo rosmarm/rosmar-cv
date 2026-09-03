@@ -1,0 +1,157 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rosmar Alejandra Mendoza Canchica",
+    "label": "Software Developer (Backend)",
+    "image": "",
+    "email": "mendozarosmar@gmail.com",
+    "phone": "+57 3173820550",
+    "url": "https://github.com/rosmarmendoza",
+    "summary": "Backend Software Developer with solid experience in designing, building, and optimizing microservices and RESTful APIs using Golang, Python, and Java. Proven track record in high-impact environments such as MercadoLibre and Fintech companies. Specialized in implementing scalable architectures, SQL database integration, and adopting AI-driven development tools (Cursor, Claude) to maximize code quality, refactoring, and software delivery efficiency.",
+    "location": {
+      "city": "Bogotá / Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rosmar-mendoza",
+        "url": "https://linkedin.com/in/rosmar-mendoza"
+      },
+      {
+        "network": "GitHub",
+        "username": "rosmarmendoza",
+        "url": "https://github.com/rosmarmendoza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MercadoLibre",
+      "position": "Software Developer (Backend)",
+      "url": "https://www.mercadolibre.com",
+      "startDate": "2023-08",
+      "endDate": "2026-03",
+      "summary": "Development and optimization of critical microservices in Golang and maintenance of high-scale RESTful APIs.",
+      "highlights": [
+        "Backend Specialization Bootcamp in Golang (Aug 2023 – Dec 2023): Selected to complete MercadoLibre's intensive training program focused on Go, microservices architecture, engineering best practices, and large-scale development standards.",
+        "Microservices Development & Maintenance: Designed and developed backend services and RESTful APIs using Golang, Java, and Python, ensuring high availability, maintainability, and code performance (99%+ SLA).",
+        "AI-Assisted Engineering Productivity: Integrated AI tools (Cursor, Claude) into daily development workflows to accelerate endpoint construction, refactor legacy code, and boost unit test coverage.",
+        "API Operations & Support: Actively participated in system maintenance, monitoring, and on-call shifts to ensure seamless operation of core platform APIs."
+      ],
+      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-07",
+      "endDate": "2023-08",
+      "summary": "Development of financial and credit backend services.",
+      "highlights": [
+        "Developed RESTful APIs using FastAPI and Django focused on financial and credit services.",
+        "Designed and integrated optimized data models and SQL queries in PostgreSQL.",
+        "Implemented backend integrations with AWS cloud services and consumed Webhooks for real-time data processing."
+      ],
+      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Support L2",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "summary": "Level 2 support and production incident troubleshooting.",
+      "highlights": [
+        "Handled and resolved Level 2 incidents via Jira Service Desk, strictly meeting Service Level Agreements (SLAs).",
+        "Conducted code debugging for Django services and performed direct PostgreSQL query analysis to troubleshoot production errors."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+    },
+    {
+      "name": "Scotiabank GBS",
+      "position": "System Access Analyst",
+      "url": "https://www.scotiabank.com",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "summary": "Centralized access security management and operational dashboards.",
+      "highlights": [
+        "Centralized user access and security management using Microsoft Office 365 and Active Directory.",
+        "Created operational access reports and executive dashboards using Power BI.",
+        "Provided support for access configuration across .NET applications."
+      ],
+      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+    },
+    {
+      "name": "Intexus",
+      "position": "IT Engineer",
+      "url": "https://www.intexus.com",
+      "startDate": "2016-09",
+      "endDate": "2019-10",
+      "summary": "IT operations management and service infrastructure monitoring.",
+      "highlights": [
+        "Managed IT operations, monitored service infrastructure, and provided Jira help desk support."
+      ],
+      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Experimental del Táchira",
+      "url": "https://www.unet.edu.ve",
+      "area": "Computer Science / Informatic Engineer",
+      "studyType": "Bachelor of Science",
+      "startDate": "2014-01",
+      "endDate": "2019-12"
+    },
+    {
+      "institution": "Digital House",
+      "url": "https://www.digitalhouse.com",
+      "area": "Certified Tech Developer",
+      "studyType": "Certification",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Golang",
+      "level": "Advanced",
+      "keywords": ["Go", "Backend", "Microservices", "REST APIs"]
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": ["FastAPI", "Django", "PostgreSQL"]
+    },
+    {
+      "name": "Java",
+      "level": "Intermediate",
+      "keywords": ["REST APIs", "Backend"]
+    },
+    {
+      "name": "Databases & Cloud",
+      "level": "Advanced",
+      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"]
+    },
+    {
+      "name": "AI Productivity Tools",
+      "level": "Advanced",
+      "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Basic"
+    }
+  ]
+}
