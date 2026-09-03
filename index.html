@@ -24,7 +24,6 @@
                             900: '#0c4a6e',
                         },
                         darkbg: '#0b0f19',
-                        darkcard: 'rgba(17, 24, 39, 0.75)',
                     },
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
@@ -35,14 +34,14 @@
         }
     </script>
     
-    <!-- Google Fonts & FontAwesome / Lucide -->
+    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Print Stylesheet for flawless PDF export */
+        /* Print Stylesheet for PDF export */
         @media print {
             body {
                 background: white !important;
@@ -68,21 +67,30 @@
             }
         }
 
+        /* Ergonomic Glass Panels for both Dark and Light mode */
         .glass-panel {
-            background: rgba(17, 24, 39, 0.7);
+            background: rgba(255, 255, 255, 0.90);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+        }
+
+        html.dark .glass-panel {
+            background: rgba(17, 24, 39, 0.75);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .light .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
         }
 
         .gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #6366f1 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        html.dark .gradient-text {
             background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -96,20 +104,23 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
+            background: linear-gradient(90deg, #0284c7, #6366f1, #8b5cf6);
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+        }
+        html.dark .gradient-border::before {
             background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
         }
     </style>
 </head>
-<body class="bg-darkbg text-slate-100 font-sans min-h-screen transition-colors duration-300 antialiased selection:bg-sky-500 selection:text-white">
+<body class="bg-slate-50 dark:bg-darkbg text-slate-800 dark:text-slate-100 font-sans min-h-screen transition-colors duration-300 antialiased selection:bg-sky-500 selection:text-white">
 
     <!-- Ambient Glowing Background Elements (No-print) -->
-    <div class="fixed top-0 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full filter blur-[120px] pointer-events-none no-print"></div>
-    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-[120px] pointer-events-none no-print"></div>
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-sky-400/10 dark:bg-sky-500/10 rounded-full filter blur-[120px] pointer-events-none no-print"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-purple-400/10 dark:bg-purple-500/10 rounded-full filter blur-[120px] pointer-events-none no-print"></div>
 
     <!-- Sticky Navigation Header -->
-    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80 transition-colors duration-300 no-print">
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-300 no-print">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group">
@@ -117,36 +128,36 @@
                     RM
                 </div>
                 <div>
-                    <span class="font-bold text-lg text-slate-100 dark:text-slate-100 tracking-tight block leading-none">Rosmar Mendoza</span>
-                    <span class="text-xs font-mono text-sky-400 font-medium">Backend Developer</span>
+                    <span class="font-bold text-lg text-slate-900 dark:text-slate-100 tracking-tight block leading-none">Rosmar Mendoza</span>
+                    <span class="text-xs font-mono text-sky-600 dark:text-sky-400 font-medium">Backend Developer</span>
                 </div>
             </a>
 
             <!-- Right Controls & Actions -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Language Toggle Switch -->
-                <div class="bg-slate-800/80 dark:bg-slate-800/80 p-1 rounded-full border border-slate-700/60 flex items-center shadow-inner">
-                    <button id="btn-lang-es" onclick="setLanguage('es')" class="px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-slate-950 shadow-md">
+                <div class="bg-slate-200/80 dark:bg-slate-800/80 p-1 rounded-full border border-slate-300/80 dark:border-slate-700/60 flex items-center shadow-inner">
+                    <button id="btn-lang-es" onclick="setLanguage('es')" class="px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-white dark:text-slate-950 shadow-md">
                         ES
                     </button>
-                    <button id="btn-lang-en" onclick="setLanguage('en')" class="px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-400 hover:text-slate-200">
+                    <button id="btn-lang-en" onclick="setLanguage('en')" class="px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200">
                         EN
                     </button>
                 </div>
 
                 <!-- Theme Toggle -->
-                <button onclick="toggleTheme()" class="p-2 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-300 hover:text-white transition-colors" title="Cambiar Tema">
+                <button onclick="toggleTheme()" class="p-2 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/80 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors" title="Cambiar Tema">
                     <i id="theme-icon" class="fas fa-moon text-sm"></i>
                 </button>
 
                 <!-- JSON Data Button -->
-                <button onclick="openJsonModal()" class="hidden sm:flex items-center space-x-2 px-3 py-1.5 text-xs font-mono font-semibold rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-sky-400 border border-sky-500/30 transition-all shadow-sm">
+                <button onclick="openJsonModal()" class="hidden sm:flex items-center space-x-2 px-3 py-1.5 text-xs font-mono font-semibold rounded-xl bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300/80 dark:hover:bg-slate-700/80 text-sky-700 dark:text-sky-400 border border-sky-500/30 transition-all shadow-sm">
                     <i class="fas fa-code"></i>
                     <span>JSON Resume</span>
                 </button>
 
                 <!-- Print / PDF Button -->
-                <button onclick="window.print()" class="flex items-center space-x-2 px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-lg shadow-sky-500/25 transition-all font-medium">
+                <button onclick="window.print()" class="flex items-center space-x-2 px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-sky-600 hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950 shadow-lg shadow-sky-500/25 transition-all font-medium">
                     <i class="fas fa-print"></i>
                     <span data-i18n="btn_pdf">Guardar PDF</span>
                 </button>
@@ -158,50 +169,50 @@
     <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8 sm:space-y-12">
 
         <!-- Hero Section -->
-        <section class="glass-panel print-card rounded-3xl p-6 sm:p-10 gradient-border shadow-2xl relative overflow-hidden">
+        <section class="glass-panel print-card rounded-3xl p-6 sm:p-10 gradient-border shadow-xl relative overflow-hidden">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="space-y-4 max-w-3xl">
                     <!-- Status Badge -->
-                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse"></span>
                         <span data-i18n="badge_status">Disponible: Backend | AI Developer | Software Developer | Project Manager</span>
                     </div>
 
                     <!-- Title & Name -->
                     <div>
-                        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-100 print-text-dark">
+                        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 print-text-dark">
                             Rosmar Alejandra Mendoza Canchica
                         </h1>
-                        <p class="text-lg sm:text-xl font-medium text-sky-400 mt-2 font-mono" data-i18n="hero_role">
+                        <p class="text-lg sm:text-xl font-medium text-sky-600 dark:text-sky-400 mt-2 font-mono" data-i18n="hero_role">
                             Software Developer (Backend & AI) | Technical Project Manager
                         </p>
                     </div>
 
                     <!-- Summary -->
-                    <p id="profile-summary" class="text-slate-300 print-text-muted leading-relaxed text-sm sm:text-base">
+                    <p id="profile-summary" class="text-slate-600 dark:text-slate-300 print-text-muted leading-relaxed text-sm sm:text-base">
                         <!-- Loaded dynamically -->
                     </p>
 
                     <!-- Contact & Social Pills -->
                     <div class="pt-2 flex flex-wrap gap-2.5 text-xs sm:text-sm">
-                        <a href="mailto:mendozarosmar@gmail.com" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 transition-all group">
-                            <i class="fas fa-envelope text-sky-400 group-hover:scale-110 transition-transform"></i>
+                        <a href="mailto:mendozarosmar@gmail.com" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 transition-all group">
+                            <i class="fas fa-envelope text-sky-600 dark:text-sky-400 group-hover:scale-110 transition-transform"></i>
                             <span>mendozarosmar@gmail.com</span>
                         </a>
-                        <a href="tel:+573173820550" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 transition-all group">
-                            <i class="fas fa-phone text-emerald-400 group-hover:scale-110 transition-transform"></i>
+                        <a href="tel:+573173820550" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 transition-all group">
+                            <i class="fas fa-phone text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform"></i>
                             <span>+57 3173820550</span>
                         </a>
-                        <a href="https://linkedin.com/in/rosmar-mendoza" target="_blank" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 transition-all group">
-                            <i class="fab fa-linkedin text-blue-400 group-hover:scale-110 transition-transform"></i>
+                        <a href="https://linkedin.com/in/rosmar-mendoza" target="_blank" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 transition-all group">
+                            <i class="fab fa-linkedin text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com/rosmarmendoza" target="_blank" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 transition-all group">
-                            <i class="fab fa-github text-purple-400 group-hover:scale-110 transition-transform"></i>
+                        <a href="https://github.com/rosmarmendoza" target="_blank" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 transition-all group">
+                            <i class="fab fa-github text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"></i>
                             <span>GitHub</span>
                         </a>
-                        <span class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-800/80 text-slate-300 border border-slate-700/60">
-                            <i class="fas fa-location-dot text-rose-400"></i>
+                        <span class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-800 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">
+                            <i class="fas fa-location-dot text-rose-600 dark:text-rose-400"></i>
                             <span>Colombia, CO</span>
                         </span>
                     </div>
@@ -209,22 +220,22 @@
             </div>
 
             <!-- Key Highlights Stat Badges -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-slate-800/80 print-card">
-                <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
-                    <div class="text-xl sm:text-2xl font-extrabold text-sky-400 font-mono">MercadoLibre</div>
-                    <div class="text-xs text-slate-400 mt-0.5" data-i18n="stat_1">Bootcamp Golang</div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-slate-200 dark:border-slate-800/80 print-card">
+                <div class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <div class="text-xl sm:text-2xl font-extrabold text-sky-600 dark:text-sky-400 font-mono">MercadoLibre</div>
+                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5" data-i18n="stat_1">Bootcamp Golang</div>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
-                    <div class="text-xl sm:text-2xl font-extrabold text-emerald-400 font-mono">99%+ SLA</div>
-                    <div class="text-xs text-slate-400 mt-0.5" data-i18n="stat_2">Alta Disponibilidad</div>
+                <div class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <div class="text-xl sm:text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 font-mono">99%+ SLA</div>
+                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5" data-i18n="stat_2">Alta Disponibilidad</div>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
-                    <div class="text-xl sm:text-2xl font-extrabold text-purple-400 font-mono">Go & Python</div>
-                    <div class="text-xs text-slate-400 mt-0.5" data-i18n="stat_3">FastAPI & Django</div>
+                <div class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <div class="text-xl sm:text-2xl font-extrabold text-purple-600 dark:text-purple-400 font-mono">Go & Python</div>
+                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5" data-i18n="stat_3">FastAPI & Django</div>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
-                    <div class="text-xl sm:text-2xl font-extrabold text-amber-400 font-mono">Cursor & Claude</div>
-                    <div class="text-xs text-slate-400 mt-0.5" data-i18n="stat_4">IA Asistida</div>
+                <div class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <div class="text-xl sm:text-2xl font-extrabold text-amber-600 dark:text-amber-400 font-mono">Cursor & Claude</div>
+                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5" data-i18n="stat_4">IA Asistida</div>
                 </div>
             </div>
         </section>
@@ -232,13 +243,13 @@
         <!-- Technical Experience Section -->
         <section class="space-y-6">
             <div class="flex items-center justify-between">
-                <h2 class="text-2xl font-bold text-slate-100 print-text-dark flex items-center space-x-3">
-                    <span class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-sm">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+                    <span class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-sm">
                         <i class="fas fa-briefcase"></i>
                     </span>
                     <span data-i18n="sec_experience">Experiencia Profesional</span>
                 </h2>
-                <span class="text-xs font-mono text-slate-400 no-print" data-i18n="exp_count">5 Posiciones Destacadas</span>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400 no-print" data-i18n="exp_count">5 Posiciones Destacadas</span>
             </div>
 
             <!-- Experience Timeline Container -->
@@ -249,8 +260,8 @@
 
         <!-- Skills Section -->
         <section class="space-y-6 print-break-inside-avoid">
-            <h2 class="text-2xl font-bold text-slate-100 print-text-dark flex items-center space-x-3">
-                <span class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-sm">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+                <span class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400 flex items-center justify-center text-sm">
                     <i class="fas fa-code"></i>
                 </span>
                 <span data-i18n="sec_skills">Habilidades Técnicas</span>
@@ -265,8 +276,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 print-break-inside-avoid">
             <!-- Education -->
             <section class="space-y-6">
-                <h2 class="text-xl font-bold text-slate-100 print-text-dark flex items-center space-x-3">
-                    <span class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-sm">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+                    <span class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm">
                         <i class="fas fa-graduation-cap"></i>
                     </span>
                     <span data-i18n="sec_education">Educación</span>
@@ -278,8 +289,8 @@
 
             <!-- Languages -->
             <section class="space-y-6">
-                <h2 class="text-xl font-bold text-slate-100 print-text-dark flex items-center space-x-3">
-                    <span class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-sm">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+                    <span class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm">
                         <i class="fas fa-language"></i>
                     </span>
                     <span data-i18n="sec_languages">Idiomas</span>
@@ -293,16 +304,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800/80 py-8 mt-12 text-center text-xs text-slate-500 no-print">
+    <footer class="border-t border-slate-200 dark:border-slate-800/80 py-8 mt-12 text-center text-xs text-slate-500 dark:text-slate-400 no-print">
         <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
-                © 2026 Rosmar Alejandra Mendoza Canchica. Diseñado con <span class="text-sky-400 font-semibold">Tailwind CSS</span> & HTML5.
+                © 2026 Rosmar Alejandra Mendoza Canchica. Diseñado con <span class="text-sky-600 dark:text-sky-400 font-semibold">Tailwind CSS</span> & HTML5.
             </div>
             <div class="flex items-center space-x-4">
-                <button onclick="openJsonModal()" class="hover:text-sky-400 transition-colors">
+                <button onclick="openJsonModal()" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                     <i class="fas fa-file-code mr-1"></i> JSON Resume Standard
                 </button>
-                <a href="https://github.com/rosmarmendoza" target="_blank" class="hover:text-sky-400 transition-colors">
+                <a href="https://github.com/rosmarmendoza" target="_blank" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                     <i class="fab fa-github mr-1"></i> GitHub
                 </a>
             </div>
@@ -310,7 +321,7 @@
     </footer>
 
     <!-- JSON Resume Modal -->
-    <div id="json-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 no-print">
+    <div id="json-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-md flex items-center justify-center p-4 no-print">
         <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
             <!-- Modal Header -->
             <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950">
@@ -449,125 +460,8 @@
           ]
         };
 
-        const fallbackEn = {
-          "basics": {
-            "name": "Rosmar Alejandra Mendoza Canchica",
-            "label": "Software Developer (Backend)",
-            "email": "mendozarosmar@gmail.com",
-            "phone": "+57 3173820550",
-            "url": "https://github.com/rosmarmendoza",
-            "summary": "Backend Software Developer with solid experience in designing, building, and optimizing microservices and RESTful APIs using Golang, Python, and Java. Proven track record in high-impact environments such as MercadoLibre and Fintech companies. Specialized in implementing scalable architectures, SQL database integration, and adopting AI-driven development tools (Cursor, Claude) to maximize code quality, refactoring, and software delivery efficiency.",
-            "location": { "city": "Bogotá", "countryCode": "CO" },
-            "profiles": [
-              { "network": "LinkedIn", "username": "rosmar-mendoza", "url": "https://linkedin.com/in/rosmar-mendoza" },
-              { "network": "GitHub", "username": "rosmarmendoza", "url": "https://github.com/rosmarmendoza" }
-            ]
-          },
-          "work": [
-            {
-              "name": "MercadoLibre",
-              "position": "Software Developer (Backend)",
-              "startDate": "2023-08",
-              "endDate": "2026-06",
-              "summary": "Development and optimization of critical microservices in Golang and maintenance of high-scale RESTful APIs.",
-              "highlights": [
-                "Backend Specialization Bootcamp in Golang (Aug 2023 – Dec 2023): Selected to complete MercadoLibre's intensive training program focused on Go, microservices architecture, engineering best practices, and large-scale development standards.",
-                "Microservices Development & Maintenance: Designed and developed backend services and RESTful APIs using Golang, Java, and Python, ensuring high availability, maintainability, and code performance (99%+ SLA).",
-                "AI-Assisted Engineering Productivity: Integrated AI tools (Cursor, Claude) into daily development workflows to accelerate endpoint construction, refactor legacy code, and boost unit test coverage.",
-                "API Operations & Support: Actively participated in system maintenance, monitoring, and on-call shifts to ensure seamless operation of core platform APIs."
-              ],
-              "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+"]
-            },
-            {
-              "name": "Mo Technologies",
-              "position": "Backend Intern",
-              "startDate": "2022-07",
-              "endDate": "2023-08",
-              "summary": "Development of financial and credit backend services.",
-              "highlights": [
-                "Developed RESTful APIs using FastAPI and Django focused on financial and credit services.",
-                "Designed and integrated optimized data models and SQL queries in PostgreSQL.",
-                "Implemented backend integrations with AWS cloud services and consumed Webhooks for real-time data processing."
-              ],
-              "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
-            },
-            {
-              "name": "Mo Technologies",
-              "position": "Support L2",
-              "startDate": "2022-01",
-              "endDate": "2022-07",
-              "summary": "Level 2 support and production incident troubleshooting.",
-              "highlights": [
-                "Handled and resolved Level 2 incidents via Jira Service Desk, strictly meeting Service Level Agreements (SLAs).",
-                "Conducted code debugging for Django services and performed direct PostgreSQL query analysis to troubleshoot production errors."
-              ],
-              "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
-            },
-            {
-              "name": "Scotiabank GBS",
-              "position": "System Access Analyst",
-              "startDate": "2019-10",
-              "endDate": "2021-10",
-              "summary": "Centralized access security management and operational dashboards.",
-              "highlights": [
-                "Centralized user access and security management using Microsoft Office 365 and Active Directory.",
-                "Created operational access reports and executive dashboards using Power BI.",
-                "Provided support for access configuration across .NET applications."
-              ],
-              "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
-            },
-            {
-              "name": "Intexus",
-              "position": "IT Engineer",
-              "startDate": "2016-09",
-              "endDate": "2019-10",
-              "summary": "IT operations management and service infrastructure monitoring.",
-              "highlights": [
-                "Managed IT operations, monitored service infrastructure, and provided Jira help desk support."
-              ],
-              "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
-            }
-          ],
-          "education": [
-            {
-              "institution": "Universidad Nacional Experimental del Táchira",
-              "area": "Computer Science / Informatic Engineer",
-              "studyType": "Bachelor of Science",
-              "startDate": "2014-01",
-              "endDate": "2019-12"
-            },
-            {
-              "institution": "Digital House",
-              "area": "Certified Tech Developer",
-              "studyType": "Certification",
-              "startDate": "",
-              "endDate": ""
-            }
-          ],
-          "skills": [
-            { "name": "Golang", "level": "Advanced", "keywords": ["Go", "Backend", "Microservices", "REST APIs"] },
-            { "name": "Python", "level": "Advanced", "keywords": ["FastAPI", "Django", "PostgreSQL"] },
-            { "name": "Java", "level": "Intermediate", "keywords": ["REST APIs", "Backend"] },
-            { "name": "Databases & Cloud", "level": "Advanced", "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"] },
-            { "name": "AI Productivity Tools", "level": "Advanced", "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"] }
-          ],
-          "languages": [
-            { "language": "Spanish", "fluency": "Native" },
-            { "language": "English", "fluency": "Advanced" },
-            { "language": "French", "fluency": "Basic" }
-          ]
-        };
-
-        const resumeData = {
-            es: fallbackEs,
-            en: fallbackEn
-        };
-
         const uiTranslations = {
             es: {
-                btn_pdf: "Guardar PDF",
-                btn_copy_json: "Copiar JSON",
-                btn_download_json: "Descargar .json",
                 badge_status: "Disponible: Backend | AI Developer | Software Developer | Project Manager",
                 hero_role: "Software Developer (Backend & AI) | Technical Project Manager",
                 stat_1: "Bootcamp Golang",
@@ -578,38 +472,59 @@
                 exp_count: "5 Posiciones Destacadas",
                 sec_skills: "Habilidades Técnicas",
                 sec_education: "Educación",
-                sec_languages: "Idiomas"
+                sec_languages: "Idiomas",
+                btn_pdf: "Guardar PDF",
+                btn_copy_json: "Copiar JSON",
+                btn_download_json: "Descargar .json"
             },
             en: {
-                btn_pdf: "Save PDF",
-                btn_copy_json: "Copy JSON",
-                btn_download_json: "Download .json",
-                badge_status: "Available for: Backend | AI Developer | Software Developer | Project Manager",
+                badge_status: "Available: Backend | AI Developer | Software Developer | Project Manager",
                 hero_role: "Software Developer (Backend & AI) | Technical Project Manager",
                 stat_1: "Golang Bootcamp",
                 stat_2: "High Availability",
                 stat_3: "FastAPI & Django",
-                stat_4: "AI Assisted",
-                sec_experience: "Work Experience",
-                exp_count: "5 Key Positions",
+                stat_4: "AI-Assisted Dev",
+                sec_experience: "Professional Experience",
+                exp_count: "5 Featured Roles",
                 sec_skills: "Technical Skills",
                 sec_education: "Education",
-                sec_languages: "Languages"
+                sec_languages: "Languages",
+                btn_pdf: "Save PDF",
+                btn_copy_json: "Copy JSON",
+                btn_download_json: "Download .json"
             }
         };
 
         let currentLang = 'es';
+        let resumeData = { es: fallbackEs, en: null };
 
         async function initApp() {
+            // Restore saved theme preference if available
+            const savedTheme = localStorage.getItem('theme');
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            if (savedTheme === 'light') {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                if (themeIcon) themeIcon.className = "fas fa-sun text-amber-500 text-sm";
+            } else {
+                html.classList.remove('light');
+                html.classList.add('dark');
+                if (themeIcon) themeIcon.className = "fas fa-moon text-sm";
+            }
+
             try {
-                const [resEs, resEn] = await Promise.all([
-                    fetch('rosmar_cv_es.json').then(r => r.json()),
-                    fetch('rosmar_cv_en.json').then(r => r.json())
-                ]);
-                if (resEs) resumeData.es = resEs;
-                if (resEn) resumeData.en = resEn;
-            } catch (err) {
-                console.log('Using inline JSON data fallback');
+                const resEs = await fetch('rosmar_cv_es.json');
+                if (resEs.ok) resumeData.es = await resEs.json();
+            } catch (e) {
+                console.log("Using fallback ES resume data");
+            }
+
+            try {
+                const resEn = await fetch('rosmar_cv_en.json');
+                if (resEn.ok) resumeData.en = await resEn.json();
+            } catch (e) {
+                console.log("EN data loading deferred or using fallback");
             }
 
             renderPage();
@@ -623,11 +538,11 @@
             const btnEn = document.getElementById('btn-lang-en');
             
             if (lang === 'es') {
-                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-slate-950 shadow-md";
-                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-400 hover:text-slate-200";
+                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-white dark:text-slate-950 shadow-md";
+                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
             } else {
-                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-slate-950 shadow-md";
-                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-400 hover:text-slate-200";
+                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-500 text-white dark:text-slate-950 shadow-md";
+                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
             }
 
             renderPage();
@@ -650,39 +565,39 @@
 
             // Render Experience
             const expContainer = document.getElementById('experience-container');
-            expContainer.innerHTML = data.work.map((w, idx) => `
-                <div class="glass-panel print-card rounded-2xl p-6 sm:p-7 relative transition-all duration-200 hover:border-sky-500/40">
+            expContainer.innerHTML = data.work.map((w) => `
+                <div class="glass-panel print-card rounded-2xl p-6 sm:p-7 relative transition-all duration-200 hover:border-sky-500/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                         <div>
-                            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2.5 py-0.5 rounded-full">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400 bg-sky-500/10 dark:bg-sky-500/10 border border-sky-500/30 px-2.5 py-0.5 rounded-full">
                                 ${w.name}
                             </span>
-                            <h3 class="text-xl font-bold text-slate-100 print-text-dark mt-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark mt-1.5">
                                 ${w.position}
                             </h3>
                         </div>
-                        <div class="text-xs font-mono text-slate-400 bg-slate-800/80 px-3 py-1 rounded-xl border border-slate-700/60 w-fit">
-                            <i class="far fa-calendar-alt mr-1.5 text-sky-400"></i> ${formatDates(w.startDate, w.endDate)}
+                        <div class="text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-3 py-1 rounded-xl border border-slate-200 dark:border-slate-700/60 w-fit shadow-xs">
+                            <i class="far fa-calendar-alt mr-1.5 text-sky-600 dark:text-sky-400"></i> ${formatDates(w.startDate, w.endDate)}
                         </div>
                     </div>
 
-                    <p class="text-sm text-slate-300 font-medium mb-3 print-text-muted">
+                    <p class="text-sm text-slate-700 dark:text-slate-300 font-medium mb-3 print-text-muted">
                         ${w.summary}
                     </p>
 
-                    <ul class="space-y-2 mb-4 text-xs sm:text-sm text-slate-300 print-text-muted">
+                    <ul class="space-y-2 mb-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 print-text-muted">
                         ${w.highlights.map(h => `
                             <li class="flex items-start space-x-2">
-                                <span class="text-sky-400 mt-1 text-xs">•</span>
+                                <span class="text-sky-600 dark:text-sky-400 mt-1 text-xs">•</span>
                                 <span>${h}</span>
                             </li>
                         `).join('')}
                     </ul>
 
                     ${w.keywords ? `
-                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/60 no-print">
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200 dark:border-slate-800/60 no-print">
                         ${w.keywords.map(k => `
-                            <span class="px-2.5 py-0.5 text-xs font-mono rounded-md bg-slate-900/80 text-slate-300 border border-slate-800">
+                            <span class="px-2.5 py-0.5 text-xs font-mono rounded-md bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 font-medium">
                                 #${k}
                             </span>
                         `).join('')}
@@ -696,17 +611,17 @@
             skillsContainer.innerHTML = data.skills.map(s => `
                 <div class="glass-panel print-card rounded-2xl p-5 space-y-3">
                     <div class="flex items-center justify-between">
-                        <h4 class="font-bold text-slate-100 print-text-dark text-base flex items-center space-x-2">
-                            <i class="fas fa-check-circle text-sky-400 text-sm"></i>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-base flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-sky-600 dark:text-sky-400 text-sm"></i>
                             <span>${s.name}</span>
                         </h4>
-                        <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 font-semibold">
+                        <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-700 dark:text-purple-300 border border-purple-500/30 font-semibold">
                             ${s.level}
                         </span>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
                         ${s.keywords.map(k => `
-                            <span class="px-2.5 py-1 rounded-xl bg-slate-800/80 text-xs font-mono text-slate-200 border border-slate-700/60">
+                            <span class="px-2.5 py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-xs font-mono text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 font-medium">
                                 ${k}
                             </span>
                         `).join('')}
@@ -719,11 +634,11 @@
             eduContainer.innerHTML = data.education.map(e => `
                 <div class="glass-panel print-card rounded-2xl p-5 space-y-1">
                     <div class="flex items-center justify-between">
-                        <h4 class="font-bold text-slate-100 print-text-dark text-sm sm:text-base">${e.institution}</h4>
-                        <span class="text-xs font-mono text-slate-400">${e.startDate ? `${e.startDate.split('-')[0]} - ${e.endDate.split('-')[0]}` : ''}</span>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-sm sm:text-base">${e.institution}</h4>
+                        <span class="text-xs font-mono text-slate-500 dark:text-slate-400">${e.startDate ? `${e.startDate.split('-')[0]} - ${e.endDate.split('-')[0]}` : ''}</span>
                     </div>
-                    <p class="text-xs sm:text-sm text-sky-400 font-mono">${e.area}</p>
-                    <p class="text-xs text-slate-400">${e.studyType}</p>
+                    <p class="text-xs sm:text-sm text-sky-600 dark:text-sky-400 font-mono font-medium">${e.area}</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">${e.studyType}</p>
                 </div>
             `).join('');
 
@@ -731,8 +646,8 @@
             const langContainer = document.getElementById('languages-container');
             langContainer.innerHTML = data.languages.map(l => `
                 <div class="glass-panel print-card rounded-2xl p-4 flex items-center justify-between">
-                    <span class="font-semibold text-slate-200 text-sm">${l.language}</span>
-                    <span class="text-xs font-mono px-3 py-1 rounded-xl bg-slate-800 text-sky-400 border border-slate-700/60">
+                    <span class="font-semibold text-slate-800 dark:text-slate-200 text-sm">${l.language}</span>
+                    <span class="text-xs font-mono px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-sky-700 dark:text-sky-400 border border-slate-200 dark:border-slate-700/60 font-semibold">
                         ${l.fluency}
                     </span>
                 </div>
@@ -772,11 +687,13 @@
             if (html.classList.contains('dark')) {
                 html.classList.remove('dark');
                 html.classList.add('light');
-                themeIcon.className = "fas fa-sun text-amber-400 text-sm";
+                themeIcon.className = "fas fa-sun text-amber-500 text-sm";
+                localStorage.setItem('theme', 'light');
             } else {
                 html.classList.remove('light');
                 html.classList.add('dark');
                 themeIcon.className = "fas fa-moon text-sm";
+                localStorage.setItem('theme', 'dark');
             }
         }
 
