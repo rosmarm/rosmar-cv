@@ -301,6 +301,20 @@
             </section>
         </div>
 
+        <!-- Certifications & Licenses Section -->
+        <section class="space-y-6 print-break-inside-avoid">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm">
+                    <i class="fas fa-certificate"></i>
+                </span>
+                <span data-i18n="sec_certificates">Certificaciones y Licencias</span>
+            </h2>
+
+            <div id="certificates-container" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Loaded dynamically -->
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -453,6 +467,26 @@
             { "name": "Bases de Datos & Cloud", "level": "Avanzado", "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"] },
             { "name": "Herramientas de IA & Productividad", "level": "Avanzado", "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"] }
           ],
+          "certificates": [
+            {
+              "name": "Matrícula Profesional de Ingeniería en Informática",
+              "date": "2024-06",
+              "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
+              "summary": "Matrícula N° 091184-0725447 CND — Licencia Oficial y Registro Profesional Vigente."
+            },
+            {
+              "name": "Professional Developer (Certified Tech Developer)",
+              "date": "2023-07",
+              "issuer": "Digital House (by Globant & MercadoLibre)",
+              "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
+            },
+            {
+              "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+              "date": "2026-08",
+              "issuer": "PMI - Project Management Institute",
+              "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
+            }
+          ],
           "languages": [
             { "language": "Español", "fluency": "Nativo" },
             { "language": "Inglés", "fluency": "Avanzado" },
@@ -473,6 +507,7 @@
                 sec_skills: "Habilidades Técnicas",
                 sec_education: "Educación",
                 sec_languages: "Idiomas",
+                sec_certificates: "Certificaciones y Licencias Oficiales",
                 btn_pdf: "Guardar PDF",
                 btn_copy_json: "Copiar JSON",
                 btn_download_json: "Descargar .json"
@@ -489,6 +524,7 @@
                 sec_skills: "Technical Skills",
                 sec_education: "Education",
                 sec_languages: "Languages",
+                sec_certificates: "Certifications & Official Licenses",
                 btn_pdf: "Save PDF",
                 btn_copy_json: "Copy JSON",
                 btn_download_json: "Download .json"
@@ -643,6 +679,28 @@
                     </span>
                 </div>
             `).join('');
+
+            // Render Certificates
+            const certContainer = document.getElementById('certificates-container');
+            if (certContainer && data.certificates) {
+                certContainer.innerHTML = data.certificates.map(c => `
+                    <div class="glass-panel print-card rounded-2xl p-5 space-y-2 flex flex-col justify-between hover:border-blue-500/50 transition-all">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-500/20 font-bold">
+                                    ${c.date ? formatSingleDate(c.date, currentLang) : 'Vigente'}
+                                </span>
+                                <i class="fas fa-award text-amber-500 text-base"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-sm sm:text-base leading-snug">
+                                ${c.name}
+                            </h4>
+                            <p class="text-xs font-semibold text-sky-600 dark:text-sky-400 font-mono">${c.issuer}</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">${c.summary}</p>
+                        </div>
+                    </div>
+                `).join('');
+            }
         }
 
         function formatSingleDate(str, lang) {

@@ -95,6 +95,29 @@
       "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
     }
   ],
+  "certificates": [
+    {
+      "name": "Professional Engineering License (Computer Engineering)",
+      "date": "2024-06",
+      "issuer": "COPNIA - National Professional Council of Engineering (Colombia)",
+      "url": "https://tramites.copnia.gov.co",
+      "summary": "License No. 091184-0725447 CND — Official Active Engineering Registration."
+    },
+    {
+      "name": "Professional Developer (Certified Tech Developer)",
+      "date": "2023-07",
+      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "url": "https://www.digitalhouse.com",
+      "summary": "Professional software development intensive certification (1,568 completed hours)."
+    },
+    {
+      "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+      "date": "2026-08",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certification in project management fundamentals and global PMP standards."
+    }
+  ],
   "education": [
     {
       "institution": "Universidad Nacional Experimental del Táchira",
