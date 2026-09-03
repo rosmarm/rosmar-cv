@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "+57 3173820550",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Backend Software Developer with solid experience in designing, building, and optimizing microservices and RESTful APIs using Golang, Python, and Java. Proven track record in high-impact environments such as MercadoLibre and Fintech companies. Specialized in implementing scalable architectures, SQL database integration, and adopting AI-driven development tools (Cursor, Claude) to maximize code quality, refactoring, and software delivery efficiency.",
+    "summary": "Backend Developer focused on designing and optimizing high-traffic microservices and RESTful APIs in Golang, Python, and Java. Experienced in high-scale environments like MercadoLibre and the Fintech sector, combining engineering best practices, relational databases, and AI-driven tools (Cursor, Claude) to build clean, efficient, and maintainable software.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -32,14 +32,14 @@
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
       "endDate": "2026-06",
-      "summary": "Development and optimization of critical microservices in Golang and maintenance of high-scale RESTful APIs.",
+      "summary": "Development, feature expansion, and maintenance of critical microservices in Golang and high-performance RESTful APIs at massive scale.",
       "highlights": [
-        "Backend Specialization Bootcamp in Golang (Aug 2023 – Dec 2023): Selected to complete MercadoLibre's intensive training program focused on Go, microservices architecture, engineering best practices, and large-scale development standards.",
-        "Microservices Development & Maintenance: Designed and developed backend services and RESTful APIs using Golang, Java, and Python, ensuring high availability, maintainability, and code performance (99%+ SLA).",
-        "AI-Assisted Engineering Productivity: Integrated AI tools (Cursor, Claude) into daily development workflows to accelerate endpoint construction, refactor legacy code, and boost unit test coverage.",
-        "API Operations & Support: Actively participated in system maintenance, monitoring, and on-call shifts to ensure seamless operation of core platform APIs."
+        "Intensive Go Training: Selected for MercadoLibre's Golang Backend Bootcamp, mastering distributed microservices architecture, engineering best practices, and large-scale standards.",
+        "High-Impact Backend Engineering: Designed and built core Golang microservices (supported by Java and Python), maintaining 99%+ availability SLAs for platforms serving millions of users.",
+        "AI-Assisted Workflow: Integrated tools like Cursor and Claude into daily workflows to speed up endpoint development, refactor legacy code, and boost test coverage.",
+        "System Reliability & On-Call Shifts: Actively participated in rotation shifts (on-call) and live monitoring to quickly diagnose and resolve production incidents."
       ],
-      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+"]
+      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
     },
     {
       "name": "Mo Technologies",
@@ -47,11 +47,11 @@
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
-      "summary": "Development of financial and credit backend services.",
+      "summary": "Building and integrating backend services for credit and financial technology products.",
       "highlights": [
-        "Developed RESTful APIs using FastAPI and Django focused on financial and credit services.",
-        "Designed and integrated optimized data models and SQL queries in PostgreSQL.",
-        "Implemented backend integrations with AWS cloud services and consumed Webhooks for real-time data processing."
+        "Credit Services Development: Built and maintained RESTful APIs using FastAPI and Django focused on evaluating and processing financial products.",
+        "Relational Database Optimization: Designed relational data models and tuned SQL queries in PostgreSQL to enhance API response times.",
+        "Cloud Integrations & Webhooks: Connected backend services with AWS cloud infrastructure and built Webhook listeners for real-time data processing."
       ],
       "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
     },
@@ -61,10 +61,10 @@
       "url": "https://motechnologies.com",
       "startDate": "2022-01",
       "endDate": "2022-07",
-      "summary": "Level 2 support and production incident troubleshooting.",
+      "summary": "Level 2 technical support and production incident resolution.",
       "highlights": [
-        "Handled and resolved Level 2 incidents via Jira Service Desk, strictly meeting Service Level Agreements (SLAs).",
-        "Conducted code debugging for Django services and performed direct PostgreSQL query analysis to troubleshoot production errors."
+        "Incident Resolution: Handled and resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to SLA response times.",
+        "Technical Debugging: Conducted direct code debugging in Django services and executed query analysis in PostgreSQL to resolve live production issues."
       ],
       "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
     },
@@ -74,11 +74,11 @@
       "url": "https://www.scotiabank.com",
       "startDate": "2019-10",
       "endDate": "2021-10",
-      "summary": "Centralized access security management and operational dashboards.",
+      "summary": "Access management, identity security, and operational reporting dashboards.",
       "highlights": [
-        "Centralized user access and security management using Microsoft Office 365 and Active Directory.",
-        "Created operational access reports and executive dashboards using Power BI.",
-        "Provided support for access configuration across .NET applications."
+        "Identity & Access Control: Managed corporate user permissions and identities integrating Active Directory and Microsoft Office 365.",
+        "Dashboards & Reporting: Designed interactive Power BI dashboards to track, audit, and report system access metrics.",
+        ".NET App Support: Assisted with permission configurations and role assignments for internal .NET applications."
       ],
       "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
     },
@@ -90,7 +90,7 @@
       "endDate": "2019-10",
       "summary": "IT operations management and service infrastructure monitoring.",
       "highlights": [
-        "Managed IT operations, monitored service infrastructure, and provided Jira help desk support."
+        "IT Operations & Monitoring: Supervised infrastructure health and managed help desk tickets using Jira."
       ],
       "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
     }
