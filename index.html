@@ -739,10 +739,31 @@
             `).join('');
         }
 
+        function formatSingleDate(str, lang) {
+            if (!str) return '';
+            if (str.toLowerCase() === 'presente' || str.toLowerCase() === 'present' || str.toLowerCase() === 'actual') {
+                return lang === 'es' ? 'Presente' : 'Present';
+            }
+            const monthsEs = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+            const monthsEn = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const months = lang === 'es' ? monthsEs : monthsEn;
+
+            const parts = str.split('-');
+            if (parts.length === 2) {
+                const year = parts[0];
+                const monthIdx = parseInt(parts[1], 10) - 1;
+                if (monthIdx >= 0 && monthIdx < 12) {
+                    return `${months[monthIdx]} ${year}`;
+                }
+            }
+            return str;
+        }
+
         function formatDates(start, end) {
             if (!start) return '';
-            const endTxt = end ? end : 'Presente';
-            return `${start} — ${endTxt}`;
+            const startFormatted = formatSingleDate(start, currentLang);
+            const endFormatted = end ? formatSingleDate(end, currentLang) : (currentLang === 'es' ? 'Presente' : 'Present');
+            return `${startFormatted} — ${endFormatted}`;
         }
 
         function toggleTheme() {
