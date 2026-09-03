@@ -440,10 +440,10 @@
             },
             {
               "institution": "Digital House",
-              "area": "Certified Tech Developer",
-              "studyType": "Certificación",
-              "startDate": "",
-              "endDate": ""
+              "area": "Professional Developer (Certified Tech Developer)",
+              "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
+              "startDate": "2021-08",
+              "endDate": "2023-07"
             }
           ],
           "skills": [
@@ -626,7 +626,7 @@
                 <div class="glass-panel print-card rounded-2xl p-5 space-y-1">
                     <div class="flex items-center justify-between">
                         <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-sm sm:text-base">${e.institution}</h4>
-                        <span class="text-xs font-mono text-slate-500 dark:text-slate-400 font-medium">${e.startDate ? `${e.startDate.split('-')[0]} - ${e.endDate.split('-')[0]}` : ''}</span>
+                        <span class="text-xs font-mono text-slate-500 dark:text-slate-400 font-medium">${e.startDate ? formatDates(e.startDate, e.endDate) : ''}</span>
                     </div>
                     <p class="text-xs sm:text-sm text-sky-600 dark:text-sky-400 font-mono font-semibold">${e.area}</p>
                     <p class="text-xs text-slate-500 dark:text-slate-400">${e.studyType}</p>
