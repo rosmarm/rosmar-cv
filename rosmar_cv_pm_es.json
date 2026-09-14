@@ -1,0 +1,190 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rosmar Alejandra Mendoza Canchica",
+    "label": "Technical Project Manager | PMP® Fundamentals | Agile & IT Delivery",
+    "image": "",
+    "email": "mendozarosmar@gmail.com",
+    "phone": "",
+    "url": "https://github.com/rosmarmendoza",
+    "summary": "Ingeniera en Informática certificada por el PMI (PMP® Intro & Fundamentals) con formación sólida en ingeniería de software y experiencia liderando iniciativas tecnológicas en MercadoLibre, Fintech y banca multinacional (Scotiabank). Especialista en orquestar equipos multidisciplinarios bajo metodologías ágiles (Scrum, Kanban), gestionar ciclos de entrega de software, garantizar el cumplimiento de SLAs del 99%+ y construir puentes efectivos entre los requerimientos de negocio y la arquitectura técnica.",
+    "location": {
+      "city": "Bogotá / Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rosmar-mendoza",
+        "url": "https://linkedin.com/in/rosmar-mendoza"
+      },
+      {
+        "network": "GitHub",
+        "username": "rosmarmendoza",
+        "url": "https://github.com/rosmarmendoza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MercadoLibre",
+      "position": "Software Developer (Backend) — Technical Delivery & Operations",
+      "url": "https://www.mercadolibre.com",
+      "startDate": "2023-08",
+      "endDate": "2026-06",
+      "summary": "Participación activa en la entrega de microservicios críticos a escala masiva, combinando ejecución técnica con coordinación operativa y gestión de incidentes en una de las plataformas más grandes de Latinoamérica.",
+      "highlights": [
+        "Coordiné la entrega de microservicios y APIs RESTful en Golang, Java y Python, asegurando la alineación técnica con los objetivos del equipo y cumplimiento de SLAs del 99%+ para millones de usuarios.",
+        "Lideré la gestión de guardias operativas (on-call) y la respuesta a incidentes en producción, priorizando y escalando problemas críticos para minimizar el impacto en la plataforma.",
+        "Facilité ceremonias ágiles (daily stand-ups, sprint planning, retrospectivas) y contribuí activamente a la mejora continua de procesos dentro del equipo de desarrollo.",
+        "Completé el Bootcamp Backend de MercadoLibre, adquiriendo profundo conocimiento técnico para comunicar eficazmente requerimientos entre equipos de ingeniería y stakeholders de producto.",
+        "Integré herramientas de IA (Cursor, Claude) en flujos de trabajo del equipo, impulsando la productividad y reduciendo tiempos de entrega."
+      ],
+      "keywords": ["Scrum", "Agile Delivery", "SLA 99%+", "Incident Management", "On-Call", "Stakeholder Communication", "Golang", "Jira"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Developer — Fintech Delivery",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-07",
+      "endDate": "2023-08",
+      "summary": "Desarrollo y entrega de servicios backend para productos financieros, colaborando con equipos de producto, QA y operaciones.",
+      "highlights": [
+        "Coordiné la entrega de APIs RESTful en Python (FastAPI, Django) orientadas a productos crediticios, asegurando la calidad y cumplimiento de plazos del sprint.",
+        "Diseñé modelos de datos y optimicé consultas SQL en PostgreSQL, presentando propuestas técnicas a stakeholders para la aprobación de cambios en la arquitectura.",
+        "Gestioné la integración con servicios AWS y Webhooks, coordinando con equipos de infraestructura y operaciones para despliegues en producción.",
+        "Documenté procesos técnicos y generé reportes de avance para la visibilidad del equipo de producto y liderazgo."
+      ],
+      "keywords": ["Agile", "Sprint Planning", "FastAPI", "Django", "PostgreSQL", "AWS", "Technical Documentation"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Support L2 — Incident Management & SLA Compliance",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "summary": "Gestión de incidentes de segundo nivel, cumplimiento estricto de SLAs y coordinación con equipos de desarrollo para resolución de problemas en producción.",
+      "highlights": [
+        "Gestioné y prioricé incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo con SLAs estrictos y reportando métricas de cumplimiento al liderazgo.",
+        "Coordiné la comunicación entre equipos de soporte, desarrollo y operaciones para la resolución ágil de incidentes críticos en producción.",
+        "Identifiqué patrones recurrentes de errores y propuse mejoras de procesos que redujeron el tiempo promedio de resolución (MTTR)."
+      ],
+      "keywords": ["Jira Service Desk", "SLA Management", "MTTR", "Incident Coordination", "ITIL"]
+    },
+    {
+      "name": "Scotiabank GBS",
+      "position": "System Access Analyst — IT Governance & Reporting",
+      "url": "https://www.scotiabank.com",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "summary": "Gobernanza de TI, gestión centralizada de accesos y construcción de tableros de control para auditoría y toma de decisiones en banca multinacional.",
+      "highlights": [
+        "Administré accesos y permisos de usuarios a nivel corporativo, gestionando procesos de alta, baja y modificación con Active Directory y Microsoft Office 365.",
+        "Construí tableros interactivos de KPIs en Power BI para auditar accesos, brindar visibilidad operativa y apoyar la toma de decisiones del equipo de seguridad.",
+        "Coordiné con equipos globales la configuración de roles y accesos para aplicaciones corporativas sobre tecnología .NET, asegurando cumplimiento normativo.",
+        "Documenté y mejoré procedimientos operativos estándar (SOPs) para la gestión de identidades y accesos."
+      ],
+      "keywords": ["IT Governance", "Power BI", "Active Directory", "O365", "SOP", "Compliance", "KPIs"]
+    },
+    {
+      "name": "Intexus",
+      "position": "IT Engineer — Operations & Service Management",
+      "url": "https://www.intexus.com",
+      "startDate": "2016-09",
+      "endDate": "2019-10",
+      "summary": "Gestión de operaciones de TI, monitoreo de infraestructura y administración de mesa de ayuda.",
+      "highlights": [
+        "Supervisé la disponibilidad de la infraestructura tecnológica, gestionando SLAs operativos y atención de requerimientos en Jira Help Desk.",
+        "Generé reportes de rendimiento y disponibilidad de servicios para la toma de decisiones gerenciales."
+      ],
+      "keywords": ["IT Operations", "Service Management", "Monitoring", "Jira Help Desk", "SLA"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+      "date": "2026-08",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
+    },
+    {
+      "name": "Matrícula Profesional de Ingeniería en Informática",
+      "date": "2024-06",
+      "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
+      "url": "https://tramites.copnia.gov.co",
+      "summary": "Matrícula N° 091184-0725447 CND — Licencia Oficial y Registro Profesional Vigente."
+    },
+    {
+      "name": "Professional Developer (Certified Tech Developer)",
+      "date": "2023-07",
+      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "url": "https://www.digitalhouse.com",
+      "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Experimental del Táchira",
+      "url": "https://www.unet.edu.ve",
+      "area": "Ingeniería en Informática",
+      "studyType": "Título Universitario",
+      "startDate": "2014-01",
+      "endDate": "2019-12"
+    },
+    {
+      "institution": "Digital House",
+      "url": "https://www.digitalhouse.com",
+      "area": "Professional Developer (Certified Tech Developer)",
+      "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
+      "startDate": "2021-08",
+      "endDate": "2023-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Gestión de Proyectos",
+      "level": "Avanzado",
+      "keywords": ["PMI / PMP®", "Scrum", "Kanban", "Agile Delivery", "Sprint Planning", "Retrospectivas"]
+    },
+    {
+      "name": "Gestión de Operaciones & SLAs",
+      "level": "Avanzado",
+      "keywords": ["SLA 99%+", "Incident Management", "MTTR", "On-Call", "ITIL", "Jira Service Desk"]
+    },
+    {
+      "name": "Liderazgo Técnico & Comunicación",
+      "level": "Avanzado",
+      "keywords": ["Stakeholder Management", "Technical Documentation", "Cross-team Coordination", "KPIs"]
+    },
+    {
+      "name": "Reporteo & Análisis",
+      "level": "Avanzado",
+      "keywords": ["Power BI", "Dashboards", "Métricas Operativas", "Data-Driven Decisions"]
+    },
+    {
+      "name": "Fundamentos Técnicos",
+      "level": "Avanzado",
+      "keywords": ["Golang", "Python", "PostgreSQL", "REST APIs", "AWS", "CI/CD"]
+    },
+    {
+      "name": "Herramientas & Productividad",
+      "level": "Avanzado",
+      "keywords": ["Jira Software", "Git", "Cursor", "Claude", "Confluence"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    },
+    {
+      "language": "Francés",
+      "fluency": "Básico"
+    }
+  ]
+}

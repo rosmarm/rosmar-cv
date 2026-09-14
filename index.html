@@ -129,12 +129,25 @@
                 </div>
                 <div>
                     <span class="font-bold text-lg text-slate-900 dark:text-slate-100 tracking-tight block leading-none">Rosmar Mendoza</span>
-                    <span class="text-xs font-mono text-sky-600 dark:text-sky-400 font-semibold">Backend Developer</span>
+                    <span id="nav-subtitle" class="text-xs font-mono text-sky-600 dark:text-sky-400 font-semibold">Backend Developer</span>
                 </div>
             </a>
 
             <!-- Right Controls & Actions -->
             <div class="flex items-center space-x-2 sm:space-x-3">
+                <!-- Profile Selector -->
+                <div class="bg-slate-200/90 dark:bg-slate-800/80 p-1 rounded-full border border-slate-300 dark:border-slate-700/60 flex items-center shadow-inner">
+                    <button id="btn-profile-backend" onclick="setProfile('backend')" class="px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md" title="Backend Developer">
+                        <i class="fas fa-server mr-0.5 hidden sm:inline"></i> Backend
+                    </button>
+                    <button id="btn-profile-pm" onclick="setProfile('pm')" class="px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200" title="Project Manager">
+                        <i class="fas fa-diagram-project mr-0.5 hidden sm:inline"></i> PM
+                    </button>
+                    <button id="btn-profile-ai" onclick="setProfile('ai')" class="px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200" title="AI Engineer">
+                        <i class="fas fa-brain mr-0.5 hidden sm:inline"></i> IA
+                    </button>
+                </div>
+
                 <!-- Language Toggle Switch -->
                 <div class="bg-slate-200/90 dark:bg-slate-800/80 p-1 rounded-full border border-slate-300 dark:border-slate-700/60 flex items-center shadow-inner">
                     <button id="btn-lang-es" onclick="setLanguage('es')" class="px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md">
@@ -215,24 +228,9 @@
                 </div>
             </div>
 
-            <!-- Key Highlights Stat Badges -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-slate-200 dark:border-slate-800/80 print-card">
-                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
-                    <div class="text-xl sm:text-2xl font-extrabold text-sky-700 dark:text-sky-400 font-mono">MercadoLibre</div>
-                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium" data-i18n="stat_1">Bootcamp Golang</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
-                    <div class="text-xl sm:text-2xl font-extrabold text-emerald-700 dark:text-emerald-400 font-mono">99%+ SLA</div>
-                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium" data-i18n="stat_2">Alta Disponibilidad</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
-                    <div class="text-xl sm:text-2xl font-extrabold text-purple-700 dark:text-purple-400 font-mono">Go & Python</div>
-                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium" data-i18n="stat_3">FastAPI & Django</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
-                    <div class="text-xl sm:text-2xl font-extrabold text-amber-700 dark:text-amber-400 font-mono">Cursor & Claude</div>
-                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium" data-i18n="stat_4">IA Asistida</div>
-                </div>
+            <!-- Key Highlights Stat Badges (Dynamic per profile) -->
+            <div id="stats-container" class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-slate-200 dark:border-slate-800/80 print-card">
+                <!-- Loaded dynamically -->
             </div>
         </section>
 
@@ -360,144 +358,88 @@
 
     <!-- Application Script -->
     <script>
-        // Inline fallback data for zero CORS / instant load
-        const fallbackEs = {
-          "basics": {
-            "name": "Rosmar Alejandra Mendoza Canchica",
-            "label": "Backend Developer | AI Engineer | Project Manager",
-            "email": "mendozarosmar@gmail.com",
-            "phone": "",
-            "url": "https://github.com/rosmarmendoza",
-            "summary": "Desarrolladora Backend especializada en el diseño y optimización de microservicios de alto tráfico y APIs RESTful en Golang, Python y Java. Experiencia en entornos de escala masiva como MercadoLibre y el sector Fintech, combinando buenas prácticas de ingeniería, bases de datos relacionales y el uso inteligente de herramientas de IA (Cursor, Claude) para construir software eficiente, limpio y mantenible.",
-            "location": { "city": "Bogotá", "countryCode": "CO" },
-            "profiles": [
-              { "network": "LinkedIn", "username": "rosmar-mendoza", "url": "https://linkedin.com/in/rosmar-mendoza" },
-              { "network": "GitHub", "username": "rosmarmendoza", "url": "https://github.com/rosmarmendoza" }
-            ]
-          },
-          "work": [
-            {
-              "name": "MercadoLibre",
-              "position": "Software Developer (Backend)",
-              "startDate": "2023-08",
-              "endDate": "2026-06",
-              "summary": "Desarrollo y mantenimiento de microservicios críticos en Golang y APIs RESTful de alto rendimiento a escala masiva.",
-              "highlights": [
-                "Diseñé y construí microservicios y APIs RESTful en Golang (con apoyo en Java y Python), manteniendo niveles de disponibilidad superiores al 99%+ (SLA) para millones de usuarios.",
-                "Completé el Bootcamp Backend de MercadoLibre, especializándome en arquitectura distribuida en Go, concurrencia y buenas prácticas de ingeniería a escala masiva.",
-                "Integré herramientas de IA (Cursor y Claude) en el flujo diario de trabajo para acelerar la construcción de endpoints, refactorizar código legacy y elevar la cobertura de pruebas unitarias.",
-                "Gestioné guardias rotativas (on-call) y monitoreo en tiempo real, resolviendo incidencias operativas para proteger la estabilidad de los servicios en producción."
-              ],
-              "keywords": ["Golang", "Go", "Microservicios", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
+        // =====================================================================
+        // Multi-Profile CV Engine
+        // Profiles: backend, pm, ai  |  Languages: es, en
+        // =====================================================================
+
+        let currentLang = 'es';
+        let currentProfile = 'backend';
+
+        // Cache for loaded JSON data: { 'backend_es': {...}, 'pm_en': {...}, ... }
+        const dataCache = {};
+
+        // Profile metadata for UI rendering
+        const profileMeta = {
+            backend: {
+                icon: 'fa-server',
+                navSubtitle: { es: 'Backend Developer', en: 'Backend Developer' },
+                stats: {
+                    es: [
+                        { value: 'MercadoLibre', label: 'Bootcamp Golang', color: 'sky' },
+                        { value: '99%+ SLA', label: 'Alta Disponibilidad', color: 'emerald' },
+                        { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
+                        { value: 'Cursor & Claude', label: 'IA Asistida', color: 'amber' }
+                    ],
+                    en: [
+                        { value: 'MercadoLibre', label: 'Golang Bootcamp', color: 'sky' },
+                        { value: '99%+ SLA', label: 'High Availability', color: 'emerald' },
+                        { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
+                        { value: 'Cursor & Claude', label: 'AI-Assisted Dev', color: 'amber' }
+                    ]
+                }
             },
-            {
-              "name": "Mo Technologies",
-              "position": "Backend Intern",
-              "startDate": "2022-07",
-              "endDate": "2023-08",
-              "summary": "Construcción e integración de servicios backend para productos crediticios y financieros.",
-              "highlights": [
-                "Desarrollé y mantuve APIs RESTful en Python utilizando FastAPI y Django para la evaluación y procesamiento de servicios financieros.",
-                "Diseñé modelos de datos relacionales y optimicé consultas SQL en PostgreSQL para mejorar los tiempos de respuesta del sistema.",
-                "Implementé integraciones backend con servicios en la nube de AWS y consumo de Webhooks para el procesamiento de datos en tiempo real."
-              ],
-              "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
+            pm: {
+                icon: 'fa-diagram-project',
+                navSubtitle: { es: 'Project Manager', en: 'Project Manager' },
+                stats: {
+                    es: [
+                        { value: 'PMI / PMP®', label: 'Certificación PM', color: 'sky' },
+                        { value: '99%+ SLA', label: 'Gestión de Incidentes', color: 'emerald' },
+                        { value: 'Scrum & Agile', label: 'Delivery Ágil', color: 'purple' },
+                        { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
+                    ],
+                    en: [
+                        { value: 'PMI / PMP®', label: 'PM Certification', color: 'sky' },
+                        { value: '99%+ SLA', label: 'Incident Management', color: 'emerald' },
+                        { value: 'Scrum & Agile', label: 'Agile Delivery', color: 'purple' },
+                        { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
+                    ]
+                }
             },
-            {
-              "name": "Mo Technologies",
-              "position": "Support L2",
-              "startDate": "2022-01",
-              "endDate": "2022-07",
-              "summary": "Soporte técnico de segundo nivel y resolución de incidencias en entornos productivos.",
-              "highlights": [
-                "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
-                "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción."
-              ],
-              "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
-            },
-            {
-              "name": "Scotiabank GBS",
-              "position": "System Access Analyst",
-              "startDate": "2019-10",
-              "endDate": "2021-10",
-              "summary": "Gestión de accesos, seguridad de identidad y tableros de control operativo.",
-              "highlights": [
-                "Administré accesos y permisos de usuarios a nivel corporativo integrando Active Directory y Microsoft Office 365.",
-                "Construí tableros interactivos en Power BI para auditar accesos y brindar visibilidad operativa al equipo de seguridad.",
-                "Brindé soporte en la configuración de roles y accesos para aplicaciones desarrolladas sobre tecnología .NET."
-              ],
-              "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
-            },
-            {
-              "name": "Intexus",
-              "position": "IT Engineer",
-              "startDate": "2016-09",
-              "endDate": "2019-10",
-              "summary": "Operación de servicios informáticos y monitoreo de infraestructura tecnológica.",
-              "highlights": [
-                "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
-              ],
-              "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+            ai: {
+                icon: 'fa-brain',
+                navSubtitle: { es: 'Ingeniera de IA', en: 'AI Engineer' },
+                stats: {
+                    es: [
+                        { value: 'Claude & Cursor', label: 'IA Generativa', color: 'sky' },
+                        { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
+                        { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
+                        { value: 'Automatización', label: 'Agentes & Scripts', color: 'amber' }
+                    ],
+                    en: [
+                        { value: 'Claude & Cursor', label: 'Generative AI', color: 'sky' },
+                        { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
+                        { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
+                        { value: 'Automation', label: 'Agents & Scripts', color: 'amber' }
+                    ]
+                }
             }
-          ],
-          "education": [
-            {
-              "institution": "Universidad Nacional Experimental del Táchira",
-              "area": "Ingeniería en Informática",
-              "studyType": "Título Universitario",
-              "startDate": "2014-01",
-              "endDate": "2019-12"
-            },
-            {
-              "institution": "Digital House",
-              "area": "Professional Developer (Certified Tech Developer)",
-              "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
-              "startDate": "2021-08",
-              "endDate": "2023-07"
-            }
-          ],
-          "skills": [
-            { "name": "Golang", "level": "Avanzado", "keywords": ["Go", "Backend", "Microservicios", "REST APIs"] },
-            { "name": "Python", "level": "Avanzado", "keywords": ["FastAPI", "Django", "PostgreSQL"] },
-            { "name": "Java", "level": "Intermedio", "keywords": ["REST APIs", "Backend"] },
-            { "name": "Bases de Datos & Cloud", "level": "Avanzado", "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"] },
-            { "name": "Herramientas de IA & Productividad", "level": "Avanzado", "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"] }
-          ],
-          "certificates": [
-            {
-              "name": "Matrícula Profesional de Ingeniería en Informática",
-              "date": "2024-06",
-              "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
-              "summary": "Matrícula N° 091184-0725447 CND — Licencia Oficial y Registro Profesional Vigente."
-            },
-            {
-              "name": "Professional Developer (Certified Tech Developer)",
-              "date": "2023-07",
-              "issuer": "Digital House (by Globant & MercadoLibre)",
-              "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
-            },
-            {
-              "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
-              "date": "2026-08",
-              "issuer": "PMI - Project Management Institute",
-              "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
-            }
-          ],
-          "languages": [
-            { "language": "Español", "fluency": "Nativo" },
-            { "language": "Inglés", "fluency": "Avanzado" },
-            { "language": "Francés", "fluency": "Básico" }
-          ]
         };
 
+        // JSON file mapping per profile + language
+        const jsonFiles = {
+            backend_es: 'rosmar_cv_backend_es.json',
+            backend_en: 'rosmar_cv_backend_en.json',
+            pm_es: 'rosmar_cv_pm_es.json',
+            pm_en: 'rosmar_cv_pm_en.json',
+            ai_es: 'rosmar_cv_ai_es.json',
+            ai_en: 'rosmar_cv_ai_en.json'
+        };
+
+        // UI translations (shared across profiles)
         const uiTranslations = {
             es: {
-                badge_status: "Disponible: Backend Developer | AI Engineer | Project Manager",
-                hero_role: "Backend Developer | AI Engineer | Project Manager",
-                stat_1: "Bootcamp Golang",
-                stat_2: "Alta Disponibilidad",
-                stat_3: "FastAPI & Django",
-                stat_4: "IA Asistida",
                 sec_experience: "Experiencia Profesional",
                 exp_count: "5 Posiciones Destacadas",
                 sec_skills: "Habilidades Técnicas",
@@ -509,12 +451,6 @@
                 btn_download_json: "Descargar .json"
             },
             en: {
-                badge_status: "Available: Backend Developer | AI Engineer | Project Manager",
-                hero_role: "Backend Developer | AI Engineer | Project Manager",
-                stat_1: "Golang Bootcamp",
-                stat_2: "High Availability",
-                stat_3: "FastAPI & Django",
-                stat_4: "AI-Assisted Dev",
                 sec_experience: "Professional Experience",
                 exp_count: "5 Featured Roles",
                 sec_skills: "Technical Skills",
@@ -527,11 +463,11 @@
             }
         };
 
-        let currentLang = 'es';
-        let resumeData = { es: fallbackEs, en: null };
-
+        // =====================================================================
+        // Initialization
+        // =====================================================================
         function initApp() {
-            // Restore saved theme preference if available
+            // Restore saved theme
             const savedTheme = localStorage.getItem('theme');
             const html = document.documentElement;
             const themeIcon = document.getElementById('theme-icon');
@@ -543,48 +479,118 @@
                 if (themeIcon) themeIcon.className = "fas fa-moon text-sm";
             }
 
-            try {
-                fetch('rosmar_cv_es.json').then(r => r.ok && r.json()).then(d => { if (d) { resumeData.es = d; renderPage(); } });
-                fetch('rosmar_cv_en.json').then(r => r.ok && r.json()).then(d => { if (d) { resumeData.en = d; if (currentLang==='en') renderPage(); } });
-            } catch (e) {
-                console.log("Using fallback data");
-            }
+            // Restore saved profile and language
+            const savedProfile = localStorage.getItem('cvProfile');
+            const savedLang = localStorage.getItem('cvLang');
+            if (savedProfile && profileMeta[savedProfile]) currentProfile = savedProfile;
+            if (savedLang && (savedLang === 'es' || savedLang === 'en')) currentLang = savedLang;
 
-            renderPage();
+            // Update button states
+            updateProfileButtons();
+            updateLangButtons();
+
+            // Load data and render
+            loadAndRender();
+        }
+
+        // =====================================================================
+        // Profile & Language Switching
+        // =====================================================================
+        function setProfile(profile) {
+            if (!profileMeta[profile]) return;
+            currentProfile = profile;
+            localStorage.setItem('cvProfile', profile);
+            updateProfileButtons();
+            loadAndRender();
         }
 
         function setLanguage(lang) {
             currentLang = lang;
-            
-            // Toggle buttons UI
-            const btnEs = document.getElementById('btn-lang-es');
-            const btnEn = document.getElementById('btn-lang-en');
-            
-            if (lang === 'es') {
-                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
-                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
-            } else {
-                btnEn.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
-                btnEs.className = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
-            }
-
-            renderPage();
+            localStorage.setItem('cvLang', lang);
+            updateLangButtons();
+            loadAndRender();
         }
 
-        function renderPage() {
-            const data = resumeData[currentLang] || resumeData.es;
+        function updateProfileButtons() {
+            const profiles = ['backend', 'pm', 'ai'];
+            const activeClass = "px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+            const inactiveClass = "px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
+            profiles.forEach(p => {
+                const btn = document.getElementById(`btn-profile-${p}`);
+                if (btn) btn.className = (p === currentProfile) ? activeClass : inactiveClass;
+            });
+        }
+
+        function updateLangButtons() {
+            const btnEs = document.getElementById('btn-lang-es');
+            const btnEn = document.getElementById('btn-lang-en');
+            const activeClass = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+            const inactiveClass = "px-3 py-1 text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
+            if (btnEs) btnEs.className = (currentLang === 'es') ? activeClass : inactiveClass;
+            if (btnEn) btnEn.className = (currentLang === 'en') ? activeClass : inactiveClass;
+        }
+
+        // =====================================================================
+        // Data Loading
+        // =====================================================================
+        function loadAndRender() {
+            const key = `${currentProfile}_${currentLang}`;
+            if (dataCache[key]) {
+                renderPage(dataCache[key]);
+                return;
+            }
+            const file = jsonFiles[key];
+            if (!file) return;
+
+            fetch(file)
+                .then(r => { if (!r.ok) throw new Error('Not found'); return r.json(); })
+                .then(data => {
+                    dataCache[key] = data;
+                    renderPage(data);
+                })
+                .catch(err => {
+                    console.warn(`Could not load ${file}, trying fallback...`, err);
+                    // Fallback: try the base files
+                    const fallbackFile = currentLang === 'es' ? 'rosmar_cv_es.json' : 'rosmar_cv_en.json';
+                    fetch(fallbackFile)
+                        .then(r => r.ok && r.json())
+                        .then(data => { if (data) { dataCache[key] = data; renderPage(data); } });
+                });
+        }
+
+        // =====================================================================
+        // Page Rendering
+        // =====================================================================
+        function renderPage(data) {
             const t = uiTranslations[currentLang];
+            const meta = profileMeta[currentProfile];
 
             // UI Strings
             document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (t[key]) el.textContent = t[key];
+                const k = el.getAttribute('data-i18n');
+                if (t[k]) el.textContent = t[k];
             });
 
             if (!data) return;
 
+            // Nav subtitle
+            const navSub = document.getElementById('nav-subtitle');
+            if (navSub) navSub.textContent = meta.navSubtitle[currentLang];
+
+            // Hero badge & role
+            const badge = document.querySelector('[data-i18n="badge_status"]');
+            if (badge) {
+                const prefix = currentLang === 'es' ? 'Disponible' : 'Available';
+                badge.textContent = `${prefix}: ${data.basics.label}`;
+            }
+            const heroRole = document.querySelector('[data-i18n="hero_role"]');
+            if (heroRole) heroRole.textContent = data.basics.label;
+
             // Profile summary
             document.getElementById('profile-summary').textContent = data.basics.summary;
+
+            // Stat badges
+            renderStats(meta.stats[currentLang]);
 
             // Render Experience
             const expContainer = document.getElementById('experience-container');
@@ -697,8 +703,36 @@
                     </div>
                 `).join('');
             }
+
+            // Update page title
+            document.title = `Rosmar Mendoza - ${data.basics.label}`;
         }
 
+        // =====================================================================
+        // Render Stat Badges
+        // =====================================================================
+        function renderStats(stats) {
+            const container = document.getElementById('stats-container');
+            if (!container || !stats) return;
+
+            const colorMap = {
+                sky:     'text-sky-700 dark:text-sky-400',
+                emerald: 'text-emerald-700 dark:text-emerald-400',
+                purple:  'text-purple-700 dark:text-purple-400',
+                amber:   'text-amber-700 dark:text-amber-400'
+            };
+
+            container.innerHTML = stats.map(s => `
+                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                    <div class="text-xl sm:text-2xl font-extrabold ${colorMap[s.color] || colorMap.sky} font-mono">${s.value}</div>
+                    <div class="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium">${s.label}</div>
+                </div>
+            `).join('');
+        }
+
+        // =====================================================================
+        // Date Formatting
+        // =====================================================================
         function formatSingleDate(str, lang) {
             if (!str) return '';
             if (str.toLowerCase() === 'presente' || str.toLowerCase() === 'present' || str.toLowerCase() === 'actual') {
@@ -726,6 +760,9 @@
             return `${startFormatted} — ${endFormatted}`;
         }
 
+        // =====================================================================
+        // Theme Toggle
+        // =====================================================================
         function toggleTheme() {
             const html = document.documentElement;
             const themeIcon = document.getElementById('theme-icon');
@@ -740,8 +777,12 @@
             }
         }
 
+        // =====================================================================
+        // JSON Modal
+        // =====================================================================
         function openJsonModal() {
-            const data = resumeData[currentLang] || resumeData.es;
+            const key = `${currentProfile}_${currentLang}`;
+            const data = dataCache[key] || {};
             document.getElementById('json-content').textContent = JSON.stringify(data, null, 2);
             document.getElementById('json-modal').classList.remove('hidden');
         }
@@ -753,18 +794,20 @@
         function copyJsonToClipboard() {
             const content = document.getElementById('json-content').textContent;
             navigator.clipboard.writeText(content).then(() => {
-                alert('JSON copiado al portapapeles!');
+                const msg = currentLang === 'es' ? 'JSON copiado al portapapeles!' : 'JSON copied to clipboard!';
+                alert(msg);
             });
         }
 
         function downloadCurrentJson() {
-            const data = resumeData[currentLang] || resumeData.es;
+            const key = `${currentProfile}_${currentLang}`;
+            const data = dataCache[key] || {};
             const jsonStr = JSON.stringify(data, null, 2);
             const blob = new Blob([jsonStr], { type: "application/json" });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `rosmar_mendoza_cv_${currentLang}.json`;
+            a.download = `rosmar_mendoza_cv_${currentProfile}_${currentLang}.json`;
             a.click();
             URL.revokeObjectURL(url);
         }

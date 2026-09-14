@@ -1,0 +1,188 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rosmar Alejandra Mendoza Canchica",
+    "label": "Senior Backend Developer | Golang & Python | Distributed Systems",
+    "image": "",
+    "email": "mendozarosmar@gmail.com",
+    "phone": "",
+    "url": "https://github.com/rosmarmendoza",
+    "summary": "Ingeniera en Informática y Desarrolladora Backend con más de 4 años de experiencia en el diseño y escalamiento de microservicios de alto tráfico y APIs RESTful en Golang, Python y Java. Trayectoria en empresas de hiper-escala como MercadoLibre y el sector Fintech, garantizando SLAs de disponibilidad superiores al 99%+, concurrencia eficiente y optimización de bases de datos relacionales (PostgreSQL). Especializada en arquitecturas distribuidas, CI/CD y desarrollo asistido por IA.",
+    "location": {
+      "city": "Bogotá / Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rosmar-mendoza",
+        "url": "https://linkedin.com/in/rosmar-mendoza"
+      },
+      {
+        "network": "GitHub",
+        "username": "rosmarmendoza",
+        "url": "https://github.com/rosmarmendoza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MercadoLibre",
+      "position": "Software Developer (Backend)",
+      "url": "https://www.mercadolibre.com",
+      "startDate": "2023-08",
+      "endDate": "2026-06",
+      "summary": "Desarrollo y mantenimiento de microservicios críticos en Golang y APIs RESTful de alto rendimiento a escala masiva.",
+      "highlights": [
+        "Diseñé y construí microservicios y APIs RESTful en Golang (con apoyo en Java y Python), manteniendo niveles de disponibilidad superiores al 99%+ (SLA) para millones de usuarios concurrentes.",
+        "Completé el Bootcamp Backend de MercadoLibre, especializándome en arquitectura distribuida en Go, concurrencia, goroutines y buenas prácticas de ingeniería a escala masiva.",
+        "Optimicé consultas SQL y modelos de datos en PostgreSQL, reduciendo la latencia de endpoints críticos y mejorando el rendimiento general del sistema.",
+        "Integré herramientas de IA (Cursor y Claude) en el flujo diario de trabajo para acelerar la construcción de endpoints, refactorizar código legacy y elevar la cobertura de pruebas unitarias.",
+        "Gestioné guardias rotativas (on-call) y monitoreo en tiempo real con Datadog y New Relic, resolviendo incidencias operativas para proteger la estabilidad de los servicios en producción."
+      ],
+      "keywords": ["Golang", "Go", "Microservicios", "RESTful APIs", "Java", "Python", "Concurrencia", "PostgreSQL", "SLA 99%+", "On-Call", "CI/CD"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Developer",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-07",
+      "endDate": "2023-08",
+      "summary": "Construcción e integración de servicios backend para productos crediticios y financieros en el sector Fintech.",
+      "highlights": [
+        "Desarrollé y mantuve APIs RESTful en Python utilizando FastAPI y Django para la evaluación y procesamiento de servicios financieros de alto volumen.",
+        "Diseñé modelos de datos relacionales y optimicé consultas SQL en PostgreSQL, mejorando significativamente los tiempos de respuesta del sistema.",
+        "Implementé integraciones backend con servicios en la nube de AWS (Lambda, S3, SQS) y consumo de Webhooks para el procesamiento de datos en tiempo real.",
+        "Escribí pruebas unitarias y de integración con pytest, asegurando la estabilidad y mantenibilidad del código en cada release."
+      ],
+      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks", "pytest"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Support L2 / Backend Debugging",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "summary": "Soporte técnico de segundo nivel con debugging directo en código backend y bases de datos en producción.",
+      "highlights": [
+        "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
+        "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción.",
+        "Identificé y documenté patrones recurrentes de errores, proponiendo refactorizaciones que redujeron la carga de tickets de soporte."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA", "Python"]
+    },
+    {
+      "name": "Scotiabank GBS",
+      "position": "System Access Analyst",
+      "url": "https://www.scotiabank.com",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "summary": "Gestión de accesos, seguridad de identidad y automatización de procesos operativos.",
+      "highlights": [
+        "Administré accesos y permisos de usuarios a nivel corporativo integrando Active Directory y Microsoft Office 365.",
+        "Construí tableros interactivos en Power BI para auditar accesos y brindar visibilidad operativa al equipo de seguridad.",
+        "Brindé soporte en la configuración de roles y accesos para aplicaciones desarrolladas sobre tecnología .NET."
+      ],
+      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+    },
+    {
+      "name": "Intexus",
+      "position": "IT Engineer",
+      "url": "https://www.intexus.com",
+      "startDate": "2016-09",
+      "endDate": "2019-10",
+      "summary": "Operación de servicios informáticos y monitoreo de infraestructura tecnológica.",
+      "highlights": [
+        "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
+      ],
+      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk", "Infrastructure"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Matrícula Profesional de Ingeniería en Informática",
+      "date": "2024-06",
+      "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
+      "url": "https://tramites.copnia.gov.co",
+      "summary": "Matrícula N° 091184-0725447 CND — Licencia Oficial y Registro Profesional Vigente."
+    },
+    {
+      "name": "Professional Developer (Certified Tech Developer)",
+      "date": "2023-07",
+      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "url": "https://www.digitalhouse.com",
+      "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
+    },
+    {
+      "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+      "date": "2026-08",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Experimental del Táchira",
+      "url": "https://www.unet.edu.ve",
+      "area": "Ingeniería en Informática",
+      "studyType": "Título Universitario",
+      "startDate": "2014-01",
+      "endDate": "2019-12"
+    },
+    {
+      "institution": "Digital House",
+      "url": "https://www.digitalhouse.com",
+      "area": "Professional Developer (Certified Tech Developer)",
+      "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
+      "startDate": "2021-08",
+      "endDate": "2023-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Golang",
+      "level": "Avanzado",
+      "keywords": ["Go", "Goroutines", "Concurrencia", "Microservicios", "REST APIs"]
+    },
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": ["FastAPI", "Django", "pytest", "Scripting"]
+    },
+    {
+      "name": "Java",
+      "level": "Intermedio",
+      "keywords": ["REST APIs", "Backend", "Spring Boot"]
+    },
+    {
+      "name": "Bases de Datos & Cloud",
+      "level": "Avanzado",
+      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS", "Docker"]
+    },
+    {
+      "name": "Arquitectura & DevOps",
+      "level": "Avanzado",
+      "keywords": ["Microservicios", "REST APIs", "CI/CD", "Git", "Datadog", "New Relic"]
+    },
+    {
+      "name": "Herramientas de IA & Productividad",
+      "level": "Avanzado",
+      "keywords": ["Cursor", "Claude", "Jira", "Scrum", "On-Call"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    },
+    {
+      "language": "Francés",
+      "fluency": "Básico"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rosmar Alejandra Mendoza Canchica",
+    "label": "AI Engineer | Python & Backend | Generative AI & Agentic Systems",
+    "image": "",
+    "email": "mendozarosmar@gmail.com",
+    "phone": "",
+    "url": "https://github.com/rosmarmendoza",
+    "summary": "Ingeniera en Informática especializada en el desarrollo de aplicaciones backend orientadas a Inteligencia Artificial y automatización inteligente con Python y Golang. Experiencia integrando modelos fundacionales (LLMs), frameworks de agentes autónomos, pipelines de procesamiento de datos y herramientas avanzadas de asistencia con IA (Cursor, Claude, Antigravity, APIs de Anthropic/OpenAI) para optimizar flujos productivos, automatizar tareas complejas y crear soluciones de software de alto impacto en entornos de escala masiva como MercadoLibre.",
+    "location": {
+      "city": "Bogotá / Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rosmar-mendoza",
+        "url": "https://linkedin.com/in/rosmar-mendoza"
+      },
+      {
+        "network": "GitHub",
+        "username": "rosmarmendoza",
+        "url": "https://github.com/rosmarmendoza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MercadoLibre",
+      "position": "Software Developer (Backend) — AI-Augmented Engineering",
+      "url": "https://www.mercadolibre.com",
+      "startDate": "2023-08",
+      "endDate": "2026-06",
+      "summary": "Desarrollo backend a escala masiva con integración intensiva de herramientas de IA generativa para acelerar el ciclo de desarrollo, mejorar la calidad del código y automatizar flujos de trabajo.",
+      "highlights": [
+        "Integré herramientas de IA generativa (Cursor, Claude, Antigravity) como parte central del flujo de desarrollo diario, acelerando la construcción de endpoints, refactorización de código legacy y generación automatizada de pruebas unitarias.",
+        "Diseñé y construí microservicios y APIs RESTful en Golang y Python, aplicando principios de ingeniería de prompts y asistencia por IA para optimizar la calidad, mantenibilidad y velocidad de entrega.",
+        "Desarrollé scripts y automatizaciones en Python para análisis de datos, procesamiento batch y generación de reportes, aprovechando capacidades de LLMs para transformación inteligente de información.",
+        "Completé el Bootcamp Backend de MercadoLibre, dominando arquitectura distribuida en Go, concurrencia y buenas prácticas de ingeniería aplicables al despliegue de servicios de inferencia.",
+        "Gestioné guardias operativas (on-call) y monitoreo en tiempo real, aplicando análisis asistido por IA para la detección rápida de anomalías y resolución de incidencias."
+      ],
+      "keywords": ["Cursor", "Claude", "Antigravity", "LLM Integration", "Golang", "Python", "Prompt Engineering", "Microservicios", "AI-Augmented Dev"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Developer — Data Pipelines & API Engineering",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-07",
+      "endDate": "2023-08",
+      "summary": "Desarrollo de APIs de alto rendimiento y pipelines de procesamiento de datos en Python para el sector Fintech.",
+      "highlights": [
+        "Construí APIs RESTful de alto rendimiento con FastAPI y Django, procesando datos financieros en tiempo real — arquitectura directamente aplicable al servicio de inferencias de modelos de IA.",
+        "Diseñé modelos de datos relacionales y optimicé consultas SQL en PostgreSQL para alimentar pipelines de análisis y reporteo automatizado.",
+        "Implementé integraciones con AWS (Lambda, S3, SQS) y consumo de Webhooks, creando pipelines de datos en tiempo real para procesamiento y transformación de información.",
+        "Automaticé flujos de validación de datos y generación de reportes con scripts en Python, reduciendo tiempos de procesamiento manual."
+      ],
+      "keywords": ["FastAPI", "Django", "Python", "Data Pipelines", "PostgreSQL", "AWS Lambda", "S3", "SQS", "Real-time Processing"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Support L2 — Data Analysis & Pattern Detection",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "summary": "Análisis de datos en producción, detección de patrones de error y debugging asistido para la resolución de incidencias.",
+      "highlights": [
+        "Analicé datos de producción y consultas SQL en PostgreSQL para diagnosticar errores, identificar patrones recurrentes y proponer soluciones automatizadas.",
+        "Depuré código en servicios Django, aplicando análisis sistemático de logs y datos para resolver incidencias complejas en entornos productivos.",
+        "Documenté patrones de error y propuse pipelines de detección temprana que redujeron la recurrencia de incidentes."
+      ],
+      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
+    },
+    {
+      "name": "Scotiabank GBS",
+      "position": "System Access Analyst — Data Dashboards & Automation",
+      "url": "https://www.scotiabank.com",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "summary": "Construcción de tableros de datos interactivos y automatización de procesos de gestión de accesos en banca multinacional.",
+      "highlights": [
+        "Construí tableros interactivos de análisis de datos en Power BI para auditar accesos, visualizar métricas de seguridad y automatizar reportes operativos.",
+        "Administré accesos y permisos de usuarios a escala corporativa, integrando Active Directory y Microsoft Office 365.",
+        "Automaticé procesos repetitivos de gestión de identidades, optimizando la eficiencia operativa del equipo de seguridad."
+      ],
+      "keywords": ["Power BI", "Data Visualization", "Active Directory", "O365", "Process Automation"]
+    },
+    {
+      "name": "Intexus",
+      "position": "IT Engineer",
+      "url": "https://www.intexus.com",
+      "startDate": "2016-09",
+      "endDate": "2019-10",
+      "summary": "Operación de servicios informáticos y monitoreo de infraestructura tecnológica.",
+      "highlights": [
+        "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
+      ],
+      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Matrícula Profesional de Ingeniería en Informática",
+      "date": "2024-06",
+      "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
+      "url": "https://tramites.copnia.gov.co",
+      "summary": "Matrícula N° 091184-0725447 CND — Licencia Oficial y Registro Profesional Vigente."
+    },
+    {
+      "name": "Professional Developer (Certified Tech Developer)",
+      "date": "2023-07",
+      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "url": "https://www.digitalhouse.com",
+      "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
+    },
+    {
+      "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+      "date": "2026-08",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Experimental del Táchira",
+      "url": "https://www.unet.edu.ve",
+      "area": "Ingeniería en Informática",
+      "studyType": "Título Universitario",
+      "startDate": "2014-01",
+      "endDate": "2019-12"
+    },
+    {
+      "institution": "Digital House",
+      "url": "https://www.digitalhouse.com",
+      "area": "Professional Developer (Certified Tech Developer)",
+      "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
+      "startDate": "2021-08",
+      "endDate": "2023-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Inteligencia Artificial & LLMs",
+      "level": "Avanzado",
+      "keywords": ["Cursor", "Claude", "Antigravity", "Prompt Engineering", "AI Agents", "LLM APIs", "OpenAI", "Anthropic"]
+    },
+    {
+      "name": "Python & Frameworks",
+      "level": "Avanzado",
+      "keywords": ["FastAPI", "Django", "pytest", "Scripting", "Data Pipelines", "Automatización"]
+    },
+    {
+      "name": "Backend & Arquitectura",
+      "level": "Avanzado",
+      "keywords": ["Golang", "Microservicios", "REST APIs", "Java", "CI/CD"]
+    },
+    {
+      "name": "Datos & Cloud",
+      "level": "Avanzado",
+      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS Lambda", "S3", "SQS", "Docker"]
+    },
+    {
+      "name": "Análisis de Datos & Visualización",
+      "level": "Avanzado",
+      "keywords": ["Power BI", "Dashboards", "Data Analysis", "Log Analysis", "Pattern Detection"]
+    },
+    {
+      "name": "Herramientas & Productividad",
+      "level": "Avanzado",
+      "keywords": ["Git", "Jira", "Scrum", "Agile", "Technical Documentation"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    },
+    {
+      "language": "Francés",
+      "fluency": "Básico"
+    }
+  ]
+}
