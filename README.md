@@ -1,45 +1,53 @@
-# Rosmar Mendoza - Interactive Backend Developer CV & Portfolio
+# Rosmar Mendoza - Interactive CV & Portfolio (Astro + Tailwind CSS)
 
-¡Hola Rosmar! Este es tu sitio web frontend interactivo de Hoja de Vida/Portafolio, construido con **Tailwind CSS**, soporte **bilingüe (Español / Inglés)**, visor y descarga de **JSON Resume Standard**, modo oscuro/claro y exportación lista para impresoras / PDF.
+¡Hola Rosmar! Este es tu sitio web frontend interactivo de Hoja de Vida/Portafolio profesional con **3 perfiles interactivos** (Backend Developer, Technical Project Manager, AI Engineer) y soporte **bilingüe (Español / Inglés)**.
 
-## 🚀 Características Principales
-
-- ⚡ **Diseño Moderno e Interactivo (Tailwind CSS)**: Tarjetas glassmorphism, degradados elegantes, insignias de tecnología y respuesta responsive impecable en móviles, tablets y escritorio.
-- 🌐 **Soporte Bilingüe Instantáneo (ES / EN)**: Botón de cambio de idioma en la cabecera que actualiza todo el contenido dinámicamente sin recargar la página.
-- 📄 **Estándar JSON Resume Integrado**:
-  - `rosmar_cv_es.json` (Versión oficial en Español)
-  - `rosmar_cv_en.json` (Versión oficial en Inglés)
-  - Visor modal interactivo para copiar o descargar el archivo `.json` en 1 clic.
-- 🖨️ **Exportación a PDF / Impresión**: Hoja de estilos personalizada para `@media print`. Al hacer clic en **"Guardar PDF"**, genera un documento limpio y bien estructurado sin menús ni botones.
-- 🌙 **Modo Oscuro & Modo Claro**: Conmutador fluido en la barra de navegación.
-- 🎯 **Enfoque Backend & IA**: Destaca la experiencia en **Golang, MercadoLibre, Python (FastAPI/Django), Java, PostgreSQL, AWS y herramientas de IA (Cursor/Claude)**.
+Migrado a **Astro + Tailwind CSS compilado** para garantizar un responsive 100% impecable en cualquier dispositivo móvil sin solapamiento de textos ni bordes.
 
 ---
 
-## 🛠️ Cómo Probarlo Localmente
+## 🎯 3 Perfiles Profesionales en 1 Solo Sitio
 
-Si tienes Python instalado:
+Puedes alternar entre los 3 perfiles instantáneamente desde la barra de navegación:
+- 🖥️ **Backend Developer**: Énfasis en Golang, Microservicios, PostgreSQL, SLAs 99%+ y Arquitecturas Distribuidas.
+- 📊 **Project Manager**: Énfasis en Certificación PMI/PMP®, Scrum/Agile delivery, gestión de incidentes y KPIs en Power BI.
+- 🧠 **AI Engineer**: Énfasis en LLMs, Python pipelines, Prompt Engineering y Automatización con agentes/herramientas de IA.
+
+---
+
+## 💡 ¿Cómo actualizar tu CV? (¡Súper fácil!)
+
+No necesitas saber frontend ni tocar código visual. Para actualizar cualquier dato de tu experiencia, habilidades, estudios o certificaciones, **solo editas los archivos JSON** en la carpeta `public/`:
+
+- `rosmar_cv_backend_es.json` / `rosmar_cv_backend_en.json`
+- `rosmar_cv_pm_es.json` / `rosmar_cv_pm_en.json`
+- `rosmar_cv_ai_es.json` / `rosmar_cv_ai_en.json`
+
+Al guardar y hacer push, GitHub Actions compila y despliega tu sitio automáticamente.
+
+---
+
+## 🛠️ Desarrollo Local
+
 ```bash
-cd /Users/ros/.gemini/antigravity/scratch/rosmar-cv-github-pages
-python3 -m http.server 8000
-```
-Luego abre en tu navegador: **`http://localhost:8000`**
+# Instalar dependencias (solo la primera vez)
+npm install
 
-O simplemente haz doble clic en el archivo [index.html](file:///Users/ros/.gemini/antigravity/scratch/rosmar-cv-github-pages/index.html) para abrirlo directamente.
+# Iniciar servidor de desarrollo con recarga automática
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Vista previa de la compilación de producción
+npm run preview
+```
 
 ---
 
-## 🌐 Publicar en GitHub Pages (Gratis en 2 minutos)
+## 🌐 Despliegue Automático a GitHub Pages
 
-1. Crea un nuevo repositorio en GitHub (ejemplo: `rosmar-cv` o `rosmar-mendoza.github.io`).
-2. Sube estos 3 archivos (`index.html`, `rosmar_cv_es.json`, `rosmar_cv_en.json`):
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit - Interactive Resume with Tailwind & JSON Resume"
-   git branch -M main
-   git remote add origin https://github.com/rosmarmendoza/rosmar-cv.git
-   git push -u origin main
-   ```
-3. En GitHub, ve a **Settings > Pages** -> selecciona la rama `main` y guarda.
-4. ¡Listo! Tu CV estará publicado en `https://rosmarmendoza.github.io/rosmar-cv/`.
+El repositorio incluye un workflow de **GitHub Actions** en `.github/workflows/static.yml` que:
+1. Se activa automáticamente con cada `git push` a la rama `main`.
+2. Instala dependencias y compila el sitio estático optimizado con Astro.
+3. Lo publica directamente en GitHub Pages: **https://rosmarm.github.io/rosmar-cv/**

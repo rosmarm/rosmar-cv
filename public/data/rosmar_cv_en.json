@@ -1,0 +1,185 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rosmar Alejandra Mendoza Canchica",
+    "label": "Backend Developer | AI Engineer | Project Manager",
+    "image": "",
+    "email": "mendozarosmar@gmail.com",
+    "phone": "",
+    "url": "https://github.com/rosmarmendoza",
+    "summary": "Backend Developer specializing in designing and optimizing high-traffic microservices and RESTful APIs in Golang, Python, and Java. Experienced in large-scale environments like MercadoLibre and the Fintech sector, combining engineering best practices, relational databases, and AI-driven tools (Cursor, Claude) to build clean, efficient, and maintainable software.",
+    "location": {
+      "city": "Bogotá / Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rosmar-mendoza",
+        "url": "https://linkedin.com/in/rosmar-mendoza"
+      },
+      {
+        "network": "GitHub",
+        "username": "rosmarmendoza",
+        "url": "https://github.com/rosmarmendoza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MercadoLibre",
+      "position": "Software Developer (Backend)",
+      "url": "https://www.mercadolibre.com",
+      "startDate": "2023-08",
+      "endDate": "2026-06",
+      "summary": "Development and maintenance of critical microservices in Golang and high-performance RESTful APIs at massive scale.",
+      "highlights": [
+        "Designed and built core microservices and RESTful APIs in Golang (supported by Java and Python), maintaining 99%+ availability SLAs for millions of users.",
+        "Completed MercadoLibre's Backend Golang Bootcamp, specializing in Go distributed microservices architecture, concurrency, and high-scale engineering practices.",
+        "Integrated AI tools (Cursor and Claude) into daily workflows to speed up endpoint delivery, refactor legacy code, and boost unit test coverage.",
+        "Managed on-call rotation shifts and real-time monitoring, troubleshooting production incidents to preserve core platform stability."
+      ],
+      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-07",
+      "endDate": "2023-08",
+      "summary": "Building and integrating backend services for credit and financial technology products.",
+      "highlights": [
+        "Developed and maintained RESTful APIs using FastAPI and Django focused on evaluating and processing financial products.",
+        "Designed relational data models and optimized SQL queries in PostgreSQL to improve system response times.",
+        "Implemented cloud integrations with AWS infrastructure and Webhook listeners for real-time data processing."
+      ],
+      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Support L2",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "summary": "Level 2 technical support and production incident resolution.",
+      "highlights": [
+        "Resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to Service Level Agreements (SLAs).",
+        "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+    },
+    {
+      "name": "Scotiabank GBS",
+      "position": "System Access Analyst",
+      "url": "https://www.scotiabank.com",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "summary": "Access management, identity security, and operational reporting dashboards.",
+      "highlights": [
+        "Managed corporate user permissions and identities using Active Directory and Microsoft Office 365.",
+        "Built interactive Power BI dashboards to track, audit, and report system access metrics to the security team.",
+        "Provided technical support for access configurations and user roles across internal .NET applications."
+      ],
+      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+    },
+    {
+      "name": "Intexus",
+      "position": "IT Engineer",
+      "url": "https://www.intexus.com",
+      "startDate": "2016-09",
+      "endDate": "2019-10",
+      "summary": "IT operations management and service infrastructure monitoring.",
+      "highlights": [
+        "Supervised infrastructure service availability and managed help desk tickets using Jira."
+      ],
+      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Engineering License (Computer Engineering)",
+      "date": "2024-06",
+      "issuer": "COPNIA - National Professional Council of Engineering (Colombia)",
+      "url": "https://tramites.copnia.gov.co",
+      "summary": "License No. 091184-0725447 CND — Official Active Engineering Registration."
+    },
+    {
+      "name": "Professional Developer (Certified Tech Developer)",
+      "date": "2023-07",
+      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "url": "https://www.digitalhouse.com",
+      "summary": "Professional software development intensive certification (1,568 completed hours)."
+    },
+    {
+      "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
+      "date": "2026-08",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certification in project management fundamentals and global PMP standards."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Experimental del Táchira",
+      "url": "https://www.unet.edu.ve",
+      "area": "Computer Science / Informatic Engineer",
+      "studyType": "Bachelor of Science",
+      "startDate": "2014-01",
+      "endDate": "2019-12"
+    },
+    {
+      "institution": "Digital House",
+      "url": "https://www.digitalhouse.com",
+      "area": "Professional Developer (Certified Tech Developer)",
+      "studyType": "Intensive Certification (1,568 Completed Hours)",
+      "startDate": "2021-08",
+      "endDate": "2023-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Golang",
+      "level": "Advanced",
+      "keywords": ["Go", "Backend", "Microservices", "REST APIs"]
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": ["FastAPI", "Django", "PostgreSQL"]
+    },
+    {
+      "name": "Java",
+      "level": "Intermediate",
+      "keywords": ["REST APIs", "Backend"]
+    },
+    {
+      "name": "Databases & Cloud",
+      "level": "Advanced",
+      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"]
+    },
+    {
+      "name": "AI Productivity Tools",
+      "level": "Advanced",
+      "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"]
+    },
+    {
+      "name": "Project Management & Technical Leadership",
+      "level": "Advanced",
+      "keywords": ["Scrum", "Agile", "Jira Service Desk", "SLA 99%+", "IT Operations", "On-Call Shifts"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Basic"
+    }
+  ]
+}

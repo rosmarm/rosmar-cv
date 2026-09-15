@@ -1,0 +1,569 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import HeroSection from '../components/HeroSection.astro';
+import Footer from '../components/Footer.astro';
+import JsonModal from '../components/JsonModal.astro';
+---
+
+<BaseLayout>
+  <Header />
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8 sm:space-y-12">
+    <!-- Hero Section -->
+    <HeroSection />
+
+    <!-- Technical Experience Section -->
+    <section class="space-y-6">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-sm">
+            <i class="fas fa-briefcase"></i>
+          </span>
+          <span data-i18n="sec_experience">Experiencia Profesional</span>
+        </h2>
+        <span class="text-xs font-mono text-slate-500 dark:text-slate-400 no-print" data-i18n="exp_count">5 Posiciones Destacadas</span>
+      </div>
+
+      <!-- Experience Timeline Container -->
+      <div id="experience-container" class="space-y-6">
+        <!-- Loaded dynamically -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="space-y-6 print-break-inside-avoid">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+        <span class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400 flex items-center justify-center text-sm">
+          <i class="fas fa-code"></i>
+        </span>
+        <span data-i18n="sec_skills">Habilidades Técnicas</span>
+      </h2>
+
+      <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Loaded dynamically -->
+      </div>
+    </section>
+
+    <!-- Education & Languages Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 print-break-inside-avoid">
+      <!-- Education -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+          <span class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm">
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+          <span data-i18n="sec_education">Educación</span>
+        </h2>
+        <div id="education-container" class="space-y-4">
+          <!-- Loaded dynamically -->
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+          <span class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm">
+            <i class="fas fa-language"></i>
+          </span>
+          <span data-i18n="sec_languages">Idiomas</span>
+        </h2>
+        <div id="languages-container" class="space-y-3">
+          <!-- Loaded dynamically -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Certifications & Licenses Section -->
+    <section class="space-y-6 print-break-inside-avoid">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
+        <span class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm">
+          <i class="fas fa-certificate"></i>
+        </span>
+        <span data-i18n="sec_certificates">Certificaciones y Licencias</span>
+      </h2>
+
+      <div id="certificates-container" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Loaded dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <JsonModal />
+
+  <!-- Client Application Script -->
+  <script is:inline>
+    // =====================================================================
+    // Multi-Profile CV Engine
+    // Profiles: backend, pm, ai  |  Languages: es, en
+    // =====================================================================
+
+    let currentLang = 'es';
+    let currentProfile = 'backend';
+    const dataCache = {};
+
+    const profileMeta = {
+      backend: {
+        icon: 'fa-server',
+        navSubtitle: { es: 'Backend Developer', en: 'Backend Developer' },
+        stats: {
+          es: [
+            { value: 'MercadoLibre', label: 'Bootcamp Golang', color: 'sky' },
+            { value: '99%+ SLA', label: 'Alta Disponibilidad', color: 'emerald' },
+            { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
+            { value: 'Cursor & Claude', label: 'IA Asistida', color: 'amber' }
+          ],
+          en: [
+            { value: 'MercadoLibre', label: 'Golang Bootcamp', color: 'sky' },
+            { value: '99%+ SLA', label: 'High Availability', color: 'emerald' },
+            { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
+            { value: 'Cursor & Claude', label: 'AI-Assisted Dev', color: 'amber' }
+          ]
+        }
+      },
+      pm: {
+        icon: 'fa-diagram-project',
+        navSubtitle: { es: 'Project Manager', en: 'Project Manager' },
+        stats: {
+          es: [
+            { value: 'PMI / PMP®', label: 'Certificación PM', color: 'sky' },
+            { value: '99%+ SLA', label: 'Gestión de Incidentes', color: 'emerald' },
+            { value: 'Scrum & Agile', label: 'Delivery Ágil', color: 'purple' },
+            { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
+          ],
+          en: [
+            { value: 'PMI / PMP®', label: 'PM Certification', color: 'sky' },
+            { value: '99%+ SLA', label: 'Incident Management', color: 'emerald' },
+            { value: 'Scrum & Agile', label: 'Agile Delivery', color: 'purple' },
+            { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
+          ]
+        }
+      },
+      ai: {
+        icon: 'fa-brain',
+        navSubtitle: { es: 'Ingeniera de IA', en: 'AI Engineer' },
+        stats: {
+          es: [
+            { value: 'Claude & Cursor', label: 'IA Generativa', color: 'sky' },
+            { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
+            { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
+            { value: 'Automatización', label: 'Agentes & Scripts', color: 'amber' }
+          ],
+          en: [
+            { value: 'Claude & Cursor', label: 'Generative AI', color: 'sky' },
+            { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
+            { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
+            { value: 'Automation', label: 'Agents & Scripts', color: 'amber' }
+          ]
+        }
+      }
+    };
+
+    const jsonFiles = {
+      backend_es: 'rosmar_cv_backend_es.json',
+      backend_en: 'rosmar_cv_backend_en.json',
+      pm_es: 'rosmar_cv_pm_es.json',
+      pm_en: 'rosmar_cv_pm_en.json',
+      ai_es: 'rosmar_cv_ai_es.json',
+      ai_en: 'rosmar_cv_ai_en.json'
+    };
+
+    const uiTranslations = {
+      es: {
+        sec_experience: "Experiencia Profesional",
+        exp_count: "5 Posiciones Destacadas",
+        sec_skills: "Habilidades Técnicas",
+        sec_education: "Educación",
+        sec_languages: "Idiomas",
+        sec_certificates: "Certificaciones y Licencias Oficiales",
+        btn_pdf: "PDF",
+        btn_copy_json: "Copiar",
+        btn_download_json: ".json"
+      },
+      en: {
+        sec_experience: "Professional Experience",
+        exp_count: "5 Featured Roles",
+        sec_skills: "Technical Skills",
+        sec_education: "Education",
+        sec_languages: "Languages",
+        sec_certificates: "Certifications & Official Licenses",
+        btn_pdf: "PDF",
+        btn_copy_json: "Copy",
+        btn_download_json: ".json"
+      }
+    };
+
+    function getBasePath() {
+      // Determine base path cleanly whether hosted on GitHub Pages or locally
+      const pathname = window.location.pathname;
+      if (pathname.includes('/rosmar-cv')) {
+        return '/rosmar-cv';
+      }
+      return '';
+    }
+
+    function initApp() {
+      // Theme restoration
+      const savedTheme = localStorage.getItem('theme');
+      const html = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      if (savedTheme === 'light') {
+        html.classList.remove('dark');
+        if (themeIcon) themeIcon.className = "fas fa-sun text-amber-500 text-xs sm:text-sm";
+      } else {
+        html.classList.add('dark');
+        if (themeIcon) themeIcon.className = "fas fa-moon text-xs sm:text-sm";
+      }
+
+      // Profile & Lang restoration
+      const savedProfile = localStorage.getItem('cvProfile');
+      const savedLang = localStorage.getItem('cvLang');
+      if (savedProfile && profileMeta[savedProfile]) currentProfile = savedProfile;
+      if (savedLang && (savedLang === 'es' || savedLang === 'en')) currentLang = savedLang;
+
+      setupEventListeners();
+      updateProfileButtons();
+      updateLangButtons();
+      loadAndRender();
+    }
+
+    function setupEventListeners() {
+      document.getElementById('btn-profile-backend')?.addEventListener('click', () => setProfile('backend'));
+      document.getElementById('btn-profile-pm')?.addEventListener('click', () => setProfile('pm'));
+      document.getElementById('btn-profile-ai')?.addEventListener('click', () => setProfile('ai'));
+
+      document.getElementById('btn-lang-es')?.addEventListener('click', () => setLanguage('es'));
+      document.getElementById('btn-lang-en')?.addEventListener('click', () => setLanguage('en'));
+
+      document.getElementById('btn-theme-toggle')?.addEventListener('click', toggleTheme);
+      document.getElementById('btn-open-json')?.addEventListener('click', openJsonModal);
+      document.getElementById('footer-btn-json')?.addEventListener('click', openJsonModal);
+      document.getElementById('btn-print')?.addEventListener('click', () => window.print());
+
+      document.getElementById('modal-btn-copy')?.addEventListener('click', copyJsonToClipboard);
+      document.getElementById('modal-btn-download')?.addEventListener('click', downloadCurrentJson);
+      document.getElementById('modal-btn-close')?.addEventListener('click', closeJsonModal);
+
+      // Close modal on background click
+      document.getElementById('json-modal')?.addEventListener('click', (e) => {
+        if (e.target.id === 'json-modal') closeJsonModal();
+      });
+    }
+
+    function setProfile(profile) {
+      if (!profileMeta[profile]) return;
+      currentProfile = profile;
+      localStorage.setItem('cvProfile', profile);
+      updateProfileButtons();
+      loadAndRender();
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('cvLang', lang);
+      updateLangButtons();
+      loadAndRender();
+    }
+
+    function updateProfileButtons() {
+      const profiles = ['backend', 'pm', 'ai'];
+      const activeClass = "px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+      const inactiveClass = "px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
+      profiles.forEach(p => {
+        const btn = document.getElementById(`btn-profile-${p}`);
+        if (btn) btn.className = (p === currentProfile) ? activeClass : inactiveClass;
+      });
+    }
+
+    function updateLangButtons() {
+      const btnEs = document.getElementById('btn-lang-es');
+      const btnEn = document.getElementById('btn-lang-en');
+      const activeClass = "px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+      const inactiveClass = "px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
+      if (btnEs) btnEs.className = (currentLang === 'es') ? activeClass : inactiveClass;
+      if (btnEn) btnEn.className = (currentLang === 'en') ? activeClass : inactiveClass;
+    }
+
+    function loadAndRender() {
+      const key = `${currentProfile}_${currentLang}`;
+      if (dataCache[key]) {
+        renderPage(dataCache[key]);
+        return;
+      }
+      const filename = jsonFiles[key];
+      if (!filename) return;
+
+      const base = getBasePath();
+      const primaryUrl = `${base}/${filename}`.replace(/\/+/g, '/');
+      const fallbackUrl = `${base}/data/${filename}`.replace(/\/+/g, '/');
+
+      fetch(primaryUrl)
+        .then(r => {
+          if (!r.ok) return fetch(fallbackUrl);
+          return r;
+        })
+        .then(r => {
+          if (!r.ok) throw new Error('Failed to load JSON');
+          return r.json();
+        })
+        .then(data => {
+          dataCache[key] = data;
+          renderPage(data);
+        })
+        .catch(err => {
+          console.warn(`Could not load ${filename}:`, err);
+        });
+    }
+
+    function renderPage(data) {
+      const t = uiTranslations[currentLang];
+      const meta = profileMeta[currentProfile];
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (t[k]) el.textContent = t[k];
+      });
+
+      if (!data) return;
+
+      const navSub = document.getElementById('nav-subtitle');
+      if (navSub) navSub.textContent = meta.navSubtitle[currentLang];
+
+      const badge = document.querySelector('[data-i18n="badge_status"]');
+      if (badge) {
+        const prefix = currentLang === 'es' ? 'Disponible' : 'Available';
+        badge.textContent = `${prefix}: ${data.basics.label}`;
+      }
+      const heroRole = document.querySelector('[data-i18n="hero_role"]');
+      if (heroRole) heroRole.textContent = data.basics.label;
+
+      const summaryEl = document.getElementById('profile-summary');
+      if (summaryEl) summaryEl.textContent = data.basics.summary;
+
+      renderStats(meta.stats[currentLang]);
+
+      // Render Experience
+      const expContainer = document.getElementById('experience-container');
+      if (expContainer && data.work) {
+        expContainer.innerHTML = data.work.map((w) => `
+          <div class="glass-panel print-card rounded-2xl p-4 sm:p-6 lg:p-7 relative transition-all duration-200 hover:border-sky-500/50">
+            <div class="flex flex-col gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2">
+                <span class="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400 bg-sky-100 dark:bg-sky-500/10 border border-sky-300 dark:border-sky-500/30 px-2 sm:px-2.5 py-0.5 rounded-full w-fit">
+                  ${w.name}
+                </span>
+                <div class="text-[10px] sm:text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl border border-slate-200 dark:border-slate-700/60 w-fit shadow-xs shrink-0">
+                  <i class="far fa-calendar-alt mr-1 sm:mr-1.5 text-sky-600 dark:text-sky-400"></i> ${formatDates(w.startDate, w.endDate)}
+                </div>
+              </div>
+              <h3 class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark leading-snug">
+                ${w.position}
+              </h3>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium mb-2 sm:mb-3 print-text-muted">
+              ${w.summary}
+            </p>
+
+            <ul class="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 text-[11px] sm:text-sm text-slate-700 dark:text-slate-300 print-text-muted">
+              ${w.highlights.map(h => `
+                <li class="flex items-start space-x-1.5 sm:space-x-2">
+                  <span class="text-sky-600 dark:text-sky-400 mt-0.5 sm:mt-1 text-[10px] sm:text-xs shrink-0">•</span>
+                  <span class="leading-relaxed">${h}</span>
+                </li>
+              `).join('')}
+            </ul>
+
+            ${w.keywords ? `
+            <div class="flex flex-wrap gap-1 sm:gap-1.5 pt-2 sm:pt-3 border-t border-slate-200 dark:border-slate-800/60 no-print">
+              ${w.keywords.map(k => `
+                <span class="px-1.5 sm:px-2.5 py-0.5 text-[10px] sm:text-xs font-mono rounded-md bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 font-semibold">
+                  #${k}
+                </span>
+              `).join('')}
+            </div>
+            ` : ''}
+          </div>
+        `).join('');
+      }
+
+      // Render Skills
+      const skillsContainer = document.getElementById('skills-container');
+      if (skillsContainer && data.skills) {
+        skillsContainer.innerHTML = data.skills.map(s => `
+          <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-2 sm:space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-1.5">
+              <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-sm sm:text-base flex items-center space-x-1.5 sm:space-x-2 min-w-0">
+                <i class="fas fa-check-circle text-sky-600 dark:text-sky-400 text-xs sm:text-sm shrink-0"></i>
+                <span class="truncate">${s.name}</span>
+              </h4>
+              <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 rounded-full bg-purple-100 dark:bg-purple-500/10 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-500/20 font-bold shrink-0">
+                ${s.level}
+              </span>
+            </div>
+            <div class="flex flex-wrap gap-1 sm:gap-1.5">
+              ${s.keywords.map(k => `
+                <span class="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-[10px] sm:text-xs font-mono text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 font-semibold">
+                  ${k}
+                </span>
+              `).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Render Education
+      const eduContainer = document.getElementById('education-container');
+      if (eduContainer && data.education) {
+        eduContainer.innerHTML = data.education.map(e => `
+          <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-2">
+              <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-xs sm:text-base leading-snug">${e.institution}</h4>
+              <span class="text-[10px] sm:text-xs font-mono text-slate-500 dark:text-slate-400 font-medium shrink-0">${e.startDate ? formatDates(e.startDate, e.endDate) : ''}</span>
+            </div>
+            <p class="text-[11px] sm:text-sm text-sky-600 dark:text-sky-400 font-mono font-semibold leading-snug">${e.area}</p>
+            <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400">${e.studyType}</p>
+          </div>
+        `).join('');
+      }
+
+      // Render Languages
+      const langContainer = document.getElementById('languages-container');
+      if (langContainer && data.languages) {
+        langContainer.innerHTML = data.languages.map(l => `
+          <div class="glass-panel print-card rounded-2xl p-3 sm:p-4 flex items-center justify-between">
+            <span class="font-semibold text-slate-900 dark:text-slate-200 text-xs sm:text-sm">${l.language}</span>
+            <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-sky-700 dark:text-sky-400 border border-slate-200 dark:border-slate-700/60 font-semibold">
+              ${l.fluency}
+            </span>
+          </div>
+        `).join('');
+      }
+
+      // Render Certificates
+      const certContainer = document.getElementById('certificates-container');
+      if (certContainer && data.certificates) {
+        certContainer.innerHTML = data.certificates.map(c => `
+          <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-1.5 sm:space-y-2 flex flex-col justify-between hover:border-blue-500/50 transition-all">
+            <div class="space-y-1.5 sm:space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-500/20 font-bold">
+                  ${c.date ? formatSingleDate(c.date, currentLang) : 'Vigente'}
+                </span>
+                <i class="fas fa-award text-amber-500 text-sm sm:text-base"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-xs sm:text-sm lg:text-base leading-snug">
+                ${c.name}
+              </h4>
+              <p class="text-[10px] sm:text-xs font-semibold text-sky-600 dark:text-sky-400 font-mono leading-snug">${c.issuer}</p>
+              <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-400 leading-relaxed">${c.summary}</p>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      document.title = `Rosmar Mendoza - ${data.basics.label}`;
+    }
+
+    function renderStats(stats) {
+      const container = document.getElementById('stats-container');
+      if (!container || !stats) return;
+
+      const colorMap = {
+        sky:     'text-sky-700 dark:text-sky-400',
+        emerald: 'text-emerald-700 dark:text-emerald-400',
+        purple:  'text-purple-700 dark:text-purple-400',
+        amber:   'text-amber-700 dark:text-amber-400'
+      };
+
+      container.innerHTML = stats.map(s => `
+        <div class="p-2 sm:p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs overflow-hidden">
+          <div class="text-xs sm:text-xl lg:text-2xl font-extrabold ${colorMap[s.color] || colorMap.sky} font-mono truncate">${s.value}</div>
+          <div class="text-[9px] sm:text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium truncate">${s.label}</div>
+        </div>
+      `).join('');
+    }
+
+    function formatSingleDate(str, lang) {
+      if (!str) return '';
+      if (str.toLowerCase() === 'presente' || str.toLowerCase() === 'present' || str.toLowerCase() === 'actual') {
+        return lang === 'es' ? 'Presente' : 'Present';
+      }
+      const monthsEs = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+      const monthsEn = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const months = lang === 'es' ? monthsEs : monthsEn;
+
+      const parts = str.split('-');
+      if (parts.length === 2) {
+        const year = parts[0];
+        const monthIdx = parseInt(parts[1], 10) - 1;
+        if (monthIdx >= 0 && monthIdx < 12) {
+          return `${months[monthIdx]} ${year}`;
+        }
+      }
+      return str;
+    }
+
+    function formatDates(start, end) {
+      if (!start) return '';
+      const startFormatted = formatSingleDate(start, currentLang);
+      const endFormatted = end ? formatSingleDate(end, currentLang) : (currentLang === 'es' ? 'Presente' : 'Present');
+      return `${startFormatted} — ${endFormatted}`;
+    }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        if (themeIcon) themeIcon.className = "fas fa-sun text-amber-500 text-xs sm:text-sm";
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        if (themeIcon) themeIcon.className = "fas fa-moon text-xs sm:text-sm";
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    function openJsonModal() {
+      const key = `${currentProfile}_${currentLang}`;
+      const data = dataCache[key] || {};
+      const pre = document.getElementById('json-content');
+      if (pre) pre.textContent = JSON.stringify(data, null, 2);
+      document.getElementById('json-modal')?.classList.remove('hidden');
+    }
+
+    function closeJsonModal() {
+      document.getElementById('json-modal')?.classList.add('hidden');
+    }
+
+    function copyJsonToClipboard() {
+      const content = document.getElementById('json-content')?.textContent || '';
+      navigator.clipboard.writeText(content).then(() => {
+        const msg = currentLang === 'es' ? '¡JSON copiado al portapapeles!' : 'JSON copied to clipboard!';
+        alert(msg);
+      });
+    }
+
+    function downloadCurrentJson() {
+      const key = `${currentProfile}_${currentLang}`;
+      const data = dataCache[key] || {};
+      const jsonStr = JSON.stringify(data, null, 2);
+      const blob = new Blob([jsonStr], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `rosmar_mendoza_cv_${currentProfile}_${currentLang}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</BaseLayout>

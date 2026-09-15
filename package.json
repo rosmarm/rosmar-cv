@@ -1,0 +1,29 @@
+{
+  "name": "rosmar-cv-github-pages",
+  "version": "1.0.0",
+  "description": "¡Hola Rosmar! Este es tu sitio web frontend interactivo de Hoja de Vida/Portafolio, construido con **Tailwind CSS**, soporte **bilingüe (Español / Inglés)**, visor y descarga de **JSON Resume Standard**, modo oscuro/claro y exportación lista para impresoras / PDF.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "start": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosmarm/rosmar-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosmarm/rosmar-cv/issues"
+  },
+  "homepage": "https://github.com/rosmarm/rosmar-cv#readme",
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@fontsource/fira-code": "^5.3.0",
+    "astro": "^7.3.2",
+    "tailwindcss": "^3.4.19"
+  }
+}
