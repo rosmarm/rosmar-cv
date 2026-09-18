@@ -43,10 +43,23 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Intern",
+      "position": "Support L2",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Level 2 technical support and production incident resolution.",
+      "highlights": [
+        "Resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to Service Level Agreements (SLAs).",
+        "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "Building and integrating backend services for credit and financial technology products.",
       "highlights": [
         "Developed and maintained RESTful APIs using FastAPI and Django focused on evaluating and processing financial products.",
@@ -54,19 +67,6 @@
         "Implemented cloud integrations with AWS infrastructure and Webhook listeners for real-time data processing."
       ],
       "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Level 2 technical support and production incident resolution.",
-      "highlights": [
-        "Resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to Service Level Agreements (SLAs).",
-        "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues."
-      ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
     },
     {
       "name": "Scotiabank GBS",

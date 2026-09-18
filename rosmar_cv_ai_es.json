@@ -44,10 +44,24 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Developer — Data Pipelines & API Engineering",
+      "position": "Support L2 — Data Analysis & Pattern Detection",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Análisis de datos en producción, detección de patrones de error y debugging asistido para la resolución de incidencias.",
+      "highlights": [
+        "Analicé datos de producción y consultas SQL en PostgreSQL para diagnosticar errores, identificar patrones recurrentes y proponer soluciones automatizadas.",
+        "Depuré código en servicios Django, aplicando análisis sistemático de logs y datos para resolver incidencias complejas en entornos productivos.",
+        "Documenté patrones de error y propuse pipelines de detección temprana que redujeron la recurrencia de incidentes."
+      ],
+      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern — Data Pipelines & API Engineering",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "Desarrollo de APIs de alto rendimiento y pipelines de procesamiento de datos en Python para el sector Fintech.",
       "highlights": [
         "Construí APIs RESTful de alto rendimiento con FastAPI y Django, procesando datos financieros en tiempo real — arquitectura directamente aplicable al servicio de inferencias de modelos de IA.",
@@ -56,20 +70,6 @@
         "Automaticé flujos de validación de datos y generación de reportes con scripts en Python, reduciendo tiempos de procesamiento manual."
       ],
       "keywords": ["FastAPI", "Django", "Python", "Data Pipelines", "PostgreSQL", "AWS Lambda", "S3", "SQS", "Real-time Processing"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2 — Data Analysis & Pattern Detection",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Análisis de datos en producción, detección de patrones de error y debugging asistido para la resolución de incidencias.",
-      "highlights": [
-        "Analicé datos de producción y consultas SQL en PostgreSQL para diagnosticar errores, identificar patrones recurrentes y proponer soluciones automatizadas.",
-        "Depuré código en servicios Django, aplicando análisis sistemático de logs y datos para resolver incidencias complejas en entornos productivos.",
-        "Documenté patrones de error y propuse pipelines de detección temprana que redujeron la recurrencia de incidentes."
-      ],
-      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
     },
     {
       "name": "Scotiabank GBS",

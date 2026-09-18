@@ -44,10 +44,24 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Developer — Fintech Delivery",
+      "position": "Support L2 — Incident Management & SLA Compliance",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Level 2 incident management, strict SLA compliance, and coordination with development teams for production issue resolution.",
+      "highlights": [
+        "Managed and prioritized Level 2 technical incidents in Jira Service Desk, complying with strict SLAs and reporting compliance metrics to leadership.",
+        "Coordinated communication between support, development, and operations teams for agile resolution of critical production incidents.",
+        "Identified recurring error patterns and proposed process improvements that reduced Mean Time to Resolution (MTTR)."
+      ],
+      "keywords": ["Jira Service Desk", "SLA Management", "MTTR", "Incident Coordination", "ITIL"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern — Fintech Delivery",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "Backend service development and delivery for financial products, collaborating with product, QA, and operations teams.",
       "highlights": [
         "Coordinated delivery of RESTful APIs in Python (FastAPI, Django) for credit products, ensuring quality and sprint deadline compliance.",
@@ -56,20 +70,6 @@
         "Documented technical processes and generated progress reports for product team and leadership visibility."
       ],
       "keywords": ["Agile", "Sprint Planning", "FastAPI", "Django", "PostgreSQL", "AWS", "Technical Documentation"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2 — Incident Management & SLA Compliance",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Level 2 incident management, strict SLA compliance, and coordination with development teams for production issue resolution.",
-      "highlights": [
-        "Managed and prioritized Level 2 technical incidents in Jira Service Desk, complying with strict SLAs and reporting compliance metrics to leadership.",
-        "Coordinated communication between support, development, and operations teams for agile resolution of critical production incidents.",
-        "Identified recurring error patterns and proposed process improvements that reduced Mean Time to Resolution (MTTR)."
-      ],
-      "keywords": ["Jira Service Desk", "SLA Management", "MTTR", "Incident Coordination", "ITIL"]
     },
     {
       "name": "Scotiabank GBS",

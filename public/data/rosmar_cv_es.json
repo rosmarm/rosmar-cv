@@ -43,10 +43,23 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Intern",
+      "position": "Support L2",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Soporte técnico de segundo nivel y resolución de incidencias en entornos productivos.",
+      "highlights": [
+        "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
+        "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "Construcción e integración de servicios backend para productos crediticios y financieros.",
       "highlights": [
         "Desarrollé y mantuve APIs RESTful en Python utilizando FastAPI y Django para la evaluación y procesamiento de servicios financieros.",
@@ -54,19 +67,6 @@
         "Implementé integraciones backend con servicios en la nube de AWS y consumo de Webhooks para el procesamiento de datos en tiempo real."
       ],
       "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Soporte técnico de segundo nivel y resolución de incidencias en entornos productivos.",
-      "highlights": [
-        "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
-        "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción."
-      ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
     },
     {
       "name": "Scotiabank GBS",

@@ -44,10 +44,24 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Developer — Data Pipelines & API Engineering",
+      "position": "Support L2 — Data Analysis & Pattern Detection",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Production data analysis, error pattern detection, and assisted debugging for incident resolution.",
+      "highlights": [
+        "Analyzed production data and SQL queries in PostgreSQL to diagnose errors, identify recurring patterns, and propose automated solutions.",
+        "Debugged Django service code, applying systematic log and data analysis to resolve complex incidents in production environments.",
+        "Documented error patterns and proposed early detection pipelines that reduced incident recurrence."
+      ],
+      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern — Data Pipelines & API Engineering",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "High-performance API development and data processing pipelines in Python for the Fintech sector.",
       "highlights": [
         "Built high-performance RESTful APIs with FastAPI and Django, processing financial data in real-time — architecture directly applicable to AI model inference serving.",
@@ -56,20 +70,6 @@
         "Automated data validation flows and report generation with Python scripts, reducing manual processing times."
       ],
       "keywords": ["FastAPI", "Django", "Python", "Data Pipelines", "PostgreSQL", "AWS Lambda", "S3", "SQS", "Real-time Processing"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2 — Data Analysis & Pattern Detection",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Production data analysis, error pattern detection, and assisted debugging for incident resolution.",
-      "highlights": [
-        "Analyzed production data and SQL queries in PostgreSQL to diagnose errors, identify recurring patterns, and propose automated solutions.",
-        "Debugged Django service code, applying systematic log and data analysis to resolve complex incidents in production environments.",
-        "Documented error patterns and proposed early detection pipelines that reduced incident recurrence."
-      ],
-      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
     },
     {
       "name": "Scotiabank GBS",

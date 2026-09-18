@@ -44,10 +44,24 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Backend Developer",
+      "position": "Support L2 / Backend Debugging",
       "url": "https://motechnologies.com",
       "startDate": "2022-07",
       "endDate": "2023-08",
+      "summary": "Soporte técnico de segundo nivel con debugging directo en código backend y bases de datos en producción.",
+      "highlights": [
+        "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
+        "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción.",
+        "Identificé y documenté patrones recurrentes de errores, proponiendo refactorizaciones que redujeron la carga de tickets de soporte."
+      ],
+      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA", "Python"]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Backend Intern",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2022-07",
       "summary": "Construcción e integración de servicios backend para productos crediticios y financieros en el sector Fintech.",
       "highlights": [
         "Desarrollé y mantuve APIs RESTful en Python utilizando FastAPI y Django para la evaluación y procesamiento de servicios financieros de alto volumen.",
@@ -56,20 +70,6 @@
         "Escribí pruebas unitarias y de integración con pytest, asegurando la estabilidad y mantenibilidad del código en cada release."
       ],
       "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks", "pytest"]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2 / Backend Debugging",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Soporte técnico de segundo nivel con debugging directo en código backend y bases de datos en producción.",
-      "highlights": [
-        "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
-        "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción.",
-        "Identificé y documenté patrones recurrentes de errores, proponiendo refactorizaciones que redujeron la carga de tickets de soporte."
-      ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA", "Python"]
     },
     {
       "name": "Scotiabank GBS",
