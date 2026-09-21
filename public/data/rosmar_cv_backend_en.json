@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Rosmar Alejandra Mendoza Canchica",
-    "label": "Senior Backend Developer | Golang & Python | Distributed Systems",
+    "label": "Semi Senior Backend Developer | Golang & Python | Distributed Systems",
     "image": "",
     "email": "mendozarosmar@gmail.com",
     "phone": "",
@@ -40,7 +40,19 @@
         "Integrated AI tools (Cursor and Claude) into daily workflows to speed up endpoint delivery, refactor legacy code, and boost unit test coverage.",
         "Managed on-call rotation shifts and real-time monitoring with Datadog and New Relic, troubleshooting production incidents to preserve core platform stability."
       ],
-      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Concurrency", "PostgreSQL", "SLA 99%+", "On-Call", "CI/CD"]
+      "keywords": [
+        "Golang",
+        "Go",
+        "Microservices",
+        "RESTful APIs",
+        "Java",
+        "Python",
+        "Concurrency",
+        "PostgreSQL",
+        "SLA 99%+",
+        "On-Call",
+        "CI/CD"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -54,7 +66,14 @@
         "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues.",
         "Identified and documented recurring error patterns, proposing refactors that reduced support ticket volume."
       ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA", "Python"]
+      "keywords": [
+        "Jira Service Desk",
+        "Django",
+        "PostgreSQL",
+        "Debugging",
+        "SLA",
+        "Python"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -69,7 +88,15 @@
         "Implemented cloud integrations with AWS infrastructure (Lambda, S3, SQS) and Webhook listeners for real-time data processing.",
         "Wrote unit and integration tests with pytest, ensuring code stability and maintainability across every release."
       ],
-      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks", "pytest"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Python",
+        "PostgreSQL",
+        "AWS",
+        "Webhooks",
+        "pytest"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -83,7 +110,13 @@
         "Built interactive Power BI dashboards to track, audit, and report system access metrics to the security team.",
         "Provided technical support for access configurations and user roles across internal .NET applications."
       ],
-      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+      "keywords": [
+        "Active Directory",
+        "O365",
+        "Power BI",
+        ".NET",
+        "Security"
+      ]
     },
     {
       "name": "Intexus",
@@ -95,7 +128,12 @@
       "highlights": [
         "Supervised infrastructure service availability and managed help desk tickets using Jira."
       ],
-      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk", "Infrastructure"]
+      "keywords": [
+        "IT Operations",
+        "Monitoring",
+        "Jira Help Desk",
+        "Infrastructure"
+      ]
     }
   ],
   "certificates": [
@@ -143,32 +181,66 @@
     {
       "name": "Golang",
       "level": "Advanced",
-      "keywords": ["Go", "Goroutines", "Concurrency", "Microservices", "REST APIs"]
+      "keywords": [
+        "Go",
+        "Goroutines",
+        "Concurrency",
+        "Microservices",
+        "REST APIs"
+      ]
     },
     {
       "name": "Python",
       "level": "Advanced",
-      "keywords": ["FastAPI", "Django", "pytest", "Scripting"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "pytest",
+        "Scripting"
+      ]
     },
     {
       "name": "Java",
       "level": "Intermediate",
-      "keywords": ["REST APIs", "Backend", "Spring Boot"]
+      "keywords": [
+        "REST APIs",
+        "Backend",
+        "Spring Boot"
+      ]
     },
     {
       "name": "Databases & Cloud",
       "level": "Advanced",
-      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS", "Docker"]
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "AWS",
+        "Docker"
+      ]
     },
     {
       "name": "Architecture & DevOps",
       "level": "Advanced",
-      "keywords": ["Microservices", "REST APIs", "CI/CD", "Git", "Datadog", "New Relic"]
+      "keywords": [
+        "Microservices",
+        "REST APIs",
+        "CI/CD",
+        "Git",
+        "Datadog",
+        "New Relic"
+      ]
     },
     {
       "name": "AI Tools & Productivity",
       "level": "Advanced",
-      "keywords": ["Cursor", "Claude", "Jira", "Scrum", "On-Call"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Jira",
+        "Scrum",
+        "On-Call"
+      ]
     }
   ],
   "languages": [
@@ -178,7 +250,7 @@
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "Intermediate"
     },
     {
       "language": "French",

@@ -39,7 +39,18 @@
         "Integrated AI tools (Cursor and Claude) into daily workflows to speed up endpoint delivery, refactor legacy code, and boost unit test coverage.",
         "Managed on-call rotation shifts and real-time monitoring, troubleshooting production incidents to preserve core platform stability."
       ],
-      "keywords": ["Golang", "Go", "Microservices", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
+      "keywords": [
+        "Golang",
+        "Go",
+        "Microservices",
+        "RESTful APIs",
+        "Java",
+        "Python",
+        "Cursor",
+        "Claude",
+        "SLA 99%+",
+        "On-Call"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -52,7 +63,13 @@
         "Resolved Level 2 technical tickets via Jira Service Desk, strictly adhering to Service Level Agreements (SLAs).",
         "Debugged code in Django services and analyzed queries in PostgreSQL to troubleshoot and fix live production issues."
       ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+      "keywords": [
+        "Jira Service Desk",
+        "Django",
+        "PostgreSQL",
+        "Debugging",
+        "SLA"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -66,7 +83,14 @@
         "Designed relational data models and optimized SQL queries in PostgreSQL to improve system response times.",
         "Implemented cloud integrations with AWS infrastructure and Webhook listeners for real-time data processing."
       ],
-      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Python",
+        "PostgreSQL",
+        "AWS",
+        "Webhooks"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -80,7 +104,13 @@
         "Built interactive Power BI dashboards to track, audit, and report system access metrics to the security team.",
         "Provided technical support for access configurations and user roles across internal .NET applications."
       ],
-      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+      "keywords": [
+        "Active Directory",
+        "O365",
+        "Power BI",
+        ".NET",
+        "Security"
+      ]
     },
     {
       "name": "Intexus",
@@ -92,7 +122,11 @@
       "highlights": [
         "Supervised infrastructure service availability and managed help desk tickets using Jira."
       ],
-      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+      "keywords": [
+        "IT Operations",
+        "Monitoring",
+        "Jira Help Desk"
+      ]
     }
   ],
   "certificates": [
@@ -140,32 +174,62 @@
     {
       "name": "Golang",
       "level": "Advanced",
-      "keywords": ["Go", "Backend", "Microservices", "REST APIs"]
+      "keywords": [
+        "Go",
+        "Backend",
+        "Microservices",
+        "REST APIs"
+      ]
     },
     {
       "name": "Python",
       "level": "Advanced",
-      "keywords": ["FastAPI", "Django", "PostgreSQL"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "PostgreSQL"
+      ]
     },
     {
       "name": "Java",
       "level": "Intermediate",
-      "keywords": ["REST APIs", "Backend"]
+      "keywords": [
+        "REST APIs",
+        "Backend"
+      ]
     },
     {
       "name": "Databases & Cloud",
       "level": "Advanced",
-      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"]
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "AWS"
+      ]
     },
     {
       "name": "AI Productivity Tools",
       "level": "Advanced",
-      "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Git",
+        "Jira",
+        "CI/CD"
+      ]
     },
     {
       "name": "Project Management & Technical Leadership",
       "level": "Advanced",
-      "keywords": ["Scrum", "Agile", "Jira Service Desk", "SLA 99%+", "IT Operations", "On-Call Shifts"]
+      "keywords": [
+        "Scrum",
+        "Agile",
+        "Jira Service Desk",
+        "SLA 99%+",
+        "IT Operations",
+        "On-Call Shifts"
+      ]
     }
   ],
   "languages": [
@@ -175,7 +239,7 @@
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "Intermediate"
     },
     {
       "language": "French",

@@ -40,7 +40,16 @@
         "Completé el Bootcamp Backend de MercadoLibre, adquiriendo profundo conocimiento técnico para comunicar eficazmente requerimientos entre equipos de ingeniería y stakeholders de producto.",
         "Integré herramientas de IA (Cursor, Claude) en flujos de trabajo del equipo, impulsando la productividad y reduciendo tiempos de entrega."
       ],
-      "keywords": ["Scrum", "Agile Delivery", "SLA 99%+", "Incident Management", "On-Call", "Stakeholder Communication", "Golang", "Jira"]
+      "keywords": [
+        "Scrum",
+        "Agile Delivery",
+        "SLA 99%+",
+        "Incident Management",
+        "On-Call",
+        "Stakeholder Communication",
+        "Golang",
+        "Jira"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -54,7 +63,13 @@
         "Coordiné la comunicación entre equipos de soporte, desarrollo y operaciones para la resolución ágil de incidentes críticos en producción.",
         "Identifiqué patrones recurrentes de errores y propuse mejoras de procesos que redujeron el tiempo promedio de resolución (MTTR)."
       ],
-      "keywords": ["Jira Service Desk", "SLA Management", "MTTR", "Incident Coordination", "ITIL"]
+      "keywords": [
+        "Jira Service Desk",
+        "SLA Management",
+        "MTTR",
+        "Incident Coordination",
+        "ITIL"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -69,7 +84,15 @@
         "Gestioné la integración con servicios AWS y Webhooks, coordinando con equipos de infraestructura y operaciones para despliegues en producción.",
         "Documenté procesos técnicos y generé reportes de avance para la visibilidad del equipo de producto y liderazgo."
       ],
-      "keywords": ["Agile", "Sprint Planning", "FastAPI", "Django", "PostgreSQL", "AWS", "Technical Documentation"]
+      "keywords": [
+        "Agile",
+        "Sprint Planning",
+        "FastAPI",
+        "Django",
+        "PostgreSQL",
+        "AWS",
+        "Technical Documentation"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -84,7 +107,15 @@
         "Coordiné con equipos globales la configuración de roles y accesos para aplicaciones corporativas sobre tecnología .NET, asegurando cumplimiento normativo.",
         "Documenté y mejoré procedimientos operativos estándar (SOPs) para la gestión de identidades y accesos."
       ],
-      "keywords": ["IT Governance", "Power BI", "Active Directory", "O365", "SOP", "Compliance", "KPIs"]
+      "keywords": [
+        "IT Governance",
+        "Power BI",
+        "Active Directory",
+        "O365",
+        "SOP",
+        "Compliance",
+        "KPIs"
+      ]
     },
     {
       "name": "Intexus",
@@ -97,7 +128,13 @@
         "Supervisé la disponibilidad de la infraestructura tecnológica, gestionando SLAs operativos y atención de requerimientos en Jira Help Desk.",
         "Generé reportes de rendimiento y disponibilidad de servicios para la toma de decisiones gerenciales."
       ],
-      "keywords": ["IT Operations", "Service Management", "Monitoring", "Jira Help Desk", "SLA"]
+      "keywords": [
+        "IT Operations",
+        "Service Management",
+        "Monitoring",
+        "Jira Help Desk",
+        "SLA"
+      ]
     }
   ],
   "certificates": [
@@ -145,32 +182,69 @@
     {
       "name": "Gestión de Proyectos",
       "level": "Avanzado",
-      "keywords": ["PMI / PMP®", "Scrum", "Kanban", "Agile Delivery", "Sprint Planning", "Retrospectivas"]
+      "keywords": [
+        "PMI / PMP®",
+        "Scrum",
+        "Kanban",
+        "Agile Delivery",
+        "Sprint Planning",
+        "Retrospectivas"
+      ]
     },
     {
       "name": "Gestión de Operaciones & SLAs",
       "level": "Avanzado",
-      "keywords": ["SLA 99%+", "Incident Management", "MTTR", "On-Call", "ITIL", "Jira Service Desk"]
+      "keywords": [
+        "SLA 99%+",
+        "Incident Management",
+        "MTTR",
+        "On-Call",
+        "ITIL",
+        "Jira Service Desk"
+      ]
     },
     {
       "name": "Liderazgo Técnico & Comunicación",
       "level": "Avanzado",
-      "keywords": ["Stakeholder Management", "Technical Documentation", "Cross-team Coordination", "KPIs"]
+      "keywords": [
+        "Stakeholder Management",
+        "Technical Documentation",
+        "Cross-team Coordination",
+        "KPIs"
+      ]
     },
     {
       "name": "Reporteo & Análisis",
       "level": "Avanzado",
-      "keywords": ["Power BI", "Dashboards", "Métricas Operativas", "Data-Driven Decisions"]
+      "keywords": [
+        "Power BI",
+        "Dashboards",
+        "Métricas Operativas",
+        "Data-Driven Decisions"
+      ]
     },
     {
       "name": "Fundamentos Técnicos",
       "level": "Avanzado",
-      "keywords": ["Golang", "Python", "PostgreSQL", "REST APIs", "AWS", "CI/CD"]
+      "keywords": [
+        "Golang",
+        "Python",
+        "PostgreSQL",
+        "REST APIs",
+        "AWS",
+        "CI/CD"
+      ]
     },
     {
       "name": "Herramientas & Productividad",
       "level": "Avanzado",
-      "keywords": ["Jira Software", "Git", "Cursor", "Claude", "Confluence"]
+      "keywords": [
+        "Jira Software",
+        "Git",
+        "Cursor",
+        "Claude",
+        "Confluence"
+      ]
     }
   ],
   "languages": [
@@ -180,7 +254,7 @@
     },
     {
       "language": "Inglés",
-      "fluency": "Avanzado"
+      "fluency": "Intermedio"
     },
     {
       "language": "Francés",

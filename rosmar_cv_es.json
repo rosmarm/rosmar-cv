@@ -39,7 +39,18 @@
         "Integré herramientas de IA (Cursor y Claude) en el flujo diario de trabajo para acelerar la construcción de endpoints, refactorizar código legacy y elevar la cobertura de pruebas unitarias.",
         "Gestioné guardias rotativas (on-call) y monitoreo en tiempo real, resolviendo incidencias operativas para proteger la estabilidad de los servicios en producción."
       ],
-      "keywords": ["Golang", "Go", "Microservicios", "RESTful APIs", "Java", "Python", "Cursor", "Claude", "SLA 99%+", "On-Call"]
+      "keywords": [
+        "Golang",
+        "Go",
+        "Microservicios",
+        "RESTful APIs",
+        "Java",
+        "Python",
+        "Cursor",
+        "Claude",
+        "SLA 99%+",
+        "On-Call"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -52,7 +63,13 @@
         "Resolví incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo estrictamente con los acuerdos de nivel de servicio (SLA).",
         "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción."
       ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA"]
+      "keywords": [
+        "Jira Service Desk",
+        "Django",
+        "PostgreSQL",
+        "Debugging",
+        "SLA"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -66,7 +83,14 @@
         "Diseñé modelos de datos relacionales y optimicé consultas SQL en PostgreSQL para mejorar los tiempos de respuesta del sistema.",
         "Implementé integraciones backend con servicios en la nube de AWS y consumo de Webhooks para el procesamiento de datos en tiempo real."
       ],
-      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Python",
+        "PostgreSQL",
+        "AWS",
+        "Webhooks"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -80,7 +104,13 @@
         "Construí tableros interactivos en Power BI para auditar accesos y brindar visibilidad operativa al equipo de seguridad.",
         "Brindé soporte en la configuración de roles y accesos para aplicaciones desarrolladas sobre tecnología .NET."
       ],
-      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+      "keywords": [
+        "Active Directory",
+        "O365",
+        "Power BI",
+        ".NET",
+        "Security"
+      ]
     },
     {
       "name": "Intexus",
@@ -92,7 +122,11 @@
       "highlights": [
         "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
       ],
-      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+      "keywords": [
+        "IT Operations",
+        "Monitoring",
+        "Jira Help Desk"
+      ]
     }
   ],
   "certificates": [
@@ -140,32 +174,62 @@
     {
       "name": "Golang",
       "level": "Avanzado",
-      "keywords": ["Go", "Backend", "Microservicios", "REST APIs"]
+      "keywords": [
+        "Go",
+        "Backend",
+        "Microservicios",
+        "REST APIs"
+      ]
     },
     {
       "name": "Python",
       "level": "Avanzado",
-      "keywords": ["FastAPI", "Django", "PostgreSQL"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "PostgreSQL"
+      ]
     },
     {
       "name": "Java",
       "level": "Intermedio",
-      "keywords": ["REST APIs", "Backend"]
+      "keywords": [
+        "REST APIs",
+        "Backend"
+      ]
     },
     {
       "name": "Bases de Datos & Cloud",
       "level": "Avanzado",
-      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS"]
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "AWS"
+      ]
     },
     {
       "name": "Herramientas de IA & Productividad",
       "level": "Avanzado",
-      "keywords": ["Cursor", "Claude", "Git", "Jira", "CI/CD"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Git",
+        "Jira",
+        "CI/CD"
+      ]
     },
     {
       "name": "Gestión de Proyectos & Liderazgo Técnico",
       "level": "Avanzado",
-      "keywords": ["Scrum", "Agile", "Jira Service Desk", "SLA 99%+", "Operaciones TI", "Guardias Operativas"]
+      "keywords": [
+        "Scrum",
+        "Agile",
+        "Jira Service Desk",
+        "SLA 99%+",
+        "Operaciones TI",
+        "Guardias Operativas"
+      ]
     }
   ],
   "languages": [
@@ -175,7 +239,7 @@
     },
     {
       "language": "Inglés",
-      "fluency": "Avanzado"
+      "fluency": "Intermedio"
     },
     {
       "language": "Francés",

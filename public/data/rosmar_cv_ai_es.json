@@ -40,7 +40,17 @@
         "Completé el Bootcamp Backend de MercadoLibre, dominando arquitectura distribuida en Go, concurrencia y buenas prácticas de ingeniería aplicables al despliegue de servicios de inferencia.",
         "Gestioné guardias operativas (on-call) y monitoreo en tiempo real, aplicando análisis asistido por IA para la detección rápida de anomalías y resolución de incidencias."
       ],
-      "keywords": ["Cursor", "Claude", "Antigravity", "LLM Integration", "Golang", "Python", "Prompt Engineering", "Microservicios", "AI-Augmented Dev"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Antigravity",
+        "LLM Integration",
+        "Golang",
+        "Python",
+        "Prompt Engineering",
+        "Microservicios",
+        "AI-Augmented Dev"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -54,7 +64,14 @@
         "Depuré código en servicios Django, aplicando análisis sistemático de logs y datos para resolver incidencias complejas en entornos productivos.",
         "Documenté patrones de error y propuse pipelines de detección temprana que redujeron la recurrencia de incidentes."
       ],
-      "keywords": ["Data Analysis", "Pattern Detection", "PostgreSQL", "Django", "Debugging", "Log Analysis"]
+      "keywords": [
+        "Data Analysis",
+        "Pattern Detection",
+        "PostgreSQL",
+        "Django",
+        "Debugging",
+        "Log Analysis"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -69,7 +86,17 @@
         "Implementé integraciones con AWS (Lambda, S3, SQS) y consumo de Webhooks, creando pipelines de datos en tiempo real para procesamiento y transformación de información.",
         "Automaticé flujos de validación de datos y generación de reportes con scripts en Python, reduciendo tiempos de procesamiento manual."
       ],
-      "keywords": ["FastAPI", "Django", "Python", "Data Pipelines", "PostgreSQL", "AWS Lambda", "S3", "SQS", "Real-time Processing"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Python",
+        "Data Pipelines",
+        "PostgreSQL",
+        "AWS Lambda",
+        "S3",
+        "SQS",
+        "Real-time Processing"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -83,7 +110,13 @@
         "Administré accesos y permisos de usuarios a escala corporativa, integrando Active Directory y Microsoft Office 365.",
         "Automaticé procesos repetitivos de gestión de identidades, optimizando la eficiencia operativa del equipo de seguridad."
       ],
-      "keywords": ["Power BI", "Data Visualization", "Active Directory", "O365", "Process Automation"]
+      "keywords": [
+        "Power BI",
+        "Data Visualization",
+        "Active Directory",
+        "O365",
+        "Process Automation"
+      ]
     },
     {
       "name": "Intexus",
@@ -95,7 +128,11 @@
       "highlights": [
         "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
       ],
-      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk"]
+      "keywords": [
+        "IT Operations",
+        "Monitoring",
+        "Jira Help Desk"
+      ]
     }
   ],
   "certificates": [
@@ -143,32 +180,74 @@
     {
       "name": "Inteligencia Artificial & LLMs",
       "level": "Avanzado",
-      "keywords": ["Cursor", "Claude", "Antigravity", "Prompt Engineering", "AI Agents", "LLM APIs", "OpenAI", "Anthropic"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Antigravity",
+        "Prompt Engineering",
+        "AI Agents",
+        "LLM APIs",
+        "OpenAI",
+        "Anthropic"
+      ]
     },
     {
       "name": "Python & Frameworks",
       "level": "Avanzado",
-      "keywords": ["FastAPI", "Django", "pytest", "Scripting", "Data Pipelines", "Automatización"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "pytest",
+        "Scripting",
+        "Data Pipelines",
+        "Automatización"
+      ]
     },
     {
       "name": "Backend & Arquitectura",
       "level": "Avanzado",
-      "keywords": ["Golang", "Microservicios", "REST APIs", "Java", "CI/CD"]
+      "keywords": [
+        "Golang",
+        "Microservicios",
+        "REST APIs",
+        "Java",
+        "CI/CD"
+      ]
     },
     {
       "name": "Datos & Cloud",
       "level": "Avanzado",
-      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS Lambda", "S3", "SQS", "Docker"]
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "AWS Lambda",
+        "S3",
+        "SQS",
+        "Docker"
+      ]
     },
     {
       "name": "Análisis de Datos & Visualización",
       "level": "Avanzado",
-      "keywords": ["Power BI", "Dashboards", "Data Analysis", "Log Analysis", "Pattern Detection"]
+      "keywords": [
+        "Power BI",
+        "Dashboards",
+        "Data Analysis",
+        "Log Analysis",
+        "Pattern Detection"
+      ]
     },
     {
       "name": "Herramientas & Productividad",
       "level": "Avanzado",
-      "keywords": ["Git", "Jira", "Scrum", "Agile", "Technical Documentation"]
+      "keywords": [
+        "Git",
+        "Jira",
+        "Scrum",
+        "Agile",
+        "Technical Documentation"
+      ]
     }
   ],
   "languages": [
@@ -178,7 +257,7 @@
     },
     {
       "language": "Inglés",
-      "fluency": "Avanzado"
+      "fluency": "Intermedio"
     },
     {
       "language": "Francés",

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Rosmar Alejandra Mendoza Canchica",
-    "label": "Senior Backend Developer | Golang & Python | Distributed Systems",
+    "label": "Semi Senior Backend Developer | Golang & Python | Distributed Systems",
     "image": "",
     "email": "mendozarosmar@gmail.com",
     "phone": "",
@@ -40,7 +40,19 @@
         "Integré herramientas de IA (Cursor y Claude) en el flujo diario de trabajo para acelerar la construcción de endpoints, refactorizar código legacy y elevar la cobertura de pruebas unitarias.",
         "Gestioné guardias rotativas (on-call) y monitoreo en tiempo real con Datadog y New Relic, resolviendo incidencias operativas para proteger la estabilidad de los servicios en producción."
       ],
-      "keywords": ["Golang", "Go", "Microservicios", "RESTful APIs", "Java", "Python", "Concurrencia", "PostgreSQL", "SLA 99%+", "On-Call", "CI/CD"]
+      "keywords": [
+        "Golang",
+        "Go",
+        "Microservicios",
+        "RESTful APIs",
+        "Java",
+        "Python",
+        "Concurrencia",
+        "PostgreSQL",
+        "SLA 99%+",
+        "On-Call",
+        "CI/CD"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -54,7 +66,14 @@
         "Depuré código en servicios de Django y analicé consultas en PostgreSQL para diagnosticar y solucionar errores directamente en producción.",
         "Identificé y documenté patrones recurrentes de errores, proponiendo refactorizaciones que redujeron la carga de tickets de soporte."
       ],
-      "keywords": ["Jira Service Desk", "Django", "PostgreSQL", "Debugging", "SLA", "Python"]
+      "keywords": [
+        "Jira Service Desk",
+        "Django",
+        "PostgreSQL",
+        "Debugging",
+        "SLA",
+        "Python"
+      ]
     },
     {
       "name": "Mo Technologies",
@@ -69,7 +88,15 @@
         "Implementé integraciones backend con servicios en la nube de AWS (Lambda, S3, SQS) y consumo de Webhooks para el procesamiento de datos en tiempo real.",
         "Escribí pruebas unitarias y de integración con pytest, asegurando la estabilidad y mantenibilidad del código en cada release."
       ],
-      "keywords": ["FastAPI", "Django", "Python", "PostgreSQL", "AWS", "Webhooks", "pytest"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Python",
+        "PostgreSQL",
+        "AWS",
+        "Webhooks",
+        "pytest"
+      ]
     },
     {
       "name": "Scotiabank GBS",
@@ -83,7 +110,13 @@
         "Construí tableros interactivos en Power BI para auditar accesos y brindar visibilidad operativa al equipo de seguridad.",
         "Brindé soporte en la configuración de roles y accesos para aplicaciones desarrolladas sobre tecnología .NET."
       ],
-      "keywords": ["Active Directory", "O365", "Power BI", ".NET", "Security"]
+      "keywords": [
+        "Active Directory",
+        "O365",
+        "Power BI",
+        ".NET",
+        "Security"
+      ]
     },
     {
       "name": "Intexus",
@@ -95,7 +128,12 @@
       "highlights": [
         "Supervisé la disponibilidad de la infraestructura tecnológica y gestioné la atención de requerimientos en Jira Help Desk."
       ],
-      "keywords": ["IT Operations", "Monitoring", "Jira Help Desk", "Infrastructure"]
+      "keywords": [
+        "IT Operations",
+        "Monitoring",
+        "Jira Help Desk",
+        "Infrastructure"
+      ]
     }
   ],
   "certificates": [
@@ -143,32 +181,66 @@
     {
       "name": "Golang",
       "level": "Avanzado",
-      "keywords": ["Go", "Goroutines", "Concurrencia", "Microservicios", "REST APIs"]
+      "keywords": [
+        "Go",
+        "Goroutines",
+        "Concurrencia",
+        "Microservicios",
+        "REST APIs"
+      ]
     },
     {
       "name": "Python",
       "level": "Avanzado",
-      "keywords": ["FastAPI", "Django", "pytest", "Scripting"]
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "pytest",
+        "Scripting"
+      ]
     },
     {
       "name": "Java",
       "level": "Intermedio",
-      "keywords": ["REST APIs", "Backend", "Spring Boot"]
+      "keywords": [
+        "REST APIs",
+        "Backend",
+        "Spring Boot"
+      ]
     },
     {
       "name": "Bases de Datos & Cloud",
       "level": "Avanzado",
-      "keywords": ["PostgreSQL", "MySQL", "SQL", "AWS", "Docker"]
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "AWS",
+        "Docker"
+      ]
     },
     {
       "name": "Arquitectura & DevOps",
       "level": "Avanzado",
-      "keywords": ["Microservicios", "REST APIs", "CI/CD", "Git", "Datadog", "New Relic"]
+      "keywords": [
+        "Microservicios",
+        "REST APIs",
+        "CI/CD",
+        "Git",
+        "Datadog",
+        "New Relic"
+      ]
     },
     {
       "name": "Herramientas de IA & Productividad",
       "level": "Avanzado",
-      "keywords": ["Cursor", "Claude", "Jira", "Scrum", "On-Call"]
+      "keywords": [
+        "Cursor",
+        "Claude",
+        "Jira",
+        "Scrum",
+        "On-Call"
+      ]
     }
   ],
   "languages": [
@@ -178,7 +250,7 @@
     },
     {
       "language": "Inglés",
-      "fluency": "Avanzado"
+      "fluency": "Intermedio"
     },
     {
       "language": "Francés",
