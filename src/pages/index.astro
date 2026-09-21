@@ -18,7 +18,7 @@ import JsonModal from '../components/JsonModal.astro';
     <section class="space-y-6">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
-          <span class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-sm">
+          <span class="w-8 h-8 rounded-lg bg-violet-500/10 text-violet-700 dark:text-violet-400 flex items-center justify-center text-sm">
             <i class="fas fa-briefcase"></i>
           </span>
           <span data-i18n="sec_experience">Experiencia Profesional</span>
@@ -78,7 +78,7 @@ import JsonModal from '../components/JsonModal.astro';
     <!-- Certifications & Licenses Section -->
     <section class="space-y-6 print-break-inside-avoid">
       <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 print-text-dark flex items-center space-x-3">
-        <span class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm">
+        <span class="w-8 h-8 rounded-lg bg-violet-500/10 text-violet-700 dark:text-violet-400 flex items-center justify-center text-sm">
           <i class="fas fa-certificate"></i>
         </span>
         <span data-i18n="sec_certificates">Certificaciones y Licencias</span>
@@ -110,13 +110,13 @@ import JsonModal from '../components/JsonModal.astro';
         navSubtitle: { es: 'Backend Developer', en: 'Backend Developer' },
         stats: {
           es: [
-            { value: 'MercadoLibre', label: 'Bootcamp Golang', color: 'sky' },
+            { value: 'MercadoLibre', label: 'Bootcamp Golang', color: 'violet' },
             { value: '99%+ SLA', label: 'Alta Disponibilidad', color: 'emerald' },
             { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
             { value: 'Cursor & Claude', label: 'IA Asistida', color: 'amber' }
           ],
           en: [
-            { value: 'MercadoLibre', label: 'Golang Bootcamp', color: 'sky' },
+            { value: 'MercadoLibre', label: 'Golang Bootcamp', color: 'violet' },
             { value: '99%+ SLA', label: 'High Availability', color: 'emerald' },
             { value: 'Go & Python', label: 'FastAPI & Django', color: 'purple' },
             { value: 'Cursor & Claude', label: 'AI-Assisted Dev', color: 'amber' }
@@ -128,13 +128,13 @@ import JsonModal from '../components/JsonModal.astro';
         navSubtitle: { es: 'Project Manager', en: 'Project Manager' },
         stats: {
           es: [
-            { value: 'PMI / PMP®', label: 'Certificación PM', color: 'sky' },
+            { value: 'PMI / PMP®', label: 'Certificación PM', color: 'violet' },
             { value: '99%+ SLA', label: 'Gestión de Incidentes', color: 'emerald' },
             { value: 'Scrum & Agile', label: 'Delivery Ágil', color: 'purple' },
             { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
           ],
           en: [
-            { value: 'PMI / PMP®', label: 'PM Certification', color: 'sky' },
+            { value: 'PMI / PMP®', label: 'PM Certification', color: 'violet' },
             { value: '99%+ SLA', label: 'Incident Management', color: 'emerald' },
             { value: 'Scrum & Agile', label: 'Agile Delivery', color: 'purple' },
             { value: 'Power BI', label: 'KPIs & Dashboards', color: 'amber' }
@@ -146,13 +146,13 @@ import JsonModal from '../components/JsonModal.astro';
         navSubtitle: { es: 'Ingeniera de IA', en: 'AI Engineer' },
         stats: {
           es: [
-            { value: 'Claude & Cursor', label: 'IA Generativa', color: 'sky' },
+            { value: 'Claude & Cursor', label: 'IA Generativa', color: 'violet' },
             { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
             { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
             { value: 'Automatización', label: 'Agentes & Scripts', color: 'amber' }
           ],
           en: [
-            { value: 'Claude & Cursor', label: 'Generative AI', color: 'sky' },
+            { value: 'Claude & Cursor', label: 'Generative AI', color: 'violet' },
             { value: 'Python', label: 'FastAPI & Pipelines', color: 'emerald' },
             { value: 'LLM APIs', label: 'Prompt Engineering', color: 'purple' },
             { value: 'Automation', label: 'Agents & Scripts', color: 'amber' }
@@ -269,7 +269,7 @@ import JsonModal from '../components/JsonModal.astro';
 
     function updateProfileButtons() {
       const profiles = ['backend', 'pm', 'ai'];
-      const activeClass = "px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+      const activeClass = "px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-violet-600 dark:bg-violet-500 text-white dark:text-slate-950 shadow-md";
       const inactiveClass = "px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
       profiles.forEach(p => {
         const btn = document.getElementById(`btn-profile-${p}`);
@@ -280,7 +280,7 @@ import JsonModal from '../components/JsonModal.astro';
     function updateLangButtons() {
       const btnEs = document.getElementById('btn-lang-es');
       const btnEn = document.getElementById('btn-lang-en');
-      const activeClass = "px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md";
+      const activeClass = "px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-violet-600 dark:bg-violet-500 text-white dark:text-slate-950 shadow-md";
       const inactiveClass = "px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200";
       if (btnEs) btnEs.className = (currentLang === 'es') ? activeClass : inactiveClass;
       if (btnEn) btnEn.className = (currentLang === 'en') ? activeClass : inactiveClass;
@@ -348,14 +348,14 @@ import JsonModal from '../components/JsonModal.astro';
       const expContainer = document.getElementById('experience-container');
       if (expContainer && data.work) {
         expContainer.innerHTML = data.work.map((w) => `
-          <div class="glass-panel print-card rounded-2xl p-4 sm:p-6 lg:p-7 relative transition-all duration-200 hover:border-sky-500/50">
+          <div class="glass-panel print-card rounded-2xl p-4 sm:p-6 lg:p-7 relative transition-all duration-200 hover:border-violet-500/50">
             <div class="flex flex-col gap-1.5 sm:gap-2 mb-3 sm:mb-4">
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2">
-                <span class="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400 bg-sky-100 dark:bg-sky-500/10 border border-sky-300 dark:border-sky-500/30 px-2 sm:px-2.5 py-0.5 rounded-full w-fit">
+                <span class="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 bg-purple-100/80 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800/50 px-2 sm:px-2.5 py-0.5 rounded-full w-fit">
                   ${w.name}
                 </span>
-                <div class="text-[10px] sm:text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl border border-slate-200 dark:border-slate-700/60 w-fit shadow-xs shrink-0">
-                  <i class="far fa-calendar-alt mr-1 sm:mr-1.5 text-sky-600 dark:text-sky-400"></i> ${formatDates(w.startDate, w.endDate)}
+                <div class="text-[10px] sm:text-xs font-mono text-slate-600 dark:text-slate-400 bg-purple-50/60 dark:bg-slate-800/80 px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl border border-purple-200/60 dark:border-purple-900/40 w-fit shadow-xs shrink-0">
+                  <i class="far fa-calendar-alt mr-1 sm:mr-1.5 text-violet-600 dark:text-violet-400"></i> ${formatDates(w.startDate, w.endDate)}
                 </div>
               </div>
               <h3 class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 dark:text-slate-100 print-text-dark leading-snug">
@@ -370,16 +370,16 @@ import JsonModal from '../components/JsonModal.astro';
             <ul class="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 text-[11px] sm:text-sm text-slate-700 dark:text-slate-300 print-text-muted">
               ${w.highlights.map(h => `
                 <li class="flex items-start space-x-1.5 sm:space-x-2">
-                  <span class="text-sky-600 dark:text-sky-400 mt-0.5 sm:mt-1 text-[10px] sm:text-xs shrink-0">•</span>
+                  <span class="text-violet-600 dark:text-violet-400 mt-0.5 sm:mt-1 text-[10px] sm:text-xs shrink-0">•</span>
                   <span class="leading-relaxed">${h}</span>
                 </li>
               `).join('')}
             </ul>
 
             ${w.keywords ? `
-            <div class="flex flex-wrap gap-1 sm:gap-1.5 pt-2 sm:pt-3 border-t border-slate-200 dark:border-slate-800/60 no-print">
+            <div class="flex flex-wrap gap-1 sm:gap-1.5 pt-2 sm:pt-3 border-t border-purple-200/60 dark:border-purple-900/40 no-print">
               ${w.keywords.map(k => `
-                <span class="px-1.5 sm:px-2.5 py-0.5 text-[10px] sm:text-xs font-mono rounded-md bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 font-semibold">
+                <span class="px-1.5 sm:px-2.5 py-0.5 text-[10px] sm:text-xs font-mono rounded-md bg-purple-50 dark:bg-slate-900/80 text-purple-900 dark:text-purple-200 border border-purple-200 dark:border-purple-900/40 font-semibold">
                   #${k}
                 </span>
               `).join('')}
@@ -396,7 +396,7 @@ import JsonModal from '../components/JsonModal.astro';
           <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-2 sm:space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-1.5">
               <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-sm sm:text-base flex items-center space-x-1.5 sm:space-x-2 min-w-0">
-                <i class="fas fa-check-circle text-sky-600 dark:text-sky-400 text-xs sm:text-sm shrink-0"></i>
+                <i class="fas fa-check-circle text-violet-600 dark:text-violet-400 text-xs sm:text-sm shrink-0"></i>
                 <span class="truncate">${s.name}</span>
               </h4>
               <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 rounded-full bg-purple-100 dark:bg-purple-500/10 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-500/20 font-bold shrink-0">
@@ -405,7 +405,7 @@ import JsonModal from '../components/JsonModal.astro';
             </div>
             <div class="flex flex-wrap gap-1 sm:gap-1.5">
               ${s.keywords.map(k => `
-                <span class="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-[10px] sm:text-xs font-mono text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 font-semibold">
+                <span class="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-xl bg-purple-50/70 dark:bg-slate-800/80 text-[10px] sm:text-xs font-mono text-purple-900 dark:text-slate-200 border border-purple-200 dark:border-purple-900/40 font-semibold">
                   ${k}
                 </span>
               `).join('')}
@@ -423,7 +423,7 @@ import JsonModal from '../components/JsonModal.astro';
               <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-xs sm:text-base leading-snug">${e.institution}</h4>
               <span class="text-[10px] sm:text-xs font-mono text-slate-500 dark:text-slate-400 font-medium shrink-0">${e.startDate ? formatDates(e.startDate, e.endDate) : ''}</span>
             </div>
-            <p class="text-[11px] sm:text-sm text-sky-600 dark:text-sky-400 font-mono font-semibold leading-snug">${e.area}</p>
+            <p class="text-[11px] sm:text-sm text-violet-700 dark:text-violet-400 font-mono font-semibold leading-snug">${e.area}</p>
             <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400">${e.studyType}</p>
           </div>
         `).join('');
@@ -435,7 +435,7 @@ import JsonModal from '../components/JsonModal.astro';
         langContainer.innerHTML = data.languages.map(l => `
           <div class="glass-panel print-card rounded-2xl p-3 sm:p-4 flex items-center justify-between">
             <span class="font-semibold text-slate-900 dark:text-slate-200 text-xs sm:text-sm">${l.language}</span>
-            <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-sky-700 dark:text-sky-400 border border-slate-200 dark:border-slate-700/60 font-semibold">
+            <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-xl bg-purple-50 dark:bg-slate-800 text-violet-700 dark:text-violet-300 border border-purple-200 dark:border-purple-900/40 font-semibold">
               ${l.fluency}
             </span>
           </div>
@@ -446,10 +446,10 @@ import JsonModal from '../components/JsonModal.astro';
       const certContainer = document.getElementById('certificates-container');
       if (certContainer && data.certificates) {
         certContainer.innerHTML = data.certificates.map(c => `
-          <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-1.5 sm:space-y-2 flex flex-col justify-between hover:border-blue-500/50 transition-all">
+          <div class="glass-panel print-card rounded-2xl p-3.5 sm:p-5 space-y-1.5 sm:space-y-2 flex flex-col justify-between hover:border-violet-500/50 transition-all">
             <div class="space-y-1.5 sm:space-y-2">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-500/20 font-bold">
+                <span class="text-[10px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 rounded-full bg-purple-100 dark:bg-purple-500/10 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-500/20 font-bold">
                   ${c.date ? formatSingleDate(c.date, currentLang) : 'Vigente'}
                 </span>
                 <i class="fas fa-award text-amber-500 text-sm sm:text-base"></i>
@@ -457,7 +457,7 @@ import JsonModal from '../components/JsonModal.astro';
               <h4 class="font-bold text-slate-900 dark:text-slate-100 print-text-dark text-xs sm:text-sm lg:text-base leading-snug">
                 ${c.name}
               </h4>
-              <p class="text-[10px] sm:text-xs font-semibold text-sky-600 dark:text-sky-400 font-mono leading-snug">${c.issuer}</p>
+              <p class="text-[10px] sm:text-xs font-semibold text-violet-700 dark:text-violet-400 font-mono leading-snug">${c.issuer}</p>
               <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-400 leading-relaxed">${c.summary}</p>
             </div>
           </div>
@@ -472,15 +472,16 @@ import JsonModal from '../components/JsonModal.astro';
       if (!container || !stats) return;
 
       const colorMap = {
-        sky:     'text-sky-700 dark:text-sky-400',
+        violet:  'text-violet-700 dark:text-violet-400',
+        sky:     'text-violet-700 dark:text-violet-400',
         emerald: 'text-emerald-700 dark:text-emerald-400',
         purple:  'text-purple-700 dark:text-purple-400',
         amber:   'text-amber-700 dark:text-amber-400'
       };
 
       container.innerHTML = stats.map(s => `
-        <div class="p-2 sm:p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center shadow-xs overflow-hidden">
-          <div class="text-xs sm:text-xl lg:text-2xl font-extrabold ${colorMap[s.color] || colorMap.sky} font-mono truncate">${s.value}</div>
+        <div class="p-2 sm:p-3.5 rounded-2xl bg-purple-50/40 dark:bg-slate-900/50 border border-purple-200/60 dark:border-purple-900/40 text-center shadow-xs overflow-hidden">
+          <div class="text-xs sm:text-xl lg:text-2xl font-extrabold ${colorMap[s.color] || colorMap.violet} font-mono truncate">${s.value}</div>
           <div class="text-[9px] sm:text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-medium truncate">${s.label}</div>
         </div>
       `).join('');

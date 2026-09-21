@@ -1,57 +1,57 @@
 ---
 ---
 
-<header class="sticky top-0 z-50 glass-panel border-b border-slate-200 dark:border-slate-800/80 transition-colors duration-300 no-print">
+<header class="sticky top-0 z-50 glass-panel border-b border-purple-200/60 dark:border-purple-900/40 transition-colors duration-300 no-print">
   <div class="max-w-6xl mx-auto px-3 sm:px-6 py-2 sm:py-0 sm:h-16 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
     <!-- Brand Logo -->
     <a href="#" class="flex items-center space-x-2 sm:space-x-3 group shrink-0">
-      <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-extrabold text-white text-base sm:text-lg shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+      <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-purple-600 to-fuchsia-600 flex items-center justify-center font-extrabold text-white text-base sm:text-lg shadow-lg shadow-purple-500/25 group-hover:scale-105 transition-transform">
         RM
       </div>
       <div class="hidden xs:block sm:block">
         <span class="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 tracking-tight block leading-none">Rosmar Mendoza</span>
-        <span id="nav-subtitle" class="text-[10px] sm:text-xs font-mono text-sky-600 dark:text-sky-400 font-semibold">Backend Developer</span>
+        <span id="nav-subtitle" class="text-[10px] sm:text-xs font-mono text-violet-700 dark:text-violet-400 font-semibold">Backend Developer</span>
       </div>
     </a>
 
     <!-- Right Controls & Actions -->
     <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-end">
       <!-- Profile Selector -->
-      <div class="bg-slate-200/90 dark:bg-slate-800/80 p-0.5 sm:p-1 rounded-full border border-slate-300 dark:border-slate-700/60 flex items-center shadow-inner">
-        <button id="btn-profile-backend" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md" title="Backend Developer">
+      <div class="bg-purple-100/70 dark:bg-slate-800/80 p-0.5 sm:p-1 rounded-full border border-purple-200 dark:border-purple-900/40 flex items-center shadow-inner">
+        <button id="btn-profile-backend" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-violet-600 dark:bg-violet-500 text-white dark:text-slate-950 shadow-md" title="Backend Developer">
           <i class="fas fa-server mr-0.5 hidden sm:inline"></i> Backend
         </button>
-        <button id="btn-profile-pm" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200" title="Project Manager">
+        <button id="btn-profile-pm" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-violet-700 dark:hover:text-violet-300" title="Project Manager">
           <i class="fas fa-diagram-project mr-0.5 hidden sm:inline"></i> PM
         </button>
-        <button id="btn-profile-ai" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200" title="AI Engineer">
+        <button id="btn-profile-ai" class="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-violet-700 dark:hover:text-violet-300" title="AI Engineer">
           <i class="fas fa-brain mr-0.5 hidden sm:inline"></i> IA
         </button>
       </div>
 
       <!-- Language Toggle Switch -->
-      <div class="bg-slate-200/90 dark:bg-slate-800/80 p-0.5 sm:p-1 rounded-full border border-slate-300 dark:border-slate-700/60 flex items-center shadow-inner">
-        <button id="btn-lang-es" class="px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 shadow-md">
+      <div class="bg-purple-100/70 dark:bg-slate-800/80 p-0.5 sm:p-1 rounded-full border border-purple-200 dark:border-purple-900/40 flex items-center shadow-inner">
+        <button id="btn-lang-es" class="px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 bg-violet-600 dark:bg-violet-500 text-white dark:text-slate-950 shadow-md">
           ES
         </button>
-        <button id="btn-lang-en" class="px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200">
+        <button id="btn-lang-en" class="px-2 sm:px-3 py-0.5 sm:py-1 text-[9px] sm:text-xs font-bold rounded-full transition-all duration-200 text-slate-600 dark:text-slate-400 hover:text-violet-700 dark:hover:text-violet-300">
           EN
         </button>
       </div>
 
       <!-- Theme Toggle -->
-      <button id="btn-theme-toggle" class="p-1.5 sm:p-2 rounded-xl bg-slate-200/90 dark:bg-slate-800/80 border border-slate-300 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors" title="Cambiar Tema">
+      <button id="btn-theme-toggle" class="p-1.5 sm:p-2 rounded-xl bg-purple-100/70 dark:bg-slate-800/80 border border-purple-200 dark:border-purple-900/40 text-slate-700 dark:text-slate-300 hover:text-violet-700 dark:hover:text-white transition-colors" title="Cambiar Tema">
         <i id="theme-icon" class="fas fa-moon text-xs sm:text-sm"></i>
       </button>
 
       <!-- JSON Data Button -->
-      <button id="btn-open-json" class="hidden sm:flex items-center space-x-2 px-3 py-1.5 text-xs font-mono font-semibold rounded-xl bg-slate-200/90 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700/80 text-sky-700 dark:text-sky-400 border border-sky-500/30 transition-all shadow-sm">
+      <button id="btn-open-json" class="hidden sm:flex items-center space-x-2 px-3 py-1.5 text-xs font-mono font-semibold rounded-xl bg-purple-100/70 dark:bg-slate-800/80 hover:bg-purple-200/70 dark:hover:bg-purple-950/40 text-violet-700 dark:text-violet-300 border border-violet-400/40 transition-all shadow-sm">
         <i class="fas fa-code"></i>
         <span>JSON</span>
       </button>
 
       <!-- Print / PDF Button -->
-      <button id="btn-print" class="flex items-center space-x-1 sm:space-x-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[9px] sm:text-xs font-semibold rounded-xl bg-sky-600 hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950 shadow-lg shadow-sky-500/25 transition-all font-medium">
+      <button id="btn-print" class="flex items-center space-x-1 sm:space-x-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[9px] sm:text-xs font-semibold rounded-xl bg-violet-600 hover:bg-violet-700 dark:bg-violet-500 dark:hover:bg-violet-400 text-white dark:text-slate-950 shadow-lg shadow-violet-500/25 transition-all font-medium">
         <i class="fas fa-print"></i>
         <span data-i18n="btn_pdf">PDF</span>
       </button>
