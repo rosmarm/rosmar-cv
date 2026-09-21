@@ -138,6 +138,13 @@
   ],
   "certificates": [
     {
+      "name": "Cognitive Project Management in AI (CPMAI)™",
+      "date": "2026-09",
+      "issuer": "PMI - Project Management Institute",
+      "url": "https://www.pmi.org",
+      "summary": "Certificación en fundamentos y metodología CPMAI™ para la gestión ágil, gobernanza y entrega exitosa de proyectos de Inteligencia Artificial."
+    },
+    {
       "name": "Matrícula Profesional de Ingeniería en Informática",
       "date": "2024-06",
       "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
