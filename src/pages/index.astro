@@ -296,8 +296,9 @@ import JsonModal from '../components/JsonModal.astro';
       if (!filename) return;
 
       const base = getBasePath();
-      const primaryUrl = `${base}/${filename}`.replace(/\/+/g, '/');
-      const fallbackUrl = `${base}/data/${filename}`.replace(/\/+/g, '/');
+      const cacheBust = `?v=${Date.now()}`;
+      const primaryUrl = `${base}/${filename}`.replace(/\/+/g, '/') + cacheBust;
+      const fallbackUrl = `${base}/data/${filename}`.replace(/\/+/g, '/') + cacheBust;
 
       fetch(primaryUrl)
         .then(r => {
