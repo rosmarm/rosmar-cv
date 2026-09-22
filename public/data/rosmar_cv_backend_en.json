@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Computer Engineer and Backend Developer with 4+ years of experience designing and scaling high-traffic microservices and RESTful APIs in Golang, Python, and Java. Proven track record at hyper-scale companies like MercadoLibre and the Fintech sector, ensuring 99%+ availability SLAs, efficient concurrency, and relational database optimization (PostgreSQL). Specialized in distributed architectures, CI/CD, and AI-assisted development.",
+    "summary": "Systems Engineer and Backend Developer with 4+ years of experience designing and scaling high-traffic microservices and RESTful APIs in Golang, Python, and Java. Proven track record at hyper-scale companies like MercadoLibre and the Fintech sector, ensuring 99%+ availability SLAs, efficient concurrency, and relational database optimization (PostgreSQL). Specialized in distributed architectures, CI/CD, and AI-assisted development.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -145,7 +145,7 @@
       "summary": "Certification in CPMAI™ methodology standards for agile management, governance, and delivery of Artificial Intelligence projects."
     },
     {
-      "name": "Professional Engineering License (Computer Engineering)",
+      "name": "Professional Engineering License (Systems Engineering)",
       "date": "2024-06",
       "issuer": "COPNIA - National Professional Council of Engineering (Colombia)",
       "url": "https://tramites.copnia.gov.co",
@@ -170,7 +170,7 @@
     {
       "institution": "Universidad Nacional Experimental del Táchira",
       "url": "https://www.unet.edu.ve",
-      "area": "Computer Science / Informatics Engineer",
+      "area": "Systems / Informatics Engineering",
       "studyType": "Bachelor of Science",
       "startDate": "2014-01",
       "endDate": "2019-12"

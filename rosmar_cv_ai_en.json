@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Computer Engineer specializing in building backend applications for Artificial Intelligence and intelligent automation using Python and Golang. Experienced integrating foundational models (LLMs), autonomous agent frameworks, data processing pipelines, and advanced AI-assisted tools (Cursor, Claude, Antigravity, Anthropic/OpenAI APIs) to optimize workflows, automate complex tasks, and build high-impact software solutions at massive-scale environments like MercadoLibre.",
+    "summary": "Systems Engineer specializing in building backend applications for Artificial Intelligence and intelligent automation using Python and Golang. Experienced integrating foundational models (LLMs), autonomous agent frameworks, data processing pipelines, and advanced AI-assisted tools (Cursor, Claude, Antigravity, Anthropic/OpenAI APIs) to optimize workflows, automate complex tasks, and build high-impact software solutions at massive-scale environments like MercadoLibre.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -144,7 +144,7 @@
       "summary": "Certification in CPMAI™ methodology standards for agile management, governance, and delivery of Artificial Intelligence projects."
     },
     {
-      "name": "Professional Engineering License (Computer Engineering)",
+      "name": "Professional Engineering License (Systems Engineering)",
       "date": "2024-06",
       "issuer": "COPNIA - National Professional Council of Engineering (Colombia)",
       "url": "https://tramites.copnia.gov.co",
@@ -169,7 +169,7 @@
     {
       "institution": "Universidad Nacional Experimental del Táchira",
       "url": "https://www.unet.edu.ve",
-      "area": "Computer Science / Informatics Engineer",
+      "area": "Systems / Informatics Engineering",
       "studyType": "Bachelor of Science",
       "startDate": "2014-01",
       "endDate": "2019-12"

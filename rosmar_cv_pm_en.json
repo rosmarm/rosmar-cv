@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Computer Engineer certified by PMI (PMP® Intro & Fundamentals) with a strong software engineering background and experience leading technology initiatives at MercadoLibre, Fintech, and multinational banking (Scotiabank). Expert in orchestrating cross-functional teams using Agile methodologies (Scrum, Kanban), managing software delivery cycles, ensuring 99%+ SLA compliance, and bridging business requirements with technical architecture.",
+    "summary": "Systems Engineer certified by PMI (PMP® Intro & Fundamentals) with a strong software engineering background and experience leading technology initiatives at MercadoLibre, Fintech, and multinational banking (Scotiabank). Expert in orchestrating cross-functional teams using Agile methodologies (Scrum, Kanban), managing software delivery cycles, ensuring 99%+ SLA compliance, and bridging business requirements with technical architecture.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -153,7 +153,7 @@
       "summary": "Certification in project management fundamentals and global PMP standards."
     },
     {
-      "name": "Professional Engineering License (Computer Engineering)",
+      "name": "Professional Engineering License (Systems Engineering)",
       "date": "2024-06",
       "issuer": "COPNIA - National Professional Council of Engineering (Colombia)",
       "url": "https://tramites.copnia.gov.co",
@@ -171,7 +171,7 @@
     {
       "institution": "Universidad Nacional Experimental del Táchira",
       "url": "https://www.unet.edu.ve",
-      "area": "Computer Science / Informatics Engineer",
+      "area": "Systems / Informatics Engineering",
       "studyType": "Bachelor of Science",
       "startDate": "2014-01",
       "endDate": "2019-12"
