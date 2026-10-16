@@ -223,6 +223,13 @@ import JsonModal from '../components/JsonModal.astro';
       if (savedProfile && profileMeta[savedProfile]) currentProfile = savedProfile;
       if (savedLang && (savedLang === 'es' || savedLang === 'en')) currentLang = savedLang;
 
+      // URL parameters override (e.g. ?profile=pm or ?lang=en)
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlProfile = urlParams.get('profile');
+      const urlLang = urlParams.get('lang');
+      if (urlProfile && profileMeta[urlProfile]) currentProfile = urlProfile;
+      if (urlLang && (urlLang === 'es' || urlLang === 'en')) currentLang = urlLang;
+
       setupEventListeners();
       updateProfileButtons();
       updateLangButtons();

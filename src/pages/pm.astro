@@ -1,0 +1,322 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = '/rosmar-cv';
+---
+
+<BaseLayout 
+  title="Rosmar Mendoza — Technical Project Manager | PMP® Fundamentals • Agile • AI Delivery" 
+  description="Landing page de marca personal y perfil profesional de Rosmar Alejandra Mendoza Canchica como Technical Project Manager, certificada por el PMI y con sólida trayectoria técnica en MercadoLibre y Fintech.">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="pm-nav" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-purple-200/60 dark:border-purple-900/40 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href={`${base}/pm`} class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-purple-600 to-indigo-600 flex items-center justify-center font-extrabold text-white text-base shadow-lg shadow-purple-500/25 group-hover:scale-105 transition-transform">
+          RM
+        </div>
+        <div>
+          <span class="font-bold text-base text-slate-900 dark:text-white tracking-tight block">Rosmar Mendoza</span>
+          <span class="text-xs font-mono font-medium text-violet-600 dark:text-violet-400 block">Technical Project Manager</span>
+        </div>
+      </a>
+
+      <!-- Nav Links (desktop) -->
+      <div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+        <a href="#about" class="text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">Perfil</a>
+        <a href="#pillars" class="text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">Especialidades</a>
+        <a href="#experience" class="text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">Trayectoria</a>
+        <a href="#certifications" class="text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">Certificaciones</a>
+      </div>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-2">
+        <!-- Botón CV Interactivo en modo PM -->
+        <a href={`${base}/?profile=pm`} class="inline-flex items-center space-x-2 px-3.5 sm:px-4 py-2 text-xs font-bold rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-500/25 transition-all">
+          <i class="fas fa-diagram-project"></i>
+          <span>CV Interactivo (PM)</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 overflow-hidden">
+    <!-- Ambient Glows -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-1/4 left-1/4 w-[450px] h-[450px] bg-violet-500/15 dark:bg-violet-600/20 rounded-full filter blur-[140px] animate-pulse"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-indigo-500/15 dark:bg-indigo-600/20 rounded-full filter blur-[120px] animate-pulse" style="animation-delay: 1.5s;"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto text-center space-y-8">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+        <span>Disponible para roles de Technical Project Manager / Agile Lead</span>
+      </div>
+
+      <!-- Headline -->
+      <div class="space-y-4">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+          Rosmar Alejandra Mendoza
+          <br />
+          <span class="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            Technical Project Manager
+          </span>
+        </h1>
+        <p class="text-base sm:text-xl font-semibold text-violet-700 dark:text-violet-400 font-mono">
+          PMP® Fundamentals &bull; CPMAI™ (PMI) &bull; Agile Delivery &bull; SLA 99%+
+        </p>
+      </div>
+
+      <!-- Value Proposition -->
+      <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        Ingeniera en Informática certificada por el <strong class="text-slate-900 dark:text-white">PMI</strong> que conecta la ingeniería de software de alta escala con la disciplina de entrega ágil. Experiencia en <strong class="text-slate-900 dark:text-white">MercadoLibre</strong> y <strong class="text-slate-900 dark:text-white">Fintech</strong> facilitando squads Scrum, reduciendo fricciones operativas y liderando proyectos tecnológicos y de IA.
+      </p>
+
+      <!-- Key Metrics Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto pt-2">
+        <div class="glass-panel p-4 rounded-2xl text-center space-y-1">
+          <span class="text-2xl font-black text-violet-600 dark:text-violet-400">PMI / PMP®</span>
+          <p class="text-xs text-slate-600 dark:text-slate-400 font-semibold">Fundamentos & CPMAI™</p>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center space-y-1">
+          <span class="text-2xl font-black text-emerald-600 dark:text-emerald-400">99%+ SLA</span>
+          <p class="text-xs text-slate-600 dark:text-slate-400 font-semibold">Gestión de Incidentes</p>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center space-y-1">
+          <span class="text-2xl font-black text-purple-600 dark:text-purple-400">Scrum & Agile</span>
+          <p class="text-xs text-slate-600 dark:text-slate-400 font-semibold">Delivery & Sprints</p>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center space-y-1">
+          <span class="text-2xl font-black text-indigo-600 dark:text-indigo-400">Inglés B1</span>
+          <p class="text-xs text-slate-600 dark:text-slate-400 font-semibold">Intermedio CEFR</p>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-4">
+        <a href={`${base}/?profile=pm`} class="inline-flex items-center space-x-2 px-6 py-3 text-sm font-bold rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white shadow-xl shadow-violet-500/25 transition-all hover:scale-105">
+          <i class="fas fa-file-lines text-base"></i>
+          <span>Ver CV Completo en Modo PM</span>
+        </a>
+        <a href={`${base}/cv-one-page.html`} target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 text-sm font-bold rounded-2xl bg-purple-100/80 dark:bg-slate-800 text-violet-700 dark:text-violet-300 border border-violet-400/40 hover:bg-purple-200/80 dark:hover:bg-purple-950/40 transition-all hover:scale-105">
+          <i class="fas fa-file-invoice text-base"></i>
+          <span>CV Resumen (1 Hoja PDF)</span>
+        </a>
+        <a href="mailto:mendozarosmar@gmail.com" class="inline-flex items-center space-x-2 px-6 py-3 text-sm font-bold rounded-2xl glass-panel text-violet-700 dark:text-violet-300 hover:bg-violet-100 dark:hover:bg-violet-950/40 transition-all hover:scale-105">
+          <i class="fas fa-envelope text-base"></i>
+          <span>Agendar Conversación</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3 PILARES DE GESTIÓN ===== -->
+  <section id="pillars" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-10 border-t border-purple-200/40 dark:border-purple-900/30">
+    <div class="text-center space-y-3">
+      <span class="text-xs font-mono font-bold text-violet-600 dark:text-violet-400 uppercase tracking-widest">Especialidades</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+        Ejes de <span class="gradient-text">Liderazgo & Delivery</span>
+      </h2>
+      <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-600 dark:text-slate-400">
+        La ventaja de contar con una Project Manager que ha escrito código, depurado sistemas distribuidos y operado bajo guardias críticas.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Pilar 1 -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-4 hover:border-violet-500/50 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-violet-500/10 text-violet-600 dark:text-violet-400 flex items-center justify-center text-xl">
+          <i class="fas fa-tasks"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Delivery Ágil & Scrum</h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Facilitación de ceremonias ágiles (Sprint Planning, Dailies, Retrospectivas), priorización de backlog en Jira, gestión de dependencias técnicas y comunicación asertiva con stakeholders.
+        </p>
+        <div class="flex flex-wrap gap-1.5 pt-2">
+          <span class="px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 text-xs font-semibold">Scrum</span>
+          <span class="px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 text-xs font-semibold">Kanban</span>
+          <span class="px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 text-xs font-semibold">Jira</span>
+          <span class="px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 text-xs font-semibold">Confluence</span>
+        </div>
+      </div>
+
+      <!-- Pilar 2 -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-4 hover:border-emerald-500/50 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Operaciones & SLAs 99%+</h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Gobernanza de incidentes en producción, reducción de tiempo de recuperación (MTTR), protocolos On-Call y aseguramiento de contratos de nivel de servicio en plataformas críticas de alto tráfico.
+        </p>
+        <div class="flex flex-wrap gap-1.5 pt-2">
+          <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">SLA 99%+</span>
+          <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">Incident Mgmt</span>
+          <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">Datadog</span>
+          <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">ITIL</span>
+        </div>
+      </div>
+
+      <!-- Pilar 3 -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-4 hover:border-indigo-500/50 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Proyectos de IA (CPMAI™)</h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Certificada en Cognitive Project Management in AI por el PMI. Gestión de ciclo de vida de modelos, gobernanza de datos, adopción de herramientas de IA en equipos y reportes de KPIs con Power BI.
+        </p>
+        <div class="flex flex-wrap gap-1.5 pt-2">
+          <span class="px-2.5 py-1 rounded-lg bg-indigo-100 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 text-xs font-semibold">CPMAI™ PMI</span>
+          <span class="px-2.5 py-1 rounded-lg bg-indigo-100 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 text-xs font-semibold">Power BI</span>
+          <span class="px-2.5 py-1 rounded-lg bg-indigo-100 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 text-xs font-semibold">GenAI Tools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAYECTORIA PM ===== -->
+  <section id="experience" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-8 border-t border-purple-200/40 dark:border-purple-900/30">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <div>
+        <span class="text-xs font-mono font-bold text-violet-600 dark:text-violet-400 uppercase tracking-widest">Experiencia</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Trayectoria de Delivery & Operaciones</h2>
+      </div>
+      <span class="text-xs font-mono text-slate-500 dark:text-slate-400">5 Experiencias Destacadas</span>
+    </div>
+
+    <div class="space-y-4">
+      <!-- MercadoLibre -->
+      <div class="glass-panel rounded-2xl p-6 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-yellow-500/10 text-yellow-700 dark:text-yellow-400 border border-yellow-500/20">MercadoLibre</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">Software Developer — Technical Delivery & Operations</h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Ago 2023 — Jun 2026</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Participación activa en el ciclo de entrega de microservicios críticos a escala masiva. Gestión de guardias rotativas (on-call), monitoreo continuo con Datadog y resolución de incidencias en producción garantizando niveles de disponibilidad superiores al 99%+ (SLA).
+        </p>
+      </div>
+
+      <!-- Mo Technologies L2 -->
+      <div class="glass-panel rounded-2xl p-6 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/10 text-blue-700 dark:text-blue-400 border border-blue-500/20">Mo Technologies</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">Support L2 — Incident Management & SLA Compliance</h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Jul 2022 — Ago 2023</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Gestión de incidencias de segundo nivel en Jira Service Desk para productos Fintech. Coordinación con desarrolladores para diagnóstico rápido de causas raíz y cumplimiento estricto de SLAs ante clientes.
+        </p>
+      </div>
+
+      <!-- Scotiabank -->
+      <div class="glass-panel rounded-2xl p-6 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/20">Scotiabank GBS</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">System Access Analyst — IT Governance & Reporting</h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Oct 2019 — Oct 2021</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Gobernanza corporativa de accesos y seguridad de identidad. Construcción de tableros interactivos de auditoría en Power BI para brindar visibilidad ejecutiva al equipo de ciberseguridad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICACIONES & IDIOMAS ===== -->
+  <section id="certifications" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 border-t border-purple-200/40 dark:border-purple-900/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Certificaciones -->
+      <div class="space-y-4">
+        <span class="text-xs font-mono font-bold text-violet-600 dark:text-violet-400 uppercase tracking-widest">Credenciales Oficiales</span>
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">Certificaciones PMI y Profesionales</h2>
+        <div class="space-y-3">
+          <div class="glass-panel p-4 rounded-xl flex items-start justify-between gap-3">
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Cognitive Project Management in AI (CPMAI)™</h4>
+              <p class="text-xs text-violet-600 dark:text-violet-400 font-semibold">Project Management Institute (PMI) &bull; Sep 2026</p>
+            </div>
+            <i class="fas fa-award text-amber-500 text-lg"></i>
+          </div>
+
+          <div class="glass-panel p-4 rounded-xl flex items-start justify-between gap-3">
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Project Management Professional (PMP)® - Intro & Fundamentals</h4>
+              <p class="text-xs text-violet-600 dark:text-violet-400 font-semibold">Project Management Institute (PMI) &bull; Ago 2026</p>
+            </div>
+            <i class="fas fa-award text-amber-500 text-lg"></i>
+          </div>
+
+          <div class="glass-panel p-4 rounded-xl flex items-start justify-between gap-3">
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Matrícula Profesional de Ingeniería en Informática</h4>
+              <p class="text-xs text-violet-600 dark:text-violet-400 font-semibold">COPNIA &bull; Matrícula N° 091184-0725447 CND</p>
+            </div>
+            <i class="fas fa-id-card text-emerald-500 text-lg"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idiomas & Educación -->
+      <div class="space-y-4">
+        <span class="text-xs font-mono font-bold text-violet-600 dark:text-violet-400 uppercase tracking-widest">Idiomas & Formación</span>
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">Capacidad de Comunicación</h2>
+        <div class="space-y-3">
+          <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between">
+            <span class="text-xs sm:text-sm font-semibold">Español</span>
+            <span class="text-xs font-mono font-bold text-violet-600 dark:text-violet-400">Nativo</span>
+          </div>
+          <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between">
+            <div>
+              <span class="text-xs sm:text-sm font-semibold block">Inglés</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Documentación, syncs y gestión ágil</span>
+            </div>
+            <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 border border-violet-300 dark:border-violet-500/20">
+              Intermedio (B1)
+            </span>
+          </div>
+          <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between">
+            <span class="text-xs sm:text-sm font-semibold">Francés</span>
+            <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Básico</span>
+          </div>
+          <div class="glass-panel p-3.5 rounded-xl">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Ingeniería en Informática</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Universidad Nacional Experimental del Táchira (UNET)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t border-purple-200/40 dark:border-purple-900/30 py-12 px-4 sm:px-6 bg-purple-50/30 dark:bg-slate-900/40 text-center space-y-4">
+    <div class="max-w-xl mx-auto space-y-2">
+      <h3 class="text-lg font-bold text-slate-900 dark:text-white">¿Buscas una Project Manager con criterio técnico real?</h3>
+      <p class="text-xs text-slate-600 dark:text-slate-400">
+        Conversemos sobre cómo puedo acelerar la entrega de tu equipo de ingeniería y asegurar el cumplimiento de tus objetivos de producto.
+      </p>
+    </div>
+    <div class="flex items-center justify-center gap-3">
+      <a href="https://linkedin.com/in/rosmar-mendoza" target="_blank" class="px-4 py-2 rounded-xl text-xs font-bold bg-violet-600 text-white hover:bg-violet-700 transition-colors">
+        LinkedIn
+      </a>
+      <a href="mailto:mendozarosmar@gmail.com" class="px-4 py-2 rounded-xl text-xs font-bold glass-panel text-slate-900 dark:text-white hover:border-violet-500 transition-colors">
+        mendozarosmar@gmail.com
+      </a>
+    </div>
+    <div class="text-xs text-slate-500 dark:text-slate-400 pt-4">
+      &copy; 2026 Rosmar Alejandra Mendoza Canchica &bull; Technical Project Manager
+    </div>
+  </footer>
+
+</BaseLayout>
