@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "+57 3173820550",
     "url": "https://rosmarm.github.io/rosmar-cv/pm",
-    "summary": "Systems Engineer certified by the PMI in PMP® Fundamentals and CPMAI™, offering 7+ years of professional technology experience orchestrating critical software delivery across hyper-scale tech (MercadoLibre), fintech startups (Mo Technologies), and multinational banking (Scotiabank). Combines strong technical depth (distributed microservices, cloud APIs) with strategic project leadership: orchestrating Scrum/Kanban squads, governing 99%+ production availability SLAs, automating executive KPI dashboards in Power BI, and embedding generative AI frameworks to accelerate Time-to-Market and operational efficiency. Uniquely skilled at aligning business priorities with technical execution to drive predictable, high-impact releases.",
+    "summary": "Systems Engineer certified by the PMI in PMP® Fundamentals and CPMAI™, offering 7+ years of professional technology experience orchestrating critical software delivery across hyper-scale tech (MercadoLibre), fintech startups (Mo Technologies), and multinational banking (Scotiabank). Combines deep technical fluency in modern software engineering (distributed microservices, cloud APIs, testing frameworks) with strategic project delivery: orchestrating end-to-end SDLC from requirements to certified releases, establishing rigorous QA strategies and DoR/DoD quality gates, automating executive KPI dashboards in Power BI, and embedding generative AI frameworks to accelerate Time-to-Market with clear, predictable timelines. Bridges business goals and engineering execution to ensure frictionless, zero-defect production releases.",
     "location": {
       "city": "Bogotá",
       "region": "Colombia",
@@ -34,25 +34,25 @@
   "work": [
     {
       "name": "MercadoLibre",
-      "position": "Software Developer — Technical Delivery & Operations",
+      "position": "Software Developer — Technical Delivery & Lifecycle Lead",
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
       "endDate": "2026-03",
-      "summary": "End-to-end technical delivery and operational coordination of critical distributed microservices at regional scale, leading sprint milestones, SLA compliance, and AI workflow integration.",
+      "summary": "High-volume distributed microservices platform requiring end-to-end SDLC ownership, test certification, and predictable release cycles.",
       "highlights": [
-        "Led agile squad orchestration under Scrum/Kanban across high-throughput distributed microservices; optimized backlog grooming and team capacity, improving sprint delivery predictability by 20%.",
-        "Spearheaded alignment between regional engineering, product, and operations teams; managed inter-team dependencies and mitigated delivery risks to guarantee continuous, frictionless releases.",
-        "Governed telemetry observability and incident triage protocols for mission-critical Golang services, conducting root cause analysis (RCA) to safeguard 99%+ platform availability for millions of users.",
-        "Architected and deployed generative AI operational workflows (Cursor, Claude, CPMAI™), accelerating code refactoring and test automation turnaround by 30%."
+        "Led agile squad execution under Scrum/Kanban across high-throughput distributed microservices; implemented Definition of Ready (DoR) and Definition of Done (DoD) criteria, increasing sprint delivery predictability by 20% with zero-defect production rollouts.",
+        "Partnered with engineering and QA to establish automated test suites (unit, integration, regression), reducing critical pre-release defects and ensuring certified, reliable software deployments.",
+        "Aligned regional engineering, product, and QA stakeholders; actively eliminated cross-team blockers and managed technical dependencies to guarantee on-time, predictable sprint schedules.",
+        "Architected and deployed generative AI operational workflows (Cursor, Claude, CPMAI™), accelerating code reviews, documentation, and test scenario creation by 30%."
       ],
       "keywords": [
-        "SDLC Governance",
+        "SDLC Lifecycle",
+        "Quality & Testing",
+        "Certified Releases",
         "Scrum & Kanban",
         "Sprint Predictability",
-        "Dependency Management",
-        "Stakeholder Alignment",
-        "Business Continuity",
-        "SLA 99%+",
+        "DoR & DoD",
+        "Timeline Management",
         "AI Adoption (CPMAI™)",
         "Golang",
         "Jira"
@@ -60,23 +60,25 @@
     },
     {
       "name": "Mo Technologies",
-      "position": "Agile Delivery & Operations",
+      "position": "Agile Delivery & Software Quality Lead",
       "url": "https://motechnologies.com",
       "startDate": "2022-01",
       "endDate": "2023-08",
-      "summary": "Orchestrated end-to-end technical delivery and operational governance across a fast-scaling B2B fintech startup. Directed cross-functional alignment between engineering and product to deploy digital credit APIs and cloud integrations (Python/AWS) on schedule; restructured Level 2 incident response via Jira Service Desk, cutting MTTR by 25% and consistently sustaining 99%+ enterprise SLA compliance with international banking partners.",
+      "summary": "Directed end-to-end software delivery and quality assurance across a high-growth B2B fintech startup. Orchestrated cross-functional collaboration between engineering, QA, and product to deliver digital credit APIs and cloud integrations (Python/AWS) on strict timelines.",
       "highlights": [
-        "Directed cross-functional alignment between engineering and product to deploy digital credit APIs and cloud integrations (Python/AWS) on schedule.",
-        "Restructured Level 2 incident response via Jira Service Desk, cutting MTTR by 25% and consistently sustaining 99%+ enterprise SLA compliance with international banking partners."
+        "Orchestrated cross-functional collaboration between engineering, QA, and product to deliver digital credit APIs and cloud integrations (Python/AWS) on strict timelines.",
+        "Established automated testing standards and rigorous acceptance criteria that reduced post-deployment rework by 25%, while maintaining 99%+ platform availability and meeting SLA commitments with international banking partners."
       ],
       "keywords": [
-        "Agile Delivery",
-        "Scrum",
-        "Startup Environment",
-        "Jira Service Desk",
-        "SLA 99%+",
-        "MTTR Reduction",
-        "Stakeholder Alignment"
+        "Agile Delivery Leadership",
+        "Software Creation Process",
+        "Quality & Testing",
+        "Certified Releases",
+        "DoR & DoD",
+        "Clear Timelines",
+        "Python",
+        "AWS",
+        "Fintech"
       ]
     },
     {
@@ -166,16 +168,16 @@
       ]
     },
     {
-      "name": "Operations & Problem Resolution",
+      "name": "Quality, Testing & Certified Delivery",
       "level": "Advanced",
       "keywords": [
-        "SLA / SLO Compliance (99%+)",
-        "Incident Management",
-        "Root Cause Analysis (RCA)",
-        "MTTR Reduction",
-        "High-Pressure Troubleshooting",
-        "ITIL Foundations",
-        "On-Call Leadership"
+        "Quality & Testing Strategy (Unit, Integration, Regression)",
+        "Certified Production Deployments & Zero Defects",
+        "Strict DoR & DoD Acceptance Criteria",
+        "CI/CD Automation & Safe Releases",
+        "Clear Timeline Planning & Blocker Removal",
+        "Proactive Delivery Risk Mitigation",
+        "Post-Launch Monitoring & SLA Compliance"
       ]
     },
     {

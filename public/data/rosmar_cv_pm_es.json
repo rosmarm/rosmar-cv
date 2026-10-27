@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "+57 3173820550",
     "url": "https://rosmarm.github.io/rosmar-cv/pm",
-    "summary": "Ingeniera de Sistemas certificada por el PMI en PMP® Fundamentals y CPMAI™, con más de 7 años de trayectoria profesional orquestando la entrega de soluciones tecnológicas críticas en entornos de hiper-escala (MercadoLibre), fintech (Mo Technologies) y banca multinacional (Scotiabank). Especialista en transformar prioridades de negocio en ejecución técnica ágil mediante marcos Scrum y Kanban, gobernanza de SLAs superiores al 99%+, analítica estratégica en Power BI y adopción de IA generativa para optimizar el Time-to-Market y la eficiencia operativa de los squads.",
+    "summary": "Ingeniera de Sistemas certificada por el PMI en PMP® Fundamentals y CPMAI™, con más de 7 años de trayectoria tecnológica orquestando el ciclo de vida de desarrollo de software (SDLC) en entornos de hiper-escala (MercadoLibre), fintech (Mo Technologies) y banca multinacional (Scotiabank). Combina una sólida base en ingeniería de software con gestión ágil de proyectos: orquestación de squads bajo Scrum/Kanban, definición estricta de DoR/DoD, estrategias de pruebas y calidad para entregas certificadas a producción, control de tiempos claros sin desvíos y reportería ejecutiva en Power BI.",
     "location": {
       "city": "Bogotá",
       "region": "Cundinamarca",
@@ -34,50 +34,50 @@
   "work": [
     {
       "name": "MercadoLibre",
-      "position": "Software Developer — Technical Delivery & Operations",
+      "position": "Software Developer — Technical Delivery & Lifecycle Lead",
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
       "endDate": "2026-03",
-      "summary": "Plataforma de microservicios distribuidos de alta concurrencia que requirió ciclo de vida completo (end-to-end), facilitación ágil interfuncional y observabilidad de APIs a escala masiva.",
+      "summary": "Plataforma de microservicios distribuidos de alta concurrencia que requirió liderazgo en ciclo de vida de software (SDLC), aseguramiento de calidad y previsibilidad de entregas certificadas.",
       "highlights": [
-        "Lideré la orquestación ágil de squads bajo Scrum/Kanban en arquitecturas distribuidas de microservicios; optimicé el refinamiento de backlog y capacidad del equipo, elevando la predictibilidad de entrega en sprints en un 20%.",
-        "Articulé la comunicación y gestión de dependencias entre ingeniería regional, producto y operaciones, mitigando proactivamente riesgos de release y asegurando el cumplimiento de compromisos estratégicos.",
-        "Supervisé la salud de microservicios críticos mediante herramientas de telemetría, dirigiendo protocolos de respuesta a incidentes y análisis de causa raíz (RCA) para blindar la disponibilidad de la plataforma (SLAs 99%+) ante millones de usuarios.",
-        "Diseñé e integré flujos de trabajo asistidos por IA generativa (marco CPMAI™, Cursor, Claude) en el ciclo de entrega técnica, reduciendo el Time-to-Market de refactorizaciones y pruebas automatizadas en un 30%."
+        "Lideré la orquestación ágil de squads bajo Scrum/Kanban en arquitecturas distribuidas de microservicios; implementé criterios rigurosos de Definition of Ready (DoR) y Definition of Done (DoD), elevando la predictibilidad de entrega en sprints en un 20% con cero defectos en producción.",
+        "Definí y ejecuté la estrategia de calidad y pruebas automatizadas (unitarias, integración y regresión) junto a QA y desarrollo, garantizando entregas de software certificadas y libres de incidentes de despliegue.",
+        "Articulé la alineación entre ingeniería regional, producto y aseguramiento de calidad; gestioné dependencias técnicas complejas y cronogramas con tiempos claros, mitigando riesgos de release antes de llegar a producción.",
+        "Diseñé e integré flujos de trabajo asistidos por IA generativa (marco CPMAI™, Cursor, Claude) en el ciclo de entrega técnica, reduciendo el Time-to-Market de refactorizaciones, diseño de pruebas y documentación en un 30%."
       ],
       "keywords": [
         "Gobernanza SDLC",
+        "Calidad & Pruebas",
+        "Entregas Certificadas",
         "Scrum & Kanban",
         "Predictibilidad Sprint",
-        "Gestión de Dependencias",
-        "Alineación Estratégica",
-        "Continuidad Operativa",
-        "SLA 99%+",
+        "DoR & DoD",
+        "Tiempos Claros",
         "Adopción de IA (CPMAI™)",
         "Golang"
       ]
     },
     {
       "name": "Mo Technologies",
-      "position": "Agile Delivery & Operaciones (Support L2 & Backend)",
+      "position": "Agile Delivery & Software Quality Lead",
       "url": "https://motechnologies.com",
       "startDate": "2022-01",
       "endDate": "2023-08",
-      "summary": "Orquestación integral de la entrega técnica y gobernanza operativa en fintech B2B de rápido crecimiento.",
+      "summary": "Orquestación integral del proceso de creación de software, pruebas y aseguramiento de calidad en fintech B2B de rápido crecimiento.",
       "highlights": [
-        "Dirigió la articulación interfuncional entre desarrollo y producto para el despliegue a tiempo de soluciones de crédito digital (Python/AWS).",
-        "Reestructuró el flujo de soporte crítico Nivel 2 en Jira Service Desk, logrando una reducción del 25% en el MTTR y blindando el cumplimiento sostenido de SLAs corporativos del 99%+ ante aliados bancarios internacionales.",
-        "Facilitó ceremonias ágiles (Planning, Dailies, Retrospectivas) y priorización de backlog alineada con los acuerdos de nivel de servicio (SLAs) de partners financieros."
+        "Dirigió la articulación interfuncional entre desarrollo, producto y calidad para el diseño, pruebas y despliegue a tiempo de soluciones de crédito digital (Python/AWS) bajo cronogramas de entrega con tiempos claros.",
+        "Estandarizó el proceso de pruebas y criterios de aceptación, reduciendo el retrabajo técnico post-despliegue en un 25% y blindando el cumplimiento sostenido de SLAs corporativos del 99%+ ante aliados bancarios internacionales.",
+        "Facilitó ceremonias ágiles (Planning, Dailies, Retrospectivas) y refinamiento de historias de usuario enfocadas en calidad desde el diseño y entregas incrementales certificadas."
       ],
       "keywords": [
         "Scrum",
         "Agile Delivery",
-        "Jira Service Desk",
-        "SLA 99%+",
-        "MTTR",
-        "PostgreSQL",
-        "FastAPI",
-        "Django",
+        "Proceso de Software",
+        "Calidad & Pruebas",
+        "Entregas Certificadas",
+        "DoR & DoD",
+        "Tiempos Claros",
+        "Python",
         "AWS",
         "Fintech"
       ]
@@ -189,16 +189,16 @@
       ]
     },
     {
-      "name": "Gobernanza de Operaciones & SLAs",
+      "name": "Calidad, Pruebas & Entregas Certificadas",
       "level": "Avanzado",
       "keywords": [
-        "SLA / SLO 99%+",
-        "Gestión de Incidentes Críticos",
-        "Análisis de Causa Raíz (RCA)",
-        "Reducción de MTTR",
-        "Protocolos On-Call",
-        "Fundamentos ITIL",
-        "Jira Service Desk"
+        "Estrategia de Pruebas (Unitarias, Integración, Regresión)",
+        "Entregas Certificadas & Cero Defectos",
+        "Criterios de Aceptación (DoR & DoD)",
+        "Automatización CI/CD & Despliegues Seguros",
+        "Planificación de Tiempos Claros",
+        "Mitigación de Riesgos de Despliegue",
+        "Monitoreo de Calidad & SLAs 99%+"
       ]
     },
     {
