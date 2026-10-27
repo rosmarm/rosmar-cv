@@ -7,7 +7,7 @@
     "email": "mendozarosmar@gmail.com",
     "phone": "",
     "url": "https://github.com/rosmarmendoza",
-    "summary": "Ingeniera en Informática especializada en el desarrollo de aplicaciones backend orientadas a Inteligencia Artificial y automatización inteligente con Python y Golang. Experiencia integrando modelos fundacionales (LLMs), frameworks de agentes autónomos, pipelines de procesamiento de datos y herramientas avanzadas de asistencia con IA (Cursor, Claude, Antigravity, APIs de Anthropic/OpenAI) para optimizar flujos productivos, automatizar tareas complejas y crear soluciones de software de alto impacto en entornos de escala masiva como MercadoLibre.",
+    "summary": "Ingeniera de Sistemas especializada en el desarrollo de aplicaciones backend orientadas a Inteligencia Artificial y automatización inteligente con Python y Golang. Experiencia integrando modelos fundacionales (LLMs), frameworks de agentes autónomos, pipelines de procesamiento de datos y herramientas avanzadas de asistencia con IA (Cursor, Claude, Antigravity, APIs de Anthropic/OpenAI) para optimizar flujos productivos, automatizar tareas complejas y crear soluciones de software de alto impacto en entornos de escala masiva como MercadoLibre.",
     "location": {
       "city": "Bogotá / Colombia",
       "countryCode": "CO"
@@ -144,7 +144,7 @@
       "summary": "Certificación en fundamentos y metodología CPMAI™ para la gestión ágil, gobernanza y entrega exitosa de proyectos de Inteligencia Artificial."
     },
     {
-      "name": "Matrícula Profesional de Ingeniería en Informática",
+      "name": "Matrícula Profesional de Ingeniería (COPNIA)",
       "date": "2024-06",
       "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
       "url": "https://tramites.copnia.gov.co",
@@ -169,7 +169,7 @@
     {
       "institution": "Universidad Nacional Experimental del Táchira",
       "url": "https://www.unet.edu.ve",
-      "area": "Ingeniería en Informática",
+      "area": "Ingeniería en Sistemas",
       "studyType": "Título Universitario",
       "startDate": "2014-01",
       "endDate": "2019-12"

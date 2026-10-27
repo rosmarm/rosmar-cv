@@ -7,7 +7,7 @@ Este documento establece las **reglas definitivas, inmutables y obligatorias** p
 ## 📌 Regla 1: Título Profesional en Inglés vs Español (¡REGLA DE ORO!)
 
 * **En Español:** 
-  - **`Ingeniera en Informática`** (Título oficial universitario UNET 2019, Matrícula Profesional COPNIA N° 091184-0725447 CND).
+  - **`Ingeniera de Sistemas`** / Carrera: **`Ingeniería en Sistemas`** (estandarizado con Systems Engineer; Título oficial universitario UNET 2019, Matrícula Profesional COPNIA N° 091184-0725447 CND).
 * **En Inglés:** 
   - **`Systems Engineer`** ⚠️ *(REGLA ESTRICTA)*.
   - **PROHIBIDO** usar *Computer Engineer*, *Informatics Engineer* o *Computer Scientist*.
@@ -57,7 +57,7 @@ Rosmar cuenta con páginas y enlaces directos según el rol al que se postule:
 * **Enfoque:** Microservicios y APIs RESTful en Golang y Python, PostgreSQL, AWS, concurrencia, alta disponibilidad y desarrollo asistido por IA (Cursor/Claude).
 
 ### 3. Rol: AI Engineer / AI Enablement
-* **Título en Español:** *Ingeniera en Informática & AI Engineer*
+* **Título en Español:** *Ingeniera de Sistemas & AI Engineer*
 * **Título en Inglés:** *Systems Engineer & AI Engineer*
 * **CV Interactivo directo:** [**rosmarm.github.io/rosmar-cv/?profile=ai**](https://rosmarm.github.io/rosmar-cv/?profile=ai)
 * **Enfoque:** Metodología CPMAI™ (PMI), integración de LLMs, automatización con agentes y flujos de trabajo AI-first.
@@ -69,7 +69,7 @@ Rosmar cuenta con páginas y enlaces directos según el rol al que se postule:
 En cualquier formato de CV deben figurar con sus nombres oficiales:
 1. **Cognitive Project Management in AI (CPMAI)™** — *Project Management Institute (PMI)* &bull; Sep 2026.
 2. **Project Management Professional (PMP)® - Intro & Fundamentals** — *Project Management Institute (PMI)* &bull; Ago 2026.
-3. **Matrícula Profesional de Ingeniería en Informática** — *COPNIA (Colombia)* &bull; Matrícula N° 091184-0725447 CND.
+3. **Matrícula Profesional de Ingeniería (COPNIA)** — *COPNIA (Colombia)* &bull; Matrícula N° 091184-0725447 CND.
 4. **Professional Developer (Certified Tech Developer)** — *Digital House & MercadoLibre / Globant* &bull; Jul 2023.
 
 ---

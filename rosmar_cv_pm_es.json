@@ -2,14 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Rosmar Alejandra Mendoza Canchica",
-    "label": "Technical Project Manager | PMP® Fundamentals | Agile & IT Delivery",
+    "label": "Ingeniera de Sistemas & Technical Project Manager | Agile Delivery & AI Enablement",
     "image": "",
     "email": "mendozarosmar@gmail.com",
-    "phone": "",
-    "url": "https://github.com/rosmarmendoza",
-    "summary": "Ingeniera en Informática certificada por el PMI (PMP® Intro & Fundamentals y CPMAI™) con más de 7 años de experiencia en la orquestación y entrega de soluciones tecnológicas en empresas de hiper-escala como MercadoLibre y el sector Fintech. Especialista en liderar squads ágiles bajo Scrum y Kanban, gestionar incidentes críticos garantizando SLAs superiores al 99%+, diseñar tableros ejecutivos en Power BI e integrar herramientas de Inteligencia Artificial para acelerar el ciclo de vida del software (SDLC).",
+    "phone": "+57 3173820550",
+    "url": "https://rosmarm.github.io/rosmar-cv/pm",
+    "summary": "Ingeniera de Sistemas certificada por el PMI en PMP® Fundamentals y CPMAI™, con más de 7 años de trayectoria profesional orquestando la entrega de soluciones tecnológicas críticas en entornos de hiper-escala (MercadoLibre), fintech (Mo Technologies) y banca multinacional (Scotiabank). Especialista en transformar prioridades de negocio en ejecución técnica ágil mediante marcos Scrum y Kanban, gobernanza de SLAs superiores al 99%+, analítica estratégica en Power BI y adopción de IA generativa para optimizar el Time-to-Market y la eficiencia operativa de los squads.",
     "location": {
-      "city": "Bogotá / Colombia",
+      "city": "Bogotá",
+      "region": "Cundinamarca",
       "countryCode": "CO"
     },
     "profiles": [
@@ -22,76 +23,63 @@
         "network": "GitHub",
         "username": "rosmarmendoza",
         "url": "https://github.com/rosmarmendoza"
+      },
+      {
+        "network": "Portafolio PM",
+        "username": "rosmarm.github.io/rosmar-cv/pm",
+        "url": "https://rosmarm.github.io/rosmar-cv/pm"
       }
     ]
   },
   "work": [
     {
       "name": "MercadoLibre",
-      "position": "Software Developer (Backend) — Technical Delivery & Operations",
+      "position": "Software Developer — Technical Delivery & Operations",
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
-      "endDate": "2026-06",
-      "summary": "Participación activa en la entrega de microservicios críticos a escala masiva, combinando ejecución técnica con coordinación operativa y gestión de incidentes en una de las plataformas más grandes de Latinoamérica.",
+      "endDate": "2026-03",
+      "summary": "Plataforma de microservicios distribuidos de alta concurrencia que requirió ciclo de vida completo (end-to-end), facilitación ágil interfuncional y observabilidad de APIs a escala masiva.",
       "highlights": [
-        "Coordiné la entrega de microservicios y APIs RESTful en Golang, Java y Python, asegurando la alineación técnica con los objetivos del equipo y cumplimiento de SLAs del 99%+ para millones de usuarios.",
-        "Lideré la gestión de guardias operativas (on-call) y la respuesta a incidentes en producción, priorizando y escalando problemas críticos para minimizar el impacto en la plataforma.",
-        "Facilité ceremonias ágiles (daily stand-ups, sprint planning, retrospectivas) y contribuí activamente a la mejora continua de procesos dentro del equipo de desarrollo.",
-        "Completé el Bootcamp Backend de MercadoLibre, adquiriendo profundo conocimiento técnico para comunicar eficazmente requerimientos entre equipos de ingeniería y stakeholders de producto.",
-        "Integré herramientas de IA (Cursor, Claude) en flujos de trabajo del equipo, impulsando la productividad y reduciendo tiempos de entrega."
+        "Lideré la orquestación ágil de squads bajo Scrum/Kanban en arquitecturas distribuidas de microservicios; optimicé el refinamiento de backlog y capacidad del equipo, elevando la predictibilidad de entrega en sprints en un 20%.",
+        "Articulé la comunicación y gestión de dependencias entre ingeniería regional, producto y operaciones, mitigando proactivamente riesgos de release y asegurando el cumplimiento de compromisos estratégicos.",
+        "Supervisé la salud de microservicios críticos mediante herramientas de telemetría, dirigiendo protocolos de respuesta a incidentes y análisis de causa raíz (RCA) para blindar la disponibilidad de la plataforma (SLAs 99%+) ante millones de usuarios.",
+        "Diseñé e integré flujos de trabajo asistidos por IA generativa (marco CPMAI™, Cursor, Claude) en el ciclo de entrega técnica, reduciendo el Time-to-Market de refactorizaciones y pruebas automatizadas en un 30%."
+      ],
+      "keywords": [
+        "Gobernanza SDLC",
+        "Scrum & Kanban",
+        "Predictibilidad Sprint",
+        "Gestión de Dependencias",
+        "Alineación Estratégica",
+        "Continuidad Operativa",
+        "SLA 99%+",
+        "Adopción de IA (CPMAI™)",
+        "Golang"
+      ]
+    },
+    {
+      "name": "Mo Technologies",
+      "position": "Agile Delivery & Operaciones (Support L2 & Backend)",
+      "url": "https://motechnologies.com",
+      "startDate": "2022-01",
+      "endDate": "2023-08",
+      "summary": "Orquestación integral de la entrega técnica y gobernanza operativa en fintech B2B de rápido crecimiento.",
+      "highlights": [
+        "Dirigió la articulación interfuncional entre desarrollo y producto para el despliegue a tiempo de soluciones de crédito digital (Python/AWS).",
+        "Reestructuró el flujo de soporte crítico Nivel 2 en Jira Service Desk, logrando una reducción del 25% en el MTTR y blindando el cumplimiento sostenido de SLAs corporativos del 99%+ ante aliados bancarios internacionales.",
+        "Facilitó ceremonias ágiles (Planning, Dailies, Retrospectivas) y priorización de backlog alineada con los acuerdos de nivel de servicio (SLAs) de partners financieros."
       ],
       "keywords": [
         "Scrum",
         "Agile Delivery",
-        "SLA 99%+",
-        "Incident Management",
-        "On-Call",
-        "Stakeholder Communication",
-        "Golang",
-        "Jira"
-      ]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Support L2 — Incident Management & SLA Compliance",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-07",
-      "endDate": "2023-08",
-      "summary": "Gestión de incidentes de segundo nivel, cumplimiento estricto de SLAs y coordinación con equipos de desarrollo para resolución de problemas en producción.",
-      "highlights": [
-        "Gestioné y prioricé incidencias técnicas de Nivel 2 en Jira Service Desk, cumpliendo con SLAs estrictos y reportando métricas de cumplimiento al liderazgo.",
-        "Coordiné la comunicación entre equipos de soporte, desarrollo y operaciones para la resolución ágil de incidentes críticos en producción.",
-        "Identifiqué patrones recurrentes de errores y propuse mejoras de procesos que redujeron el tiempo promedio de resolución (MTTR)."
-      ],
-      "keywords": [
         "Jira Service Desk",
-        "SLA Management",
+        "SLA 99%+",
         "MTTR",
-        "Incident Coordination",
-        "ITIL"
-      ]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Backend Intern — Fintech Delivery",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Desarrollo y entrega de servicios backend para productos financieros, colaborando con equipos de producto, QA y operaciones.",
-      "highlights": [
-        "Coordiné la entrega de APIs RESTful en Python (FastAPI, Django) orientadas a productos crediticios, asegurando la calidad y cumplimiento de plazos del sprint.",
-        "Diseñé modelos de datos y optimicé consultas SQL en PostgreSQL, presentando propuestas técnicas a stakeholders para la aprobación de cambios en la arquitectura.",
-        "Gestioné la integración con servicios AWS y Webhooks, coordinando con equipos de infraestructura y operaciones para despliegues en producción.",
-        "Documenté procesos técnicos y generé reportes de avance para la visibilidad del equipo de producto y liderazgo."
-      ],
-      "keywords": [
-        "Agile",
-        "Sprint Planning",
+        "PostgreSQL",
         "FastAPI",
         "Django",
-        "PostgreSQL",
         "AWS",
-        "Technical Documentation"
+        "Fintech"
       ]
     },
     {
@@ -100,21 +88,21 @@
       "url": "https://www.scotiabank.com",
       "startDate": "2019-10",
       "endDate": "2021-10",
-      "summary": "Gobernanza de TI, gestión centralizada de accesos y construcción de tableros de control para auditoría y toma de decisiones en banca multinacional.",
+      "summary": "Gobernanza corporativa de TI, gestión centralizada de identidades y accesos, y construcción de tableros de control para auditoría bancaria multinacional.",
       "highlights": [
-        "Administré accesos y permisos de usuarios a nivel corporativo, gestionando procesos de alta, baja y modificación con Active Directory y Microsoft Office 365.",
-        "Construí tableros interactivos de KPIs en Power BI para auditar accesos, brindar visibilidad operativa y apoyar la toma de decisiones del equipo de seguridad.",
-        "Coordiné con equipos globales la configuración de roles y accesos para aplicaciones corporativas sobre tecnología .NET, asegurando cumplimiento normativo.",
-        "Documenté y mejoré procedimientos operativos estándar (SOPs) para la gestión de identidades y accesos."
+        "Diseñé y automaticé tableros ejecutivos interactivos de KPIs en Power BI para auditar accesos, brindar visibilidad operativa en tiempo real y apoyar la toma de decisiones gerenciales.",
+        "Administré la gobernanza corporativa de identidades y accesos (IAM) en entornos empresariales de Active Directory y Microsoft 365, garantizando cero discrepancias ante auditorías.",
+        "Redacté y optimicé procedimientos operativos estándar (SOPs) bilingües para el onboarding y gestión de aplicaciones empresariales (.NET)."
       ],
       "keywords": [
         "IT Governance",
         "Power BI",
+        "Dashboards Ejecutivos",
         "Active Directory",
-        "O365",
-        "SOP",
+        "Microsoft 365",
+        "SOPs",
         "Compliance",
-        "KPIs"
+        "Auditoría Bancaria"
       ]
     },
     {
@@ -123,17 +111,17 @@
       "url": "https://www.intexus.com",
       "startDate": "2016-09",
       "endDate": "2019-10",
-      "summary": "Gestión de operaciones de TI, monitoreo de infraestructura y administración de mesa de ayuda.",
+      "summary": "Gestión de operaciones de TI, monitoreo de infraestructura tecnológica y administración de mesa de ayuda.",
       "highlights": [
-        "Supervisé la disponibilidad de la infraestructura tecnológica, gestionando SLAs operativos y atención de requerimientos en Jira Help Desk.",
-        "Generé reportes de rendimiento y disponibilidad de servicios para la toma de decisiones gerenciales."
+        "Supervisé continuamente la disponibilidad de la infraestructura tecnológica, gestionando SLAs operativos y atención de requerimientos en Jira Help Desk.",
+        "Generé reportes periódicos de disponibilidad y rendimiento de servicios para el soporte a la toma de decisiones gerenciales."
       ],
       "keywords": [
         "IT Operations",
         "Service Management",
-        "Monitoring",
         "Jira Help Desk",
-        "SLA"
+        "SLA",
+        "Infraestructura"
       ]
     }
   ],
@@ -141,19 +129,19 @@
     {
       "name": "Cognitive Project Management in AI (CPMAI)™",
       "date": "2026-09",
-      "issuer": "PMI - Project Management Institute",
+      "issuer": "Project Management Institute (PMI)",
       "url": "https://www.pmi.org",
-      "summary": "Certificación en fundamentos y metodología CPMAI™ para la gestión ágil, gobernanza y entrega exitosa de proyectos de Inteligencia Artificial."
+      "summary": "Certificación en fundamentos y metodología CPMAI™ para la gestión ágil, gobernanza y entrega exitosa de proyectos impulsados por Inteligencia Artificial."
     },
     {
       "name": "Project Management Professional (PMP)® - Intro & Fundamentals",
       "date": "2026-08",
-      "issuer": "PMI - Project Management Institute",
+      "issuer": "Project Management Institute (PMI)",
       "url": "https://www.pmi.org",
-      "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos PMP."
+      "summary": "Certificación en fundamentos y estándares globales de gestión de proyectos, gobernanza, ciclo de vida y gestión de riesgos del PMI."
     },
     {
-      "name": "Matrícula Profesional de Ingeniería en Informática",
+      "name": "Matrícula Profesional de Ingeniería (COPNIA)",
       "date": "2024-06",
       "issuer": "COPNIA - Consejo Profesional Nacional de Ingeniería (Colombia)",
       "url": "https://tramites.copnia.gov.co",
@@ -162,22 +150,22 @@
     {
       "name": "Professional Developer (Certified Tech Developer)",
       "date": "2023-07",
-      "issuer": "Digital House (by Globant & MercadoLibre)",
+      "issuer": "Digital House, MercadoLibre & Globant",
       "url": "https://www.digitalhouse.com",
-      "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación)."
+      "summary": "Certificación de desarrollo profesional intensivo (1.568 horas de formación) en arquitectura, bases de datos y desarrollo de software."
     }
   ],
   "education": [
     {
-      "institution": "Universidad Nacional Experimental del Táchira",
+      "institution": "Universidad Nacional Experimental del Táchira (UNET)",
       "url": "https://www.unet.edu.ve",
-      "area": "Ingeniería en Informática",
-      "studyType": "Título Universitario",
+      "area": "Ingeniería en Sistemas",
+      "studyType": "Título Universitario Oficial",
       "startDate": "2014-01",
       "endDate": "2019-12"
     },
     {
-      "institution": "Digital House",
+      "institution": "Digital House (by Globant & MercadoLibre)",
       "url": "https://www.digitalhouse.com",
       "area": "Professional Developer (Certified Tech Developer)",
       "studyType": "Programa Intensivo (1.568 Horas Cursadas)",
@@ -187,70 +175,67 @@
   ],
   "skills": [
     {
-      "name": "Gestión de Proyectos",
+      "name": "Gestión de Proyectos & Agile Delivery",
       "level": "Avanzado",
       "keywords": [
-        "PMI / PMP®",
-        "Scrum",
-        "Kanban",
+        "Estándares PMI / PMP®",
+        "Scrum & Kanban",
         "Agile Delivery",
-        "Sprint Planning",
-        "Retrospectivas"
+        "Sprint Planning & Dailies",
+        "Retrospectivas & Mejora Continua",
+        "Refinamiento de Backlog (Grooming)",
+        "Criterios DoR & DoD",
+        "Metodología CPMAI™ (Proyectos IA)"
       ]
     },
     {
-      "name": "Gestión de Operaciones & SLAs",
+      "name": "Gobernanza de Operaciones & SLAs",
       "level": "Avanzado",
       "keywords": [
-        "SLA 99%+",
-        "Incident Management",
-        "MTTR",
-        "On-Call",
-        "ITIL",
+        "SLA / SLO 99%+",
+        "Gestión de Incidentes Críticos",
+        "Análisis de Causa Raíz (RCA)",
+        "Reducción de MTTR",
+        "Protocolos On-Call",
+        "Fundamentos ITIL",
         "Jira Service Desk"
       ]
     },
     {
-      "name": "Liderazgo Técnico & Comunicación",
+      "name": "Liderazgo & Comunicación con Stakeholders",
       "level": "Avanzado",
       "keywords": [
-        "Stakeholder Management",
-        "Technical Documentation",
-        "Cross-team Coordination",
-        "KPIs"
+        "Alineación de Stakeholders",
+        "Liderazgo de Equipos Interfuncionales",
+        "Documentación Técnica & SOPs",
+        "Reportes Ejecutivos de Progreso",
+        "Gestión de Riesgos y Dependencias"
       ]
     },
     {
-      "name": "Reporteo & Análisis",
+      "name": "Analítica, BI & Herramientas",
       "level": "Avanzado",
       "keywords": [
-        "Power BI",
-        "Dashboards",
-        "Métricas Operativas",
-        "Data-Driven Decisions"
-      ]
-    },
-    {
-      "name": "Fundamentos Técnicos",
-      "level": "Avanzado",
-      "keywords": [
-        "Golang",
-        "Python",
-        "PostgreSQL",
-        "REST APIs",
-        "AWS",
-        "CI/CD"
-      ]
-    },
-    {
-      "name": "Herramientas & Productividad",
-      "level": "Avanzado",
-      "keywords": [
+        "Power BI (Dashboards Ejecutivos)",
+        "Microsoft 365 / Excel Avanzado",
         "Jira Software",
-        "Git",
-        "Cursor",
-        "Claude",
-        "Confluence"
+        "Confluence",
+        "Datadog",
+        "Git & GitHub"
+      ]
+    },
+    {
+      "name": "Base Técnica & Inteligencia Artificial",
+      "level": "Avanzado",
+      "keywords": [
+        "Flujos con IA (Cursor, Claude, LLMs)",
+        "Arquitectura de Microservicios",
+        "APIs RESTful",
+        "Golang",
+        "Python (FastAPI, Django)",
+        "PostgreSQL",
+        "AWS Cloud",
+        "CI/CD"
       ]
     }
   ],

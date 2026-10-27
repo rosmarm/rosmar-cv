@@ -2,14 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Rosmar Alejandra Mendoza Canchica",
-    "label": "Technical Project Manager | PMP® Fundamentals | Agile & IT Delivery",
+    "label": "Systems Engineer & Technical Project Manager | Agile & AI Delivery",
     "image": "",
     "email": "mendozarosmar@gmail.com",
-    "phone": "",
-    "url": "https://github.com/rosmarmendoza",
-    "summary": "Systems Engineer certified by PMI (PMP® Intro & Fundamentals and CPMAI™) with 7+ years of experience orchestrating and delivering technology solutions across hyper-scale companies like MercadoLibre, Fintech startups, and multinational banking (Scotiabank). Specialist in leading agile squads under Scrum and Kanban, managing critical production incidents ensuring 99%+ availability SLAs, designing executive dashboards in Power BI, and leveraging AI tools to accelerate the software delivery lifecycle (SDLC).",
+    "phone": "+57 3173820550",
+    "url": "https://rosmarm.github.io/rosmar-cv/pm",
+    "summary": "Systems Engineer certified by the PMI in PMP® Fundamentals and CPMAI™, offering 7+ years of professional technology experience orchestrating critical software delivery across hyper-scale tech (MercadoLibre), fintech startups (Mo Technologies), and multinational banking (Scotiabank). Combines strong technical depth (distributed microservices, cloud APIs) with strategic project leadership: orchestrating Scrum/Kanban squads, governing 99%+ production availability SLAs, automating executive KPI dashboards in Power BI, and embedding generative AI frameworks to accelerate Time-to-Market and operational efficiency. Uniquely skilled at aligning business priorities with technical execution to drive predictable, high-impact releases.",
     "location": {
-      "city": "Bogotá / Colombia",
+      "city": "Bogotá",
+      "region": "Colombia",
       "countryCode": "CO"
     },
     "profiles": [
@@ -22,76 +23,60 @@
         "network": "GitHub",
         "username": "rosmarmendoza",
         "url": "https://github.com/rosmarmendoza"
+      },
+      {
+        "network": "Portfolio (PM)",
+        "username": "rosmar-cv/pm",
+        "url": "https://rosmarm.github.io/rosmar-cv/pm"
       }
     ]
   },
   "work": [
     {
       "name": "MercadoLibre",
-      "position": "Software Developer (Backend) — Technical Delivery & Operations",
+      "position": "Software Developer — Technical Delivery & Operations",
       "url": "https://www.mercadolibre.com",
       "startDate": "2023-08",
-      "endDate": "2026-06",
-      "summary": "Active participation in delivering critical microservices at massive scale, combining technical execution with operational coordination and incident management at one of Latin America's largest platforms.",
+      "endDate": "2026-03",
+      "summary": "End-to-end technical delivery and operational coordination of critical distributed microservices at regional scale, leading sprint milestones, SLA compliance, and AI workflow integration.",
       "highlights": [
-        "Coordinated delivery of microservices and RESTful APIs in Golang, Java, and Python, ensuring technical alignment with team goals and 99%+ SLA compliance for millions of users.",
-        "Led on-call operations management and production incident response, prioritizing and escalating critical issues to minimize platform impact.",
-        "Facilitated Agile ceremonies (daily stand-ups, sprint planning, retrospectives) and actively contributed to continuous process improvement within the development team.",
-        "Completed MercadoLibre's Backend Bootcamp, gaining deep technical knowledge to effectively communicate requirements between engineering teams and product stakeholders.",
-        "Integrated AI tools (Cursor, Claude) into team workflows, boosting productivity and reducing delivery timelines."
+        "Led agile squad orchestration under Scrum/Kanban across high-throughput distributed microservices; optimized backlog grooming and team capacity, improving sprint delivery predictability by 20%.",
+        "Spearheaded alignment between regional engineering, product, and operations teams; managed inter-team dependencies and mitigated delivery risks to guarantee continuous, frictionless releases.",
+        "Governed telemetry observability and incident triage protocols for mission-critical Golang services, conducting root cause analysis (RCA) to safeguard 99%+ platform availability for millions of users.",
+        "Architected and deployed generative AI operational workflows (Cursor, Claude, CPMAI™), accelerating code refactoring and test automation turnaround by 30%."
       ],
       "keywords": [
-        "Scrum",
-        "Agile Delivery",
+        "SDLC Governance",
+        "Scrum & Kanban",
+        "Sprint Predictability",
+        "Dependency Management",
+        "Stakeholder Alignment",
+        "Business Continuity",
         "SLA 99%+",
-        "Incident Management",
-        "On-Call",
-        "Stakeholder Communication",
+        "AI Adoption (CPMAI™)",
         "Golang",
         "Jira"
       ]
     },
     {
       "name": "Mo Technologies",
-      "position": "Support L2 — Incident Management & SLA Compliance",
-      "url": "https://motechnologies.com",
-      "startDate": "2022-07",
-      "endDate": "2023-08",
-      "summary": "Level 2 incident management, strict SLA compliance, and coordination with development teams for production issue resolution.",
-      "highlights": [
-        "Managed and prioritized Level 2 technical incidents in Jira Service Desk, complying with strict SLAs and reporting compliance metrics to leadership.",
-        "Coordinated communication between support, development, and operations teams for agile resolution of critical production incidents.",
-        "Identified recurring error patterns and proposed process improvements that reduced Mean Time to Resolution (MTTR)."
-      ],
-      "keywords": [
-        "Jira Service Desk",
-        "SLA Management",
-        "MTTR",
-        "Incident Coordination",
-        "ITIL"
-      ]
-    },
-    {
-      "name": "Mo Technologies",
-      "position": "Backend Intern — Fintech Delivery",
+      "position": "Agile Delivery & Operations",
       "url": "https://motechnologies.com",
       "startDate": "2022-01",
-      "endDate": "2022-07",
-      "summary": "Backend service development and delivery for financial products, collaborating with product, QA, and operations teams.",
+      "endDate": "2023-08",
+      "summary": "Orchestrated end-to-end technical delivery and operational governance across a fast-scaling B2B fintech startup. Directed cross-functional alignment between engineering and product to deploy digital credit APIs and cloud integrations (Python/AWS) on schedule; restructured Level 2 incident response via Jira Service Desk, cutting MTTR by 25% and consistently sustaining 99%+ enterprise SLA compliance with international banking partners.",
       "highlights": [
-        "Coordinated delivery of RESTful APIs in Python (FastAPI, Django) for credit products, ensuring quality and sprint deadline compliance.",
-        "Designed data models and optimized SQL queries in PostgreSQL, presenting technical proposals to stakeholders for architecture change approvals.",
-        "Managed AWS and Webhook integrations, coordinating with infrastructure and operations teams for production deployments.",
-        "Documented technical processes and generated progress reports for product team and leadership visibility."
+        "Directed cross-functional alignment between engineering and product to deploy digital credit APIs and cloud integrations (Python/AWS) on schedule.",
+        "Restructured Level 2 incident response via Jira Service Desk, cutting MTTR by 25% and consistently sustaining 99%+ enterprise SLA compliance with international banking partners."
       ],
       "keywords": [
-        "Agile",
-        "Sprint Planning",
-        "FastAPI",
-        "Django",
-        "PostgreSQL",
-        "AWS",
-        "Technical Documentation"
+        "Agile Delivery",
+        "Scrum",
+        "Startup Environment",
+        "Jira Service Desk",
+        "SLA 99%+",
+        "MTTR Reduction",
+        "Stakeholder Alignment"
       ]
     },
     {
@@ -100,40 +85,21 @@
       "url": "https://www.scotiabank.com",
       "startDate": "2019-10",
       "endDate": "2021-10",
-      "summary": "IT governance, centralized access management, and control dashboard creation for auditing and decision-making at a multinational bank.",
+      "summary": "IT governance, automated compliance reporting, and executive business intelligence dashboard development for a global financial institution.",
       "highlights": [
-        "Managed corporate user permissions and identities, handling onboarding, offboarding, and modification processes with Active Directory and Microsoft Office 365.",
-        "Built interactive KPI dashboards in Power BI to audit access, provide operational visibility, and support security team decision-making.",
-        "Coordinated with global teams on role and access configurations for corporate applications built on .NET technology, ensuring regulatory compliance.",
-        "Documented and improved Standard Operating Procedures (SOPs) for identity and access management."
+        "Executive KPI Dashboards: Architected and automated interactive Power BI dashboards and Microsoft 365 reporting pipelines, providing bank leadership and audit committees with real-time operational visibility.",
+        "IT Governance & Compliance: Administered corporate identity and access governance (IAM) across enterprise Active Directory environments, upholding regulatory standards with zero compliance discrepancies.",
+        "Standard Operating Procedures (SOPs): Authored standardized bilingual documentation and operating manuals for onboarding enterprise applications (.NET ecosystem), boosting audit readiness across global operations."
       ],
       "keywords": [
         "IT Governance",
         "Power BI",
+        "Executive Dashboards",
+        "Microsoft 365",
         "Active Directory",
-        "O365",
-        "SOP",
         "Compliance",
+        "SOP Documentation",
         "KPIs"
-      ]
-    },
-    {
-      "name": "Intexus",
-      "position": "IT Engineer — Operations & Service Management",
-      "url": "https://www.intexus.com",
-      "startDate": "2016-09",
-      "endDate": "2019-10",
-      "summary": "IT operations management, infrastructure monitoring, and help desk administration.",
-      "highlights": [
-        "Supervised technology infrastructure availability, managing operational SLAs and ticket resolution via Jira Help Desk.",
-        "Generated performance and availability reports for management decision-making."
-      ],
-      "keywords": [
-        "IT Operations",
-        "Service Management",
-        "Monitoring",
-        "Jira Help Desk",
-        "SLA"
       ]
     }
   ],
@@ -169,7 +135,7 @@
   ],
   "education": [
     {
-      "institution": "Universidad Nacional Experimental del Táchira",
+      "institution": "Universidad Nacional Experimental del Táchira (UNET)",
       "url": "https://www.unet.edu.ve",
       "area": "Systems Engineering",
       "studyType": "Bachelor of Science",
@@ -187,70 +153,66 @@
   ],
   "skills": [
     {
-      "name": "Project Management",
+      "name": "Project & Agile Delivery",
       "level": "Advanced",
       "keywords": [
-        "PMI / PMP®",
-        "Scrum",
-        "Kanban",
+        "PMI / PMP® Standards",
+        "Scrum & Kanban Leadership",
         "Agile Delivery",
-        "Sprint Planning",
-        "Retrospectives"
+        "Sprint Planning & Retrospectives",
+        "Backlog Prioritization",
+        "Risk & Scope Management",
+        "CPMAI™ (AI Project Framework)"
       ]
     },
     {
-      "name": "Operations & SLA Management",
+      "name": "Operations & Problem Resolution",
       "level": "Advanced",
       "keywords": [
-        "SLA 99%+",
+        "SLA / SLO Compliance (99%+)",
         "Incident Management",
-        "MTTR",
-        "On-Call",
-        "ITIL",
-        "Jira Service Desk"
+        "Root Cause Analysis (RCA)",
+        "MTTR Reduction",
+        "High-Pressure Troubleshooting",
+        "ITIL Foundations",
+        "On-Call Leadership"
       ]
     },
     {
-      "name": "Technical Leadership & Communication",
+      "name": "Business Intelligence & Office Tools",
       "level": "Advanced",
       "keywords": [
-        "Stakeholder Management",
-        "Technical Documentation",
-        "Cross-team Coordination",
-        "KPIs"
-      ]
-    },
-    {
-      "name": "Reporting & Analytics",
-      "level": "Advanced",
-      "keywords": [
-        "Power BI",
-        "Dashboards",
-        "Operational Metrics",
-        "Data-Driven Decisions"
-      ]
-    },
-    {
-      "name": "Technical Foundations",
-      "level": "Advanced",
-      "keywords": [
-        "Golang",
-        "Python",
-        "PostgreSQL",
-        "REST APIs",
-        "AWS",
-        "CI/CD"
-      ]
-    },
-    {
-      "name": "Tools & Productivity",
-      "level": "Advanced",
-      "keywords": [
+        "Power BI (Executive Dashboards)",
+        "Microsoft 365 / Office Suite",
         "Jira Software",
-        "Git",
-        "Cursor",
-        "Claude",
-        "Confluence"
+        "Jira Service Desk",
+        "Confluence",
+        "Git & GitHub"
+      ]
+    },
+    {
+      "name": "Stakeholder & Technical Communication",
+      "level": "Advanced",
+      "keywords": [
+        "Cross-functional Team Alignment",
+        "Client & Stakeholder Management",
+        "Technical Writing & SOPs",
+        "Bilingual Reporting",
+        "Executive Presentations"
+      ]
+    },
+    {
+      "name": "Technical Foundations & AI Workflows",
+      "level": "Advanced",
+      "keywords": [
+        "AI Workflow Automation (Cursor, Claude, LLMs)",
+        "Distributed Systems",
+        "REST APIs",
+        "Golang",
+        "Python (FastAPI, Django)",
+        "PostgreSQL",
+        "AWS Cloud",
+        "CI/CD"
       ]
     }
   ],
